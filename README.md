@@ -31,6 +31,12 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
    - 6.3 Model Deployment & Serving
    - 6.4 Monitoring, Drift & Governance
    - 6.5 LLMOps: Operationalizing LLMs, RAG & Agents
+7. Agentic AI & Applied AI Systems Design
+   - 7.1 Agentic AI Foundations & Architectures
+   - 7.2 Multi-Agent Workflows & Orchestration
+   - 7.3 Context Engineering, Memory & Planning
+   - 7.4 AI Product & System Design
+   - 7.5 Capstone: End-to-End Agentic AI System
 
 ## Repository Structure
 - `01-foundations-of-computing-and-programming/`
@@ -38,6 +44,7 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
 - `03-classical-machine-learning/`
 - `05-generative-models-and-llms/`
 - `06-mlops-and-llmops-production-ai-systems/`
+- `07-agentic-ai-and-applied-ai-systems-design/`
 
 Each sub-lesson uses:
 - `theory/` markdown chapter + PDF export
