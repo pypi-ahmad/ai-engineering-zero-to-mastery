@@ -1,14 +1,12 @@
-# Mathematics for AI
+# 2. Mathematics for AI
 
-Mathematics is the language behind AI and ML systems. In practice, linear algebra powers
-how models represent data, apply transformations, and compute similarities across vectors
-and embeddings.
+This section connects mathematical rigor to ML engineering decisions.
 
 ## How This Section Is Structured
-- One core concept per lesson notebook.
-- Rich markdown explanations for intuition + formulas.
-- Runnable code demos using NumPy and related tools.
-- Practical business logic, failure modes, and interview prep in each lesson.
+Each subtopic has:
+- Theory chapter with formulas + intuition + interview prep
+- Notebook with runnable numerical demos
+- Business case studies and failure modes
 
 ## Subtopics
 - 2.1 Linear Algebra

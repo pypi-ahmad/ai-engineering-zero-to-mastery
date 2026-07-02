@@ -1,6 +1,6 @@
 # 2.2 Calculus & Optimization
 
-This lesson introduces derivatives, gradients, and optimization for ML training.
+Builds derivative and gradient intuition for model training and convergence behavior.
 
 ## Contents
 - Theory: `theory/02-2-calculus-and-optimization.md`

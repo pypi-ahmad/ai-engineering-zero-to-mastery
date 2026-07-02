@@ -1,37 +1,94 @@
 # Overview
 
-Clean code and modular design make AI systems easier to maintain, debug, and scale. Without them, model and data code becomes brittle and hard to reuse across experiments and production jobs.
+AI codebases decay quickly without clean code, modular boundaries, and documentation. Notebook-first experimentation is useful, but production reliability requires explicit architecture.
 
 # Clean Code Principles
 
-- Use clear names for variables and functions.
-- Keep functions focused on one responsibility.
-- Avoid duplication by extracting shared logic.
-- Write readable control flow and keep side effects explicit.
+1. **Meaningful naming:** `train_classifier` is better than `run1`.
+2. **Single responsibility:** each function handles one coherent task.
+3. **Small interfaces:** pass explicit arguments, avoid hidden globals.
+4. **Avoid duplication:** centralize shared preprocessing logic.
+5. **Fail loudly:** validate assumptions and raise helpful errors.
 
 # Modular Design
 
-Split functionality into modules/packages by responsibility (data loading, feature transformation, training, evaluation). Define clear interfaces between components so each part can evolve independently.
+Recommended decomposition:
+- `data/` ingestion and validation.
+- `features/` transformation logic.
+- `models/` training/prediction APIs.
+- `evaluation/` metrics and reporting.
+
+Benefits:
+- Better testability.
+- Easier parallel development.
+- Lower blast radius for changes.
 
 # Documentation Practices
 
-- Add docstrings for public functions and classes.
-- Keep README files updated with setup, usage, and assumptions.
-- Use inline comments sparingly for non-obvious logic.
-- Maintain high-level architecture notes for handoff and onboarding.
+Three layers:
+1. **Docstrings:** what function does, args, return, exceptions.
+2. **README:** setup, run steps, project intent.
+3. **Architecture notes:** data flow and system boundaries.
+
+Documentation should describe assumptions and limitations, not only happy path.
 
 # AI-Specific Examples
 
-- Separate one-off training experiments from reusable utility modules.
-- Build reusable data loaders and feature transformer functions instead of copy-pasting notebook cells.
+- Move feature engineering from notebook cells to `feature_pipeline.py`.
+- Expose `train_model(config)` and `predict(records)` stable interfaces.
+- Keep experiment scripts separate from reusable package code.
 
 # Common Pitfalls
 
-- Monolithic notebooks that combine ingestion, training, evaluation, and deployment logic in one place.
-- Hardcoded paths, environment assumptions, or secrets in code.
+- Monolithic notebooks mixing ingestion/training/evaluation/deployment.
+- Hardcoded file paths and secrets.
+- Unclear naming (`tmp`, `data2`, `final_final`).
+- Lack of tests for data contracts.
 
-# Interview Prep Checklist
+# Business Case Studies & Exceptions
 
-- Refactor a script into small reusable modules.
-- Explain how modular design improves testing and deployment reliability.
-- Explain why documentation quality matters for team handoffs and incident response.
+## Case 1: Feature Drift from Duplicate Logic
+Two teams reimplemented feature transform differently; online/offline mismatch caused prediction quality drop.
+
+Fix:
+- Single shared feature module.
+- Contract tests to compare outputs across environments.
+
+## Case 2: Incident Escalation Blocked by Missing Docs
+On-call engineer could not identify data source ownership because pipeline had no architecture docs.
+
+Fix:
+- Add service/component README.
+- Add runbook with alert meanings and owner contacts.
+
+# Interview Questions & Answers
+
+1. **Q: What is single responsibility principle?**  
+   **A:** Each unit should have one reason to change, reducing coupling and simplifying tests.
+
+2. **Q: Why modularize ML pipelines?**  
+   **A:** Reuse components, isolate failures, and enable independent iteration.
+
+3. **Q: What belongs in function docstring?**  
+   **A:** Purpose, args, return type, raised exceptions, and edge-case behavior.
+
+4. **Q: Why avoid hardcoded paths?**  
+   **A:** They break portability across local, CI, and production environments.
+
+5. **Q: How do clean code practices reduce incidents?**  
+   **A:** Clear logic and naming speed debugging and reduce accidental side effects.
+
+6. **Q: Unit vs integration test?**  
+   **A:** Unit test isolates small component; integration test checks interactions between components.
+
+7. **Q: How refactor notebook into modules?**  
+   **A:** Extract repeatable logic into functions/files, leave notebook for orchestration and analysis narrative.
+
+8. **Q: What is code smell in ML repo?**  
+   **A:** Copy-pasted preprocessing across scripts yielding inconsistent train/inference behavior.
+
+9. **Q: Why document assumptions?**  
+   **A:** Hidden assumptions cause silent failures when data or business context changes.
+
+10. **Q: How does modularity help CI/CD?**  
+    **A:** Targeted tests per module and safer incremental releases.

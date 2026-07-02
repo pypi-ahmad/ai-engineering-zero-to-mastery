@@ -1,6 +1,6 @@
 # 2.4 Applied Stats for ML
 
-This lesson applies ML evaluation metrics and diagnostic concepts on the Iris dataset.
+Applies statistical thinking to model diagnostics, metric selection, and threshold decisions.
 
 ## Contents
 - Theory: `theory/02-4-applied-stats-for-ml-iris.md`

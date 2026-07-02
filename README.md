@@ -1,60 +1,50 @@
 # AI Engineering - Zero to Mastery
 
-A practical, end-to-end learning repository for becoming an AI Engineer from fundamentals to production systems.
+Practical, production-minded curriculum for applied AI engineers. Each lesson combines theory chapters and executable notebooks.
 
 ## Purpose
-This repo is a structured tutorial path to build strong foundations, mathematical intuition, and production-ready AI engineering skills through theory + hands-on notebooks.
+Build end-to-end AI engineering skill from programming foundations to robust ML systems, with strong mathematics, model evaluation, and software practice.
 
-## High-Level Roadmap
+## Curriculum
 1. Foundations of Computing and Programming
+   - 1.1 Programming Basics
+   - 1.2 Data Structures & Algorithms
+   - 1.3 Software Engineering Practices
 2. Mathematics for AI
-3. Machine Learning Fundamentals
-4. Deep Learning
-5. LLM Engineering
-6. Retrieval-Augmented Generation (RAG)
-7. AI Agents and Multi-Agent Systems
-8. MLOps and Production AI Systems
-9. Capstone Projects and Interview Prep
+   - 2.1 Linear Algebra
+   - 2.2 Calculus & Optimization
+   - 2.3 Probability & Statistics
+   - 2.4 Applied Stats for ML
+3. Classical Machine Learning
+   - 3.1 Supervised Learning
+   - 3.2 Unsupervised Learning
+   - 3.3 Model Evaluation & Selection
+4. Deep Learning Fundamentals (planned)
+5. LLM Engineering (planned)
+6. RAG Systems (planned)
+7. Agents (planned)
+8. MLOps (planned)
 
 ## Repository Structure
 - `01-foundations-of-computing-and-programming/`
 - `02-mathematics-for-ai/`
+- `03-classical-machine-learning/`
 
-Each heading follows a reusable pattern:
-- `notebooks/` for hands-on Jupyter lessons
-- `data/` for local dataset copies/cache
-- `theory/` for deep-dive markdown and PDF lessons
-- `README.md` for lesson coverage overview
+Each sub-lesson uses:
+- `theory/` markdown chapter + PDF export
+- `notebooks/` executable Jupyter notebook
+- `README.md` lesson map
 
-## How to Run Notebooks
-
-### Option A: `venv`
+## Environment Setup (uv)
 ```bash
-python3 -m venv .venv
+uv venv --python 3.12.10
 source .venv/bin/activate
-pip install -r requirements.txt
+uv pip install -r requirements.txt
 jupyter lab
 ```
 
-### Option B: Conda
+## PDF Export
 ```bash
-conda create -n ai-z2m python=3.10 -y
-conda activate ai-z2m
-pip install -r requirements.txt
-jupyter notebook
+python3 scripts/export_theory_pdf.py
 ```
-
-## Current Progress
-- Implemented: Foundations Lesson 01 (Python & Jupyter Basics)
-- Deferred intentionally: Mathematics Lesson 01+ (pending review)
-
-## Curriculum So Far
-- Lesson 01 - Python & Jupyter Basics (Foundations of Computing and Programming)
-- Lesson 02 - Linear Algebra for ML & AI (Mathematics for AI)
-- Lesson 1.2 - Data Structures & Algorithms in Python (Foundations of Computing and Programming)
-- Lesson 1.3 - Software Engineering Practices (Git, clean code, REST APIs)
-- 2. Mathematics for AI
-  - 2.1 Linear Algebra
-  - 2.2 Calculus & Optimization
-  - 2.3 Probability & Statistics
-  - 2.4 Applied Stats for ML
+This exports all lesson theory markdown files to matching PDFs.

@@ -1,6 +1,6 @@
 # 2.3 Probability & Statistics
 
-This lesson uses the Titanic dataset to build intuition for probability and descriptive statistics.
+Covers uncertainty, conditional reasoning, and descriptive analysis using Titanic dataset.
 
 ## Contents
 - Theory: `theory/02-3-probability-and-statistics-titanic.md`

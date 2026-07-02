@@ -6,3 +6,6 @@ jupyter
 ipykernel
 requests
 scikit-learn
+scipy
+xgboost
+pytest

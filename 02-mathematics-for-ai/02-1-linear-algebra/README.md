@@ -1,6 +1,6 @@
 # 2.1 Linear Algebra
 
-This lesson covers linear algebra foundations for machine learning and AI.
+Foundation for vectors, matrices, similarity, and linear transformations used in ML systems.
 
 ## Contents
 - Theory: `theory/02-1-linear-algebra-for-ml-and-ai.md`
