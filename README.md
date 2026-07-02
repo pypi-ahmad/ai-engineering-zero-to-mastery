@@ -52,6 +52,11 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
    - 10.2 Perception, Planning & Navigation
    - 10.3 Edge AI & TinyML
    - 10.4 Integrated Robotics/IoT Project (Capstone)
+11. AI Product Management, Entrepreneurship & Research Methods
+   - 11.1 AI Product Management Foundations
+   - 11.2 AI Entrepreneurship & Startup Design
+   - 11.3 AI Research Methods & AI-for-Science
+   - 11.4 Portfolio, Capstone & Publication / Launch
 
 ## Repository Structure
 - `01-foundations-of-computing-and-programming/`
@@ -63,6 +68,7 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
 - `08-responsible-ai-ethics-policy-and-career-readiness/`
 - `09-advanced-ai-specializations-rl-cv-nlp-and-domain-ai/`
 - `10-robotics-edge-ai-and-tinyml/`
+- `11-ai-product-entrepreneurship-and-research-methods/`
 
 Each sub-lesson uses:
 - `theory/` markdown chapter + PDF export
