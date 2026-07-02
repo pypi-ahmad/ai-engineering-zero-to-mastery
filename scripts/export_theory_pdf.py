@@ -13,13 +13,13 @@ def main() -> int:
     parser.add_argument(
         "--src",
         type=Path,
-        default=Path("foundations-of-computing-and-programming/theory/lesson-01-python-and-jupyter-basics.md"),
+        default=Path("01-foundations-of-computing-and-programming/theory/lesson-01-python-and-jupyter-basics.md"),
         help="Path to source markdown file.",
     )
     parser.add_argument(
         "--dst",
         type=Path,
-        default=Path("foundations-of-computing-and-programming/theory/lesson-01-python-and-jupyter-basics.pdf"),
+        default=Path("01-foundations-of-computing-and-programming/theory/lesson-01-python-and-jupyter-basics.pdf"),
         help="Path to output PDF file.",
     )
     args = parser.parse_args()

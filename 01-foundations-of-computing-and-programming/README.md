@@ -7,3 +7,8 @@ This section builds core programming fluency for AI engineering:
 
 ## Lessons
 - Lesson 01: Python & Jupyter Basics
+
+## Subtopics
+- 1.1 Programming Basics
+- 1.2 Data Structures & Algorithms
+- 1.3 Software Engineering Practices

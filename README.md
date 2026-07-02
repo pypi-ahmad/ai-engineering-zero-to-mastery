@@ -17,8 +17,8 @@ This repo is a structured tutorial path to build strong foundations, mathematica
 9. Capstone Projects and Interview Prep
 
 ## Repository Structure
-- `foundations-of-computing-and-programming/`
-- `mathematics-for-ai/`
+- `01-foundations-of-computing-and-programming/`
+- `02-mathematics-for-ai/`
 
 Each heading follows a reusable pattern:
 - `notebooks/` for hands-on Jupyter lessons
@@ -51,3 +51,4 @@ jupyter notebook
 ## Curriculum So Far
 - Lesson 01 - Python & Jupyter Basics (Foundations of Computing and Programming)
 - Lesson 02 - Linear Algebra for ML & AI (Mathematics for AI)
+- Lesson 1.2 - Data Structures & Algorithms in Python (Foundations of Computing and Programming)
