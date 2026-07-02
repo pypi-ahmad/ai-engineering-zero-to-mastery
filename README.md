@@ -42,6 +42,11 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
    - 8.2 Responsible AI in Practice
    - 8.3 AI Law, Policy & Governance
    - 8.4 AI Career Roadmap, Portfolio & Interviews
+9. Advanced AI Specializations: RL, CV, NLP & Domain AI
+   - 9.1 Deep Reinforcement Learning (RL)
+   - 9.2 Advanced Computer Vision
+   - 9.3 Advanced NLP & LLM Applications
+   - 9.4 Domain AI: Applied AI in Key Industries
 
 ## Repository Structure
 - `01-foundations-of-computing-and-programming/`
@@ -51,6 +56,7 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
 - `06-mlops-and-llmops-production-ai-systems/`
 - `07-agentic-ai-and-applied-ai-systems-design/`
 - `08-responsible-ai-ethics-policy-and-career-readiness/`
+- `09-advanced-ai-specializations-rl-cv-nlp-and-domain-ai/`
 
 Each sub-lesson uses:
 - `theory/` markdown chapter + PDF export
