@@ -20,15 +20,18 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
    - 3.2 Unsupervised Learning
    - 3.3 Model Evaluation & Selection
 4. Deep Learning Fundamentals (planned)
-5. LLM Engineering (planned)
-6. RAG Systems (planned)
-7. Agents (planned)
-8. MLOps (planned)
+5. Generative Models & LLMs
+   - 5.1 Classical Deep Generative Models (VAEs, GANs, Flows)
+   - 5.2 Autoregressive & Diffusion Models
+   - 5.3 LLM Foundations & Prompt Engineering
+   - 5.4 RAG, Tools, and AI Agents
+6. MLOps (planned)
 
 ## Repository Structure
 - `01-foundations-of-computing-and-programming/`
 - `02-mathematics-for-ai/`
 - `03-classical-machine-learning/`
+- `05-generative-models-and-llms/`
 
 Each sub-lesson uses:
 - `theory/` markdown chapter + PDF export
