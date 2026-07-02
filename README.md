@@ -57,6 +57,11 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
    - 11.2 AI Entrepreneurship & Startup Design
    - 11.3 AI Research Methods & AI-for-Science
    - 11.4 Portfolio, Capstone & Publication / Launch
+12. MLOps & LLMOps: Production AI & Operations
+   - 12.1 MLOps Foundations & ML Lifecycle in Production
+   - 12.2 ML Pipelines, Deployment & Monitoring
+   - 12.3 LLMOps Foundations & LLM Lifecycle
+   - 12.4 LLM Application Deployment, Observability & Governance
 
 ## Repository Structure
 - `01-foundations-of-computing-and-programming/`
@@ -69,6 +74,7 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
 - `09-advanced-ai-specializations-rl-cv-nlp-and-domain-ai/`
 - `10-robotics-edge-ai-and-tinyml/`
 - `11-ai-product-entrepreneurship-and-research-methods/`
+- `12-mlops-and-llmops-production-ai-and-operations/`
 
 Each sub-lesson uses:
 - `theory/` markdown chapter + PDF export
