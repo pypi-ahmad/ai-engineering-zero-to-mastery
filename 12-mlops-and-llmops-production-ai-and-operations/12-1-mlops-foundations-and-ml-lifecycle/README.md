@@ -4,8 +4,8 @@ Defines MLOps principles, production ML lifecycle stages, and maturity models. F
 
 ## Start here
 
-1. Theory: `theory/12-1-mlops-foundations-and-ml-lifecycle-in-production.md`
-2. Notebook: `notebooks/12-1-mlops-foundations-and-ml-lifecycle-in-production-demo.ipynb`
+1. Theory: `theory/12-1-mlops-foundations-and-ml-lifecycle.md`
+2. Notebook: `notebooks/12-1-mlops-foundations-lifecycle-demo.ipynb`
 
 ## Outcomes
 

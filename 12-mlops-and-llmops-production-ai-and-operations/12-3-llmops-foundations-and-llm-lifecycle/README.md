@@ -5,7 +5,7 @@ Introduces LLMOps lifecycle stages, architecture decisions, cost/performance opt
 ## Start here
 
 1. Theory: `theory/12-3-llmops-foundations-and-llm-lifecycle.md`
-2. Notebook: `notebooks/12-3-llmops-foundations-and-llm-lifecycle-demo.ipynb`
+2. Notebook: `notebooks/12-3-llmops-foundations-lifecycle-architecture.ipynb`
 
 ## Outcomes
 

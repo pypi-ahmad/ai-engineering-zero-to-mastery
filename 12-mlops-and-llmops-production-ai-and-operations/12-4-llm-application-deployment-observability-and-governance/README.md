@@ -5,7 +5,7 @@ Focuses on production deployment of LLM applications with tracing, evaluation lo
 ## Start here
 
 1. Theory: `theory/12-4-llm-application-deployment-observability-and-governance.md`
-2. Notebook: `notebooks/12-4-llm-application-deployment-observability-and-governance-demo.ipynb`
+2. Notebook: `notebooks/12-4-llmops-observability-and-evaluation-demo.ipynb`
 
 ## Outcomes
 
