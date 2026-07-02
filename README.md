@@ -37,6 +37,11 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
    - 7.3 Context Engineering, Memory & Planning
    - 7.4 AI Product & System Design
    - 7.5 Capstone: End-to-End Agentic AI System
+8. Responsible AI, Ethics, Policy & Career Readiness
+   - 8.1 Foundations of AI Ethics
+   - 8.2 Responsible AI in Practice
+   - 8.3 AI Law, Policy & Governance
+   - 8.4 AI Career Roadmap, Portfolio & Interviews
 
 ## Repository Structure
 - `01-foundations-of-computing-and-programming/`
@@ -45,6 +50,7 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
 - `05-generative-models-and-llms/`
 - `06-mlops-and-llmops-production-ai-systems/`
 - `07-agentic-ai-and-applied-ai-systems-design/`
+- `08-responsible-ai-ethics-policy-and-career-readiness/`
 
 Each sub-lesson uses:
 - `theory/` markdown chapter + PDF export
