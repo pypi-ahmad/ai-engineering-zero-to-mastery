@@ -25,13 +25,19 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
    - 5.2 Autoregressive & Diffusion Models
    - 5.3 LLM Foundations & Prompt Engineering
    - 5.4 RAG, Tools, and AI Agents
-6. MLOps (planned)
+6. MLOps & LLMOps: Production AI Systems
+   - 6.1 MLOps Fundamentals & Lifecycle
+   - 6.2 Data & Feature Pipelines
+   - 6.3 Model Deployment & Serving
+   - 6.4 Monitoring, Drift & Governance
+   - 6.5 LLMOps: Operationalizing LLMs, RAG & Agents
 
 ## Repository Structure
 - `01-foundations-of-computing-and-programming/`
 - `02-mathematics-for-ai/`
 - `03-classical-machine-learning/`
 - `05-generative-models-and-llms/`
+- `06-mlops-and-llmops-production-ai-systems/`
 
 Each sub-lesson uses:
 - `theory/` markdown chapter + PDF export
