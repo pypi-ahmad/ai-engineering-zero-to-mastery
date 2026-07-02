@@ -72,6 +72,11 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
    - 14.2 Multi-Agent Systems & Complex Environments
    - 14.3 Quantum & Neuromorphic AI (Conceptual Overview)
    - 14.4 Lifelong Learning, Reading Groups & Contributing to the Field
+15. AI Engineering Capstone & Professional Practice
+   - 15.1 Capstone Design & Scoping
+   - 15.2 Execution: Data, Modeling, Deployment & Documentation
+   - 15.3 Teamwork, Communication & Stakeholder Management
+   - 15.4 Final Presentation, Reflection & Next Steps
 
 ## Repository Structure
 - `01-foundations-of-computing-and-programming/`
@@ -87,6 +92,7 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
 - `12-mlops-and-llmops-production-ai-and-operations/`
 - `13-ai-safety-security-and-trustworthy-ai/`
 - `14-frontier-and-emerging-directions-in-ai/`
+- `15-ai-engineering-capstone-and-professional-practice/`
 
 Each sub-lesson uses:
 - `theory/` markdown chapter + PDF export
