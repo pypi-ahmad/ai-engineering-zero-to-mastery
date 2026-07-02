@@ -47,6 +47,11 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
    - 9.2 Advanced Computer Vision
    - 9.3 Advanced NLP & LLM Applications
    - 9.4 Domain AI: Applied AI in Key Industries
+10. Robotics, Edge AI & TinyML
+   - 10.1 Robotics & Control Foundations
+   - 10.2 Perception, Planning & Navigation
+   - 10.3 Edge AI & TinyML
+   - 10.4 Integrated Robotics/IoT Project (Capstone)
 
 ## Repository Structure
 - `01-foundations-of-computing-and-programming/`
@@ -57,6 +62,7 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
 - `07-agentic-ai-and-applied-ai-systems-design/`
 - `08-responsible-ai-ethics-policy-and-career-readiness/`
 - `09-advanced-ai-specializations-rl-cv-nlp-and-domain-ai/`
+- `10-robotics-edge-ai-and-tinyml/`
 
 Each sub-lesson uses:
 - `theory/` markdown chapter + PDF export
