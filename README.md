@@ -62,6 +62,16 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
    - 12.2 ML Pipelines, Deployment & Monitoring
    - 12.3 LLMOps Foundations & LLM Lifecycle
    - 12.4 LLM Application Deployment, Observability & Governance
+13. AI Safety, Security & Trustworthy AI
+   - 13.1 AI Safety & Alignment Fundamentals
+   - 13.2 Robustness, Adversarial ML & AI Security
+   - 13.3 Trustworthy AI: Robust, Fair, Explainable & Governed Systems
+   - 13.4 Practical Guardrails, Evaluations & Safe Agent Design
+14. Frontier & Emerging Directions in AI
+   - 14.1 Neurosymbolic AI & Causal Reasoning
+   - 14.2 Multi-Agent Systems & Complex Environments
+   - 14.3 Quantum & Neuromorphic AI (Conceptual Overview)
+   - 14.4 Lifelong Learning, Reading Groups & Contributing to the Field
 
 ## Repository Structure
 - `01-foundations-of-computing-and-programming/`
@@ -75,6 +85,8 @@ Build end-to-end AI engineering skill from programming foundations to robust ML 
 - `10-robotics-edge-ai-and-tinyml/`
 - `11-ai-product-entrepreneurship-and-research-methods/`
 - `12-mlops-and-llmops-production-ai-and-operations/`
+- `13-ai-safety-security-and-trustworthy-ai/`
+- `14-frontier-and-emerging-directions-in-ai/`
 
 Each sub-lesson uses:
 - `theory/` markdown chapter + PDF export
