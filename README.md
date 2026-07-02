@@ -53,3 +53,8 @@ jupyter notebook
 - Lesson 02 - Linear Algebra for ML & AI (Mathematics for AI)
 - Lesson 1.2 - Data Structures & Algorithms in Python (Foundations of Computing and Programming)
 - Lesson 1.3 - Software Engineering Practices (Git, clean code, REST APIs)
+- 2. Mathematics for AI
+  - 2.1 Linear Algebra
+  - 2.2 Calculus & Optimization
+  - 2.3 Probability & Statistics
+  - 2.4 Applied Stats for ML

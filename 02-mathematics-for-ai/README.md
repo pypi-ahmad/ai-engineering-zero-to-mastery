@@ -10,5 +10,8 @@ and embeddings.
 - Runnable code demos using NumPy and related tools.
 - Practical business logic, failure modes, and interview prep in each lesson.
 
-## Current Lesson
-- Lesson 02: Linear Algebra for ML & AI
+## Subtopics
+- 2.1 Linear Algebra
+- 2.2 Calculus & Optimization
+- 2.3 Probability & Statistics
+- 2.4 Applied Stats for ML
