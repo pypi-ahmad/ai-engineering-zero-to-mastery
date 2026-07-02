@@ -52,3 +52,4 @@ jupyter notebook
 - Lesson 01 - Python & Jupyter Basics (Foundations of Computing and Programming)
 - Lesson 02 - Linear Algebra for ML & AI (Mathematics for AI)
 - Lesson 1.2 - Data Structures & Algorithms in Python (Foundations of Computing and Programming)
+- Lesson 1.3 - Software Engineering Practices (Git, clean code, REST APIs)
