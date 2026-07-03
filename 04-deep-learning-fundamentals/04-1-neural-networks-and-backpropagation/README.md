@@ -7,6 +7,10 @@ Introduces perceptrons, multilayer networks, forward propagation, loss functions
 1. Theory: `theory/04-1-neural-networks-and-backpropagation.md`
 2. Notebook: `notebooks/04-1-neural-networks-and-backpropagation.ipynb`
 
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`
+
 ## Outcomes
 
 - Explain how neural networks learn nonlinear decision boundaries.

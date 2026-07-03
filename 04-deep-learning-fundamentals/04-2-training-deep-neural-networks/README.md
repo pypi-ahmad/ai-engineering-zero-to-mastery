@@ -7,6 +7,10 @@ Covers practical optimization and generalization mechanics: initialization, norm
 1. Theory: `theory/04-2-training-deep-neural-networks.md`
 2. Notebook: `notebooks/04-2-training-deep-neural-networks.ipynb`
 
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`
+
 ## Outcomes
 
 - Diagnose underfitting/overfitting with training curves.

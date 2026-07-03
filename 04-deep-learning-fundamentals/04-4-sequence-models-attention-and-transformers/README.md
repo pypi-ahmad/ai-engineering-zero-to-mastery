@@ -7,6 +7,10 @@ Introduces sequential modeling (RNN/LSTM intuition), attention mechanics, and tr
 1. Theory: `theory/04-4-sequence-models-attention-and-transformers.md`
 2. Notebook: `notebooks/04-4-sequence-models-attention-and-transformers.ipynb`
 
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`
+
 ## Outcomes
 
 - Understand sequence modeling trade-offs across RNN/LSTM/Transformer families.
