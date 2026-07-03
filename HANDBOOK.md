@@ -543,7 +543,7 @@ for cfg in configs:
 ```
 
 ```text
-/home/ahmad/AI/Github/ai-engineering-zero-to-mastery/.venv/lib/python3.14/site-packages/sklearn/neural_network/_multilayer_perceptron.py:785: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (250) reached and the optimization hasn't converged yet.
+sklearn/neural_network/_multilayer_perceptron.py:785: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (250) reached and the optimization hasn't converged yet.
   warnings.warn(
 ```
 
@@ -2042,7 +2042,7 @@ for name, model in models.items():
 ```
 
 ```text
-/home/ahmad/AI/Github/ai-engineering-zero-to-mastery/.venv/lib/python3.14/site-packages/sklearn/linear_model/_logistic.py:599: ConvergenceWarning: lbfgs failed to converge after 2000 iteration(s) (status=1):
+sklearn/linear_model/_logistic.py:599: ConvergenceWarning: lbfgs failed to converge after 2000 iteration(s) (status=1):
 STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT
 
 Increase the number of iterations to improve the convergence (max_iter=2000).

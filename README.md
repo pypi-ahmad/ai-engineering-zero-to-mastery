@@ -52,6 +52,14 @@ Parallel-friendly paths (after Lesson 5):
 - Lesson 9 and Lesson 10 can be explored in parallel based on specialization goals.
 
 ## Setup
+
+Install `uv` (recommended). Official instructions:
+https://docs.astral.sh/uv/getting-started/installation/
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
 ```bash
 git clone https://github.com/pypi-ahmad/ai-engineering-zero-to-mastery.git
 cd ai-engineering-zero-to-mastery
@@ -174,7 +182,7 @@ uv sync --frozen --extra ops
 - Python 3.10+, Jupyter, `uv`
 - ML: `scikit-learn`, `xgboost`
 - DL/LLM: `torch`, `torchvision`, `transformers`, `diffusers`, `datasets`, `peft`, `trl`
-- Systems: `fastapi`, `networkx`, `airflow`
+- Systems: `fastapi`, `networkx` (Airflow appears as optional pseudo-code in one lesson)
 
 ## Sources and References
 - Full registry: [docs/sources-and-references.md](./docs/sources-and-references.md)

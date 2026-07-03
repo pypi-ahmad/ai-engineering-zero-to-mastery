@@ -9,12 +9,16 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
 import sys
 from dataclasses import dataclass
 from pathlib import Path
 
 
 LESSON_DIR_RE = re.compile(r"^\d{2}-")
+ABS_REPO_PATH_RE = re.compile(
+    r"(?i)(/home/|/users/|[a-zA-Z]:\\\\)[^\\s\"']*ai-engineering-zero-to-mastery"
+)
 
 
 @dataclass(frozen=True)
@@ -56,6 +60,21 @@ def _is_excluded(path: Path) -> bool:
 
 def _read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8", errors="ignore")
+
+
+def _git_tracked_files(root: Path) -> list[Path]:
+    """Return git-tracked files under root.
+
+    This avoids false-failing when learners generate local artifacts that are
+    gitignored (e.g., notebook outputs, artifacts, downloaded datasets).
+    """
+    try:
+        out = subprocess.check_output(
+            ["git", "-C", str(root), "ls-files"], text=True, stderr=subprocess.DEVNULL
+        )
+    except Exception:
+        return []
+    return [root / line for line in out.splitlines() if line.strip()]
 
 
 def validate_structure(root: Path) -> list[ValidationError]:
@@ -273,24 +292,129 @@ def validate_placeholders(root: Path) -> list[ValidationError]:
     return errors
 
 
-def validate_readme_links(root: Path) -> list[ValidationError]:
+def _iter_markdown_links(text: str) -> list[str]:
+    # Minimal link matcher: ignores nested-paren edge cases (rare in this repo).
+    return re.findall(r"\]\(([^)]+)\)", text)
+
+
+def _strip_fenced_code_blocks(text: str) -> str:
+    """Remove fenced code blocks so code like `fn(x)` doesn't look like `](x)` links."""
+    out_lines: list[str] = []
+    in_fence = False
+    for line in text.splitlines():
+        if line.lstrip().startswith("```"):
+            in_fence = not in_fence
+            continue
+        if not in_fence:
+            out_lines.append(line)
+    return "\n".join(out_lines)
+
+
+def validate_markdown_links(root: Path) -> list[ValidationError]:
     errors: list[ValidationError] = []
-    readme = root / "README.md"
-    if not readme.exists():
+    tracked = _git_tracked_files(root)
+    md_files = [p for p in tracked if p.suffix == ".md"] if tracked else sorted(root.rglob("*.md"))
+
+    for md in md_files:
+        if _is_excluded(md):
+            continue
+        text = _strip_fenced_code_blocks(_read_text(md))
+        for raw in _iter_markdown_links(text):
+            link = raw.strip()
+            if not link:
+                continue
+            if link.startswith("#"):
+                continue
+            if link.startswith(("http://", "https://", "mailto:")):
+                continue
+            if "://" in link:
+                continue
+
+            # Strip anchors and decode minimal URL-escapes used in local paths.
+            link = link.split("#", 1)[0].replace("%20", " ")
+            if not link:
+                continue
+
+            if link.startswith("/"):
+                target = root / link.lstrip("/")
+            else:
+                target = (md.parent / link).resolve()
+
+            try:
+                target.relative_to(root.resolve())
+            except Exception:
+                errors.append(
+                    ValidationError(
+                        code="LINK900",
+                        message=f"Suspicious local link outside repo: {raw}",
+                        path=str(md),
+                    )
+                )
+                continue
+
+            if not target.exists():
+                errors.append(
+                    ValidationError(
+                        code="LINK001",
+                        message=f"Broken local link: {raw}",
+                        path=str(md),
+                    )
+                )
+
+    return errors
+
+
+def validate_tracked_hygiene(root: Path) -> list[ValidationError]:
+    """Ensure we don't ship generated artifacts, datasets, or maintainer dumps."""
+    errors: list[ValidationError] = []
+    tracked = _git_tracked_files(root)
+    if not tracked:
         return errors
 
-    text = _read_text(readme)
-    for match in re.findall(r"\]\((\./[^)#]+)\)", text):
-        target = root / match[2:]
-        if not target.exists():
+    forbidden_substrings = [
+        "/notebooks/artifacts/",
+        "/notebooks/data/",
+        "docs/_artifacts/",
+        "docs/_research/firecrawl/",
+        "docs/superpowers/",
+    ]
+    for path in tracked:
+        rel = str(path.relative_to(root)).replace("\\", "/")
+        for sub in forbidden_substrings:
+            if sub in rel:
+                errors.append(
+                    ValidationError(
+                        code="HYGIENE001",
+                        message=f"Generated/maintainer-only content must not be tracked: {rel}",
+                        path=str(path),
+                    )
+                )
+                break
+    return errors
+
+
+def validate_no_absolute_repo_paths(root: Path) -> list[ValidationError]:
+    """Reject machine-specific absolute paths that mention the repo name."""
+    errors: list[ValidationError] = []
+    tracked = _git_tracked_files(root)
+    if not tracked:
+        return errors
+
+    text_exts = {".md", ".py", ".ipynb", ".json", ".yml", ".yaml", ".toml", ".txt"}
+    for path in tracked:
+        if path.suffix not in text_exts:
+            continue
+        if _is_excluded(path):
+            continue
+        text = _read_text(path)
+        if ABS_REPO_PATH_RE.search(text):
             errors.append(
                 ValidationError(
-                    code="LINK001",
-                    message=f"Broken README local link: {match}",
-                    path=str(readme),
+                    code="PATH001",
+                    message="Machine-specific absolute path containing repo name found",
+                    path=str(path),
                 )
             )
-
     return errors
 
 
@@ -301,7 +425,9 @@ def main() -> int:
     errors.extend(validate_structure(root))
     errors.extend(validate_notebooks(root))
     errors.extend(validate_placeholders(root))
-    errors.extend(validate_readme_links(root))
+    errors.extend(validate_markdown_links(root))
+    errors.extend(validate_tracked_hygiene(root))
+    errors.extend(validate_no_absolute_repo_paths(root))
 
     if errors:
         print("Curriculum validation failed:")

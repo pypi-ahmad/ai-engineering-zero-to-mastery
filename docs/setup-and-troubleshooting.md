@@ -8,6 +8,25 @@ This repo uses **uv** for reproducible Python environments.
 - OS: Linux/macOS/Windows (WSL2 is fine)
 - Disk: enough for ML packages (especially if you install deep learning extras)
 
+## Install uv
+
+Follow the official installer instructions (recommended):
+
+- Linux/macOS:
+
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+- Windows (PowerShell):
+
+```powershell
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+More install options (Homebrew, WinGet, Scoop, etc.) are in the uv docs:
+https://docs.astral.sh/uv/getting-started/installation/
+
 ## Setup (Recommended)
 
 ```bash
@@ -73,4 +92,3 @@ Most notebooks set seeds, but results can still vary due to:
 - randomization in data splits or sampling.
 
 If determinism matters, run on CPU, pin versions via `uv.lock`, and keep seeds fixed.
-
