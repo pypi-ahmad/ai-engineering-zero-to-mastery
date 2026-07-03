@@ -1,0 +1,4 @@
+species,mean_sepal_length,mean_petal_area,n
+setosa,5.006,0.36560000000000004,50
+versicolor,5.936,5.7204,50
+virginica,6.587999999999999,11.296199999999999,50

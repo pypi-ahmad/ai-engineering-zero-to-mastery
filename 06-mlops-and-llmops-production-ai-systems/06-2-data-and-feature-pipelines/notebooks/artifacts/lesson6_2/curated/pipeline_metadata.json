@@ -1,0 +1,16 @@
+{
+  "run_time_utc": "2026-07-03T05:45:06.222159Z",
+  "input_path": "artifacts/lesson6_2/raw/customer_snapshot.csv",
+  "output_path": "artifacts/lesson6_2/curated/customer_features_batch.csv",
+  "row_count": 2000,
+  "feature_count": 17,
+  "quality_report": {
+    "null_ratio_monthly_spend": 0.0,
+    "null_ratio_region": 0.0,
+    "invalid_tenure_rows": 0,
+    "invalid_login_rows": 0,
+    "duplicate_customer_snapshot": 0,
+    "row_count": 2000,
+    "status": "pass"
+  }
+}
