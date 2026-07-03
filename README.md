@@ -7,6 +7,7 @@
 Beginner-first, production-oriented curriculum for **AI engineering**: building AI systems end-to-end (data, modeling, evaluation, serving, and operations), not just training models in isolation.
 
 ## Start Here
+- Beginner-first learning path: [curriculum/](./curriculum/README.md)
 - Curriculum entrypoint: [Lesson 1](./01-foundations-of-computing-and-programming/README.md)
 - Consolidated study guide: [HANDBOOK.md](./HANDBOOK.md) / [HANDBOOK.pdf](./HANDBOOK.pdf)
 - Capstone culmination: [Lesson 15](./15-ai-engineering-capstone-and-professional-practice/README.md)

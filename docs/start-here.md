@@ -44,5 +44,6 @@ For each sub-lesson:
 ## Where To Go Next
 
 - If you want quick hands-on wins: follow the **Beginner Track** in `docs/learning-tracks.md`.
+- If you want a guided beginner-first order: follow `curriculum/README.md`.
 - If you want the full journey: follow Lessons 1 → 15 in order.
 - If you want a runnable system scaffold: start with `projects/capstone-template/`.

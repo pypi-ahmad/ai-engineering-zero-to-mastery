@@ -10,6 +10,13 @@ Purpose:
 - Get setup instructions.
 - Navigate all lessons quickly.
 
+## 1.5) Curriculum Path (`curriculum/`)
+Use this if you are a complete beginner or want a guided path.
+
+Purpose:
+- Follow a beginner-first order (including recommended sub-lesson ordering).
+- Understand prerequisites and what to skip without losing the thread.
+
 ## 2) Lesson READMEs (`<lesson>/README.md`)
 Use this second.
 
@@ -54,6 +61,7 @@ Purpose:
 
 ## Quick Navigation
 - Root index: [README.md](../README.md)
+- Beginner path: [curriculum/README.md](../curriculum/README.md)
 - Handbook: [HANDBOOK.md](../HANDBOOK.md)
 - Start here: [start-here.md](./start-here.md)
 - Tracks: [learning-tracks.md](./learning-tracks.md)
