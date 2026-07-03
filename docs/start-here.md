@@ -14,6 +14,11 @@ AI engineering is the practice of building **AI systems that work reliably**:
 
 “Model training” is only one part of the job.
 
+## Key Terms (2-minute skim)
+
+If you hit jargon early, skim the glossary:
+- [`docs/glossary.md`](./glossary.md)
+
 ## How To Study This Repo
 
 For each sub-lesson:
@@ -40,6 +45,26 @@ For each sub-lesson:
 - Only reading theory (no execution), or only running code (no understanding).
 - Treating notebooks as production code (hidden state, hardcoded paths).
 - Not saving artifacts (model files, metrics, configs) for reproducibility.
+
+## Expected Outcomes (First Week)
+
+- You can run notebooks from a clean kernel and explain what changed when you tweak a parameter.
+- You can train + evaluate a baseline model with a defensible metric.
+- You can produce at least one saved artifact (metrics JSON, model file, or a small API contract).
+
+## Verification (Day 1 Sanity Checks)
+
+From the repo root:
+
+```bash
+python3 scripts/validate_curriculum.py
+```
+
+If you already have a `.venv/`, run tests:
+
+```bash
+.venv/bin/python -m pytest -q
+```
 
 ## Where To Go Next
 

@@ -38,6 +38,20 @@ jupyter lab
 
 If you are new to environments: the virtual environment lives at `.venv/`.
 
+## Quick Verification (Recommended)
+
+From the repo root, verify the curriculum structure and links:
+
+```bash
+python3 scripts/validate_curriculum.py
+```
+
+If you already have a working `.venv/`, verify the runnable scaffold tests:
+
+```bash
+.venv/bin/python -m pytest -q
+```
+
 ## Optional Extras (Install When Needed)
 
 ```bash
@@ -59,12 +73,25 @@ uv sync --frozen --extra ops
 
 ## Troubleshooting
 
+### `python` not found (only `python3` exists)
+
+Some systems do not provide a `python` alias. Use:
+- `python3 ...` for scripts, or
+- `uv run python ...` for reproducible runs inside the uv environment.
+
 ### uv sync fails
 
 1. Ensure you activated the environment: `source .venv/bin/activate`
 2. Try clearing uv cache if needed:
    - `uv cache clean`
 3. If you are behind a proxy or have restrictive DNS, configure your network or use a different network.
+
+If your home directory is read-only (common in some sandboxes/containers), set the uv cache to a writable location:
+
+```bash
+mkdir -p /tmp/uv-cache
+UV_CACHE_DIR=/tmp/uv-cache XDG_CACHE_HOME=/tmp uv sync --frozen --group dev
+```
 
 ### Jupyter kernel doesn’t show the venv
 
@@ -75,6 +102,10 @@ uv sync --frozen
 ```
 
 Then restart Jupyter Lab.
+
+If you still don’t see the right kernel, run notebooks from the activated environment and prefer:
+- Jupyter started after `source .venv/bin/activate`
+- `uv run jupyter lab` if you suspect PATH confusion
 
 ### Torch install issues
 
@@ -92,3 +123,9 @@ Most notebooks set seeds, but results can still vary due to:
 - randomization in data splits or sampling.
 
 If determinism matters, run on CPU, pin versions via `uv.lock`, and keep seeds fixed.
+
+## Common Setup Mistakes
+
+- Installing every optional extra on day 1 (install extras only when you reach those lessons).
+- Running `jupyter lab` before activating `.venv/` (you end up on a different Python).
+- Mixing system Python + venv Python in the same session.

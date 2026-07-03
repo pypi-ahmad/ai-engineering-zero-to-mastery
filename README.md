@@ -14,6 +14,7 @@ Beginner-first, production-oriented curriculum for **AI engineering**: building 
 - Runnable capstone scaffold: [projects/capstone-template](./projects/capstone-template/README.md)
 - Learning tracks: [docs/learning-tracks.md](./docs/learning-tracks.md)
 - Setup + troubleshooting: [docs/setup-and-troubleshooting.md](./docs/setup-and-troubleshooting.md)
+- Glossary (key terms): [docs/glossary.md](./docs/glossary.md)
 - Documentation architecture: [docs/documentation-map.md](./docs/documentation-map.md)
 
 ## What This Solves
@@ -68,6 +69,12 @@ uv venv --python 3.12
 source .venv/bin/activate
 uv sync --frozen --group dev
 jupyter lab
+```
+
+Quick verification:
+
+```bash
+python3 scripts/validate_curriculum.py
 ```
 
 Optional extras (install only when you reach those lessons):

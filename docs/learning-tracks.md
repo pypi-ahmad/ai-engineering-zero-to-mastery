@@ -19,6 +19,10 @@ Tip: for Lessons 1–3, do the `exercises/` after running each notebook once.
 Expected outcome:
 - you can train, evaluate, and serve a baseline model with saved artifacts and a basic API contract.
 
+Verification (recommended):
+- `python3 scripts/validate_curriculum.py`
+- follow [`projects/capstone-template/README.md`](../projects/capstone-template/README.md) and confirm artifacts are created
+
 ## Track 2: GenAI Builder Track (RAG + Evaluation + Guardrails)
 
 Goal: build grounded LLM systems with an evaluation loop and safe tool use.
@@ -36,6 +40,9 @@ Sequence:
 Expected outcome:
 - you can build a small RAG app that is measurable (eval set + regression checks) and safer (tool allowlist + circuit breakers).
 
+Verification (recommended):
+- run the `exercises/` in 5.4 and 6.5 and ensure you can explain each gate (budget, circuit breaker, tool policy)
+
 ## Track 3: Practitioner Track (Systems Focus)
 
 Goal: learn the production layer for AI systems (deployment, monitoring, evaluation loops).
@@ -51,6 +58,9 @@ Sequence:
 
 Expected outcome:
 - you can design a production deployment path and an evaluation/monitoring plan, and you can explain tradeoffs.
+
+Verification (recommended):
+- pick one system and write a one-page ops plan: metrics, alert thresholds, rollback, and incident response
 
 ## Track 4: Full Track (Zero to Mastery)
 
