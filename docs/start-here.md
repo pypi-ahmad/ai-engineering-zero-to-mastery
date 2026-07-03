@@ -21,7 +21,8 @@ For each sub-lesson:
 1. Read the sub-lesson `README.md` (what you’ll do and why).
 2. Read the `theory/*.md` chapter (plain English + tradeoffs).
 3. Run the `notebooks/*.ipynb` teaching notebook (hands-on).
-4. Write a short summary:
+4. Do the `exercises/` (if present) to verify understanding.
+5. Write a short summary:
    - what you learned,
    - what you can now build,
    - what confused you (make it a note).
@@ -45,4 +46,3 @@ For each sub-lesson:
 - If you want quick hands-on wins: follow the **Beginner Track** in `docs/learning-tracks.md`.
 - If you want the full journey: follow Lessons 1 → 15 in order.
 - If you want a runnable system scaffold: start with `projects/capstone-template/`.
-

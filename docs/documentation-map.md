@@ -31,14 +31,21 @@ Purpose:
 - Run examples end-to-end.
 - Adapt templates/checklists to your own projects.
 
-## 5) Handbook (`HANDBOOK.md`, `HANDBOOK.pdf`)
+## 5) Exercises (`<lesson>/<sub-lesson>/exercises/*.md`)
+Use this to practice deliberately after running the notebook once.
+
+Purpose:
+- Reinforce key skills with small tasks and expected outcomes.
+- Build “do it yourself” confidence instead of passive reading.
+
+## 6) Handbook (`HANDBOOK.md`, `HANDBOOK.pdf`)
 Use this for end-to-end revision.
 
 Purpose:
 - Read a single consolidated learning path across all lessons.
 - Review representative code and real notebook outputs.
 
-## 6) Sources Registry (`docs/sources-and-references.md`)
+## 7) Sources Registry (`docs/sources-and-references.md`)
 Use this for validation and further reading.
 
 Purpose:

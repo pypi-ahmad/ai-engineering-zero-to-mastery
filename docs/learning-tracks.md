@@ -12,6 +12,8 @@ Goal: get hands-on, end-to-end experience quickly without skipping fundamentals.
 4. Run the capstone scaffold: `projects/capstone-template/`
 5. Lesson 6: MLOps/LLMOps fundamentals
 
+Tip: for Lessons 1–3, do the `exercises/` after running each notebook once.
+
 Expected outcome:
 - you can train, evaluate, and serve a baseline model with saved artifacts and a basic API contract.
 
@@ -48,4 +50,3 @@ Expected outcome:
 - RL demos: `uv sync --extra rl`
 - Serving demos: `uv sync --extra serving`
 - Ops tooling: `uv sync --extra ops`
-
