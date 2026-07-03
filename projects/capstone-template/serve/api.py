@@ -35,7 +35,7 @@ def _load_config(config_path: Path) -> dict[str, Any]:
 def create_app(*, model_path: Path) -> Any:
     if FastAPI is None or Field is None:
         raise RuntimeError(
-            "FastAPI is not installed. Install it with: uv sync --extra serving"
+            "FastAPI is not installed. Install it with: uv sync --frozen --extra serving"
         )
 
     model = joblib.load(model_path)
@@ -83,7 +83,7 @@ def create_app_stub(*, model_path: Path) -> Any:
     """
     if FastAPI is None or Field is None:
         raise RuntimeError(
-            "FastAPI is not installed. Install it with: uv sync --extra serving"
+            "FastAPI is not installed. Install it with: uv sync --frozen --extra serving"
         )
 
     from fastapi import HTTPException

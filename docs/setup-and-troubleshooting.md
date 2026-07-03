@@ -109,7 +109,7 @@ If you still don’t see the right kernel, run notebooks from the activated envi
 
 ### Torch install issues
 
-Torch wheels vary by OS, Python version, and GPU/CUDA setup. If `uv sync --extra dl` fails:
+Torch wheels vary by OS, Python version, and GPU/CUDA setup. If `uv sync --frozen --extra dl` fails:
 
 - Try a different Python version (3.12 tends to be the most compatible).
 - If you need GPU acceleration, follow PyTorch’s official install matrix for your platform.

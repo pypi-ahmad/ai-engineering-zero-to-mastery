@@ -74,8 +74,8 @@ Expected outcome:
 
 ## When To Install Extras
 
-- Deep learning: `uv sync --extra dl`
-- GenAI lessons: `uv sync --extra genai`
-- RL demos: `uv sync --extra rl`
-- Serving demos: `uv sync --extra serving`
-- Ops tooling: `uv sync --extra ops`
+- Deep learning: `uv sync --frozen --extra dl`
+- GenAI lessons: `uv sync --frozen --extra genai`
+- RL demos: `uv sync --frozen --extra rl`
+- Serving demos: `uv sync --frozen --extra serving`
+- Ops tooling: `uv sync --frozen --extra ops`
