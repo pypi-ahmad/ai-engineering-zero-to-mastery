@@ -2,6 +2,16 @@
 
 This lesson connects technical AI engineering with ethics, governance, legal constraints, and career execution.
 
+## Why This Matters
+
+If you ship AI systems, you inherit responsibility for their impact: privacy, fairness, security, misuse, and compliance. This lesson helps you design constraints up front and communicate them clearly.
+
+## Expected Outcomes
+
+- You can identify risks (privacy, safety, bias, misuse) and propose mitigations.
+- You can write a simple governance checklist for a model/LLM release.
+- You can communicate tradeoffs and limitations in a way stakeholders understand.
+
 ## Sub-lessons
 
 1. `8.1 Foundations of AI Ethics`
@@ -14,6 +24,11 @@ This lesson connects technical AI engineering with ethics, governance, legal con
 1. Read each theory chapter (`theory/*.md`) first.
 2. Work through the matching notebook for frameworks, case analyses, and practical templates.
 3. Reuse the checklists, governance stubs, and career planner artifacts in your own projects.
+
+## Verify Your Work
+
+- Write a one-page “responsible release checklist” for a system you built (or the capstone template).
+- Identify at least 3 failure modes and how you would detect/respond to them.
 
 ## Bridge from Lesson 7
 **Why this follows:** Agentic and LLM systems require explicit ethical and governance controls, not only technical performance.

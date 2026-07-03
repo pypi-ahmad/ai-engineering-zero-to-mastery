@@ -2,6 +2,16 @@
 
 This lesson consolidates the entire curriculum into a capstone delivery framework and professional practice toolkit. It focuses on scoping, execution, teamwork, stakeholder communication, and final presentation/reflection.
 
+## Why This Matters
+
+Knowing concepts is not enough. This lesson turns learning into delivery: a coherent system, measured improvements, reproducible artifacts, and a story you can defend in interviews or with stakeholders.
+
+## Expected Outcomes
+
+- You ship a portfolio-grade AI system with evaluation and ops readiness evidence.
+- You can explain tradeoffs, limitations, and safety controls clearly.
+- You can present the work as a credible project narrative (not a notebook dump).
+
 ## Sub-lessons
 
 1. `15.1 Capstone Design & Scoping`
@@ -15,6 +25,15 @@ This lesson consolidates the entire curriculum into a capstone delivery framewor
 2. Use execution checklists to run your capstone end-to-end.
 3. Apply communication playbooks for team and stakeholder alignment.
 4. Close with a presentation and reflection plan that converts work into portfolio and interview assets.
+
+## Verify Your Work
+
+- Run your capstone end-to-end and produce a release-ready bundle:
+  - README with setup + how to verify,
+  - saved artifacts (model, metrics, configs),
+  - tests or regression checks,
+  - an ops plan (monitoring + rollback),
+  - a safety/threat review summary.
 
 ## Bridge from Lesson 14
 **Why this follows:** After surveying frontier directions, this lesson focuses on execution discipline: turning knowledge into a coherent, deliverable capstone.

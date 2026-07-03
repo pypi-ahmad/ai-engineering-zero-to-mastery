@@ -2,6 +2,15 @@
 
 This lesson deepens specialization tracks for applied AI engineers across reinforcement learning, advanced computer vision, advanced NLP/LLM systems, graph AI/GraphRAG patterns, speech/voice systems, and domain-specific architectures.
 
+## Why This Matters
+
+Specialization is where you become dangerous: you learn the domain-specific failure modes, data constraints, and evaluation tricks that separate “toy demos” from real systems.
+
+## Expected Outcomes
+
+- You can pick a specialization track and build a small end-to-end project with appropriate evaluation.
+- You can explain key tradeoffs in the chosen domain (data, compute, latency, safety).
+
 ## Sub-lessons
 
 1. `9.1 Deep Reinforcement Learning (RL)`
@@ -18,6 +27,14 @@ This lesson deepens specialization tracks for applied AI engineers across reinfo
 3. Compare algorithms using the business-case and interview sections.
 4. Reuse templates and pipelines in your own capstones.
 5. Use 9.5 and 9.6 when building graph-native or voice-native production applications.
+
+## Verify Your Work
+
+- Pick one sub-lesson and complete it end-to-end.
+- Produce one artifact:
+  - RL: a training curve + policy evaluation
+  - CV/NLP: a baseline + error analysis
+  - Graph/Voice: a minimal pipeline + tests or eval checks
 
 ## Bridge from Lesson 8
 **Why this follows:** After building a responsibility lens, you now deepen technical expertise in specialized AI tracks.

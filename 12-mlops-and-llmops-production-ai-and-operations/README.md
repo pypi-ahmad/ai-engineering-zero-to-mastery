@@ -2,6 +2,16 @@
 
 Lesson 12 is the advanced operations module: production hardening, observability, evaluation loops, governance, inference/post-training reliability, distributed training systems, privacy-preserving operations, and data-centric labeling loops.
 
+## Why This Matters
+
+Lesson 6 gets you to “first reliable system”. Lesson 12 gets you to “safe to run at scale”: measurable quality, predictable latency/cost, strong observability, and governance that survives real incidents.
+
+## Expected Outcomes
+
+- You can design an evaluation flywheel (offline + online signals + regression gates).
+- You can reason about inference system tradeoffs (batching, caching, queueing).
+- You can design ops controls for regulated environments (privacy, access, auditability).
+
 ## Learning Objectives
 - Design robust deployment and monitoring architectures beyond baseline setups.
 - Implement telemetry and evaluation loops for quality, latency, and cost control.
@@ -32,6 +42,14 @@ Lesson 12 is the advanced operations module: production hardening, observability
 Lesson 6 covers core operations fundamentals. Lesson 12 is the advanced continuation focused on production hardening and reliability engineering depth.
 
 If Lesson 6 answers "how do I ship a first reliable ML/LLM system?", Lesson 12 answers "how do I run and evolve that system safely at scale with strong observability, evaluation, and governance?"
+
+## Verify Your Work
+
+- Pick one sub-lesson and produce an ops design note (1–2 pages):
+  - metrics (quality/latency/cost),
+  - logging/tracing plan,
+  - regression gates,
+  - rollback and incident response.
 
 ## What's Next
 Proceed to Lesson 13 to add safety, adversarial robustness, and trustworthy AI controls on top of this expanded operations baseline.
