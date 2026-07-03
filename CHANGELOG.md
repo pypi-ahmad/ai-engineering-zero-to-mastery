@@ -10,6 +10,14 @@ Release focused on strengthening the beginner practice loop through Lesson 6, wi
 - Added a Lesson 6 LLMOps practice set covering prompt versioning, evaluation harnesses, cost/token gating, retrieval circuit breakers, and tool policy gates.
 - Updated `scripts/validate_curriculum.py` to require the “theory -> notebook -> exercises -> solutions” loop for Lessons 1–6.
 
+## v1.4.0 (2026-07-03)
+
+Release focused on making the repository easier for complete beginners to navigate without losing the depth of the full 15-lesson curriculum.
+
+- Added a new guided path in `curriculum/` with a recommended learning order, prerequisite flow, and completion criteria per module.
+- Updated onboarding docs and tracks to point to the guided curriculum path.
+- Added a `projects/` index and updated the capstone template quickstart to run scripts via `uv run python` for reproducible execution.
+
 ## v1.2.0 (2026-07-03)
 
 Release focused on portability, lean release hygiene, and a consistent beginner practice loop.
