@@ -2,6 +2,8 @@
 
 This repo prioritizes **runnable learning**, but also avoids pretending that every notebook can always be executed in every environment (GPU, network access, OS differences).
 
+If notebooks are new to you, read: [`docs/notebook-playbook.md`](./notebook-playbook.md).
+
 ## What We Validate in CI
 
 CI runs `scripts/validate_curriculum.py`, which checks:
