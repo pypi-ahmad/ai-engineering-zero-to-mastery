@@ -67,4 +67,5 @@ Purpose:
 - Tracks: [learning-tracks.md](./learning-tracks.md)
 - Setup: [setup-and-troubleshooting.md](./setup-and-troubleshooting.md)
 - Notebook validation: [notebook-status.md](./notebook-status.md)
+- Release notes: [release/README.md](./release/README.md)
 - Sources: [sources-and-references.md](./sources-and-references.md)
