@@ -12,6 +12,10 @@ This sub-lesson is the practical bridge from prompting to model adaptation. It c
 - Theory: `theory/05-5-llm-post-training-and-fine-tuning.md`
 - Notebook: `notebooks/05-5-llm-post-training-and-fine-tuning-peft-lora-qlora.ipynb`
 
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`
+
 ## Prerequisites
 - Lesson 5.3 (LLM foundations and prompt engineering)
 - Lesson 5.4 (RAG/tool patterns)

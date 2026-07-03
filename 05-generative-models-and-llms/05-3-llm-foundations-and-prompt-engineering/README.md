@@ -12,6 +12,10 @@ This chapter covers the practical foundations for building with LLMs:
 1. Theory: `theory/05-3-llm-foundations-and-prompt-engineering.md`
 2. Notebook: `notebooks/05-3-llm-foundations-and-prompt-engineering-demo.ipynb`
 
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`
+
 ## What You Will Learn
 
 - How prompt structure affects model behavior.

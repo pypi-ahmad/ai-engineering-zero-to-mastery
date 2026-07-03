@@ -10,6 +10,10 @@ This chapter compares two dominant modern generation paradigms:
 1. Theory: `theory/05-2-autoregressive-and-diffusion-models.md`
 2. Notebook: `notebooks/05-2-autoregressive-and-diffusion-models-demo.ipynb`
 
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`
+
 ## What You Will Learn
 
 - Joint distribution factorization and decoding strategies for AR models.

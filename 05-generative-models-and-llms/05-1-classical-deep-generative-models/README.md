@@ -11,6 +11,10 @@ This chapter introduces foundational deep generative model families:
 1. Theory: `theory/05-1-classical-deep-generative-models.md`
 2. Notebook: `notebooks/05-1-classical-deep-generative-models-vae-gan.ipynb`
 
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`
+
 ## What You Will Learn
 
 - Formal differences between explicit-density and implicit generative models.

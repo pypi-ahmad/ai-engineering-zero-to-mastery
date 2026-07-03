@@ -12,6 +12,10 @@ This chapter explains how to move from standalone LLM prompts to grounded, tool-
 1. Theory: `theory/05-4-rag-tools-and-ai-agents.md`
 2. Notebook: `notebooks/05-4-rag-tools-and-ai-agents-demo.ipynb`
 
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`
+
 ## What You Will Learn
 
 - RAG architecture and where quality bottlenecks occur.
