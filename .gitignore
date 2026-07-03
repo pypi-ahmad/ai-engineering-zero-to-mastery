@@ -14,6 +14,10 @@ env/
 # Jupyter
 .ipynb_checkpoints/
 
+# Notebook-generated datasets and artifacts (do not commit)
+**/notebooks/data/
+**/notebooks/artifacts/
+
 # Logs
 *.log
 
@@ -30,6 +34,11 @@ dist/
 projects/**/artifacts/
 projects/**/data/raw/
 projects/**/data/processed/
+
+# Maintainer-only local logs / research (do not commit)
+docs/_artifacts/
+docs/_research/*
+!docs/_research/README.md
 
 # Test / coverage
 .pytest_cache/
