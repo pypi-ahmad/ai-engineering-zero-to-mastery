@@ -17,98 +17,10 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: "3.12"
 
-      - name: Validate curriculum structure and notebook quality
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import json
-          import re
-          import sys
-
-          root = Path(".")
-          errors = []
-
-          lesson_dirs = sorted([p for p in root.iterdir() if p.is_dir() and re.match(r"^\d{2}-", p.name)])
-          if len(lesson_dirs) != 15:
-              errors.append(f"Expected 15 lesson directories, found {len(lesson_dirs)}")
-
-          for lesson in lesson_dirs:
-              if not (lesson / "README.md").exists():
-                  errors.append(f"Missing lesson README: {lesson}/README.md")
-
-              sub_lessons = sorted([d for d in lesson.iterdir() if d.is_dir() and re.match(rf"^{lesson.name[:2]}-\d+", d.name)])
-              if not sub_lessons:
-                  errors.append(f"No sub-lessons found in {lesson}")
-                  continue
-
-              for sub in sub_lessons:
-                  readme = sub / "README.md"
-                  theory_dir = sub / "theory"
-                  notebooks_dir = sub / "notebooks"
-                  theory_md = sorted(theory_dir.glob("*.md")) if theory_dir.exists() else []
-                  theory_pdf = sorted(theory_dir.glob("*.pdf")) if theory_dir.exists() else []
-                  notebooks = sorted(notebooks_dir.glob("*.ipynb")) if notebooks_dir.exists() else []
-
-                  if not readme.exists():
-                      errors.append(f"Missing sub-lesson README: {readme}")
-                  if not theory_md:
-                      errors.append(f"Missing theory markdown in {theory_dir}")
-                  if not theory_pdf:
-                      errors.append(f"Missing theory PDF in {theory_dir}")
-                  if not notebooks:
-                      errors.append(f"Missing notebooks in {notebooks_dir}")
-
-                  for nb in notebooks:
-                      try:
-                          data = json.loads(nb.read_text(encoding="utf-8"))
-                      except Exception as e:
-                          errors.append(f"Notebook parse error {nb}: {e}")
-                          continue
-
-                      md_text = "\n".join(
-                          "".join(c.get("source", ""))
-                          for c in data.get("cells", [])
-                          if c.get("cell_type") == "markdown"
-                      ).lower()
-                      code_cells = [c for c in data.get("cells", []) if c.get("cell_type") == "code"]
-
-                      if "objective" not in md_text:
-                          errors.append(f"Notebook missing objectives section: {nb}")
-                      if "case studies" not in md_text and "case study" not in md_text and "exceptions" not in md_text:
-                          errors.append(f"Notebook missing case studies/exceptions section: {nb}")
-                      if "interview questions" not in md_text and "interview q&a" not in md_text:
-                          errors.append(f"Notebook missing interview Q&A section: {nb}")
-                      if not code_cells:
-                          errors.append(f"Notebook has no code cells: {nb}")
-
-          # Placeholder text scan
-          bad_tokens = ["TODO", "TBD", "Lorem ipsum"]
-          for path in root.rglob("*"):
-              if path.is_file() and path.suffix in {".md", ".py", ".txt"}:
-                  text = path.read_text(encoding="utf-8", errors="ignore")
-                  for token in bad_tokens:
-                      if token in text:
-                          errors.append(f"Placeholder token '{token}' found in {path}")
-
-          # Root README local-link resolution
-          readme = root / "README.md"
-          if readme.exists():
-              text = readme.read_text(encoding="utf-8")
-              for match in re.findall(r"\]\((\./[^)#]+)\)", text):
-                  target = root / match[2:]
-                  if not target.exists():
-                      errors.append(f"Broken README local link: {match}")
-
-          if errors:
-              print("Curriculum integrity checks failed:")
-              for err in errors:
-                  print(f"- {err}")
-              sys.exit(1)
-
-          print("Curriculum integrity checks passed.")
-          PY
+      - name: Validate curriculum (structure, notebooks, links)
+        run: python scripts/validate_curriculum.py
 
   import-smoke:
     runs-on: ubuntu-latest
@@ -119,16 +31,17 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: "3.12"
 
-      - name: Install lightweight smoke dependencies
+      - name: Install uv
         run: |
           python -m pip install --upgrade pip
-          pip install numpy pandas scikit-learn matplotlib fastapi jupyter nbformat
+          pip install uv
 
       - name: Smoke-test critical imports
         run: |
-          python - <<'PY'
+          uv sync --frozen --extra serving --group dev
+          uv run python - <<'PY'
           import importlib
 
           modules = [
@@ -143,3 +56,7 @@ jobs:
               importlib.import_module(m)
           print("Import smoke test passed.")
           PY
+
+      - name: Run tests
+        run: |
+          uv run pytest -q
