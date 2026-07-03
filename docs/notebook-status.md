@@ -10,8 +10,11 @@ CI runs `scripts/validate_curriculum.py`, which checks:
 - notebook JSON parses correctly,
 - required markdown sections exist (objectives, case studies/exceptions, interview Q&A),
 - code cells compile (basic syntax check),
-- root README local links resolve,
-- placeholder tokens (TODO/TBD/Lorem ipsum) are not present in curriculum files.
+- repo-wide markdown local links resolve,
+- Lessons 1-6 include a consistent practice loop (README section + exercises + solutions),
+- placeholder tokens (TODO/TBD/Lorem ipsum) are not present in curriculum files,
+- generated/maintainer-only artifacts are not tracked in git,
+- machine-specific absolute repo paths are not present in tracked files.
 
 ## Notebook Execution (Local)
 
