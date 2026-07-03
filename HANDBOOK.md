@@ -9,25 +9,44 @@ This handbook consolidates the complete curriculum into a single reference guide
 3. Re-run the notebooks locally when you want to modify experiments, model choices, or deployment settings.
 4. Treat Lesson 15 as your end-to-end integration capstone and portfolio anchor.
 
+## Handbook Structure
+
+This handbook follows a consistent chapter pattern inspired by documentation best practices (Diátaxis, GitHub Docs, and technical-writing style guides):
+- Objectives first
+- Theory synthesis second
+- Practical code/output excerpts third
+- Case-study and interview-ready framing throughout
+
 ## Table of Contents
 
-- [1. Lesson 1: Foundations of Computing and Programming](#lesson-1-lesson-1-foundations-of-computing-and-programming)
-- [2. Lesson 2: Mathematics for AI](#lesson-2-lesson-2-mathematics-for-ai)
-- [3. Lesson 3: Classical Machine Learning](#lesson-3-lesson-3-classical-machine-learning)
-- [4. Lesson 4: Deep Learning Fundamentals](#lesson-4-lesson-4-deep-learning-fundamentals)
-- [5. Lesson 5: Generative Models & LLMs](#lesson-5-lesson-5-generative-models-llms)
-- [6. Lesson 6: MLOps & LLMOps: Production AI Systems](#lesson-6-lesson-6-mlops-llmops-production-ai-systems)
-- [7. Lesson 7: Agentic AI & Applied AI Systems Design](#lesson-7-lesson-7-agentic-ai-applied-ai-systems-design)
-- [8. Lesson 8: Responsible AI, Ethics, Policy & Career Readiness](#lesson-8-lesson-8-responsible-ai-ethics-policy-career-readiness)
-- [9. Lesson 9: Advanced AI Specializations (RL, CV, NLP, Domain AI)](#lesson-9-lesson-9-advanced-ai-specializations-rl-cv-nlp-domain-ai)
-- [10. Lesson 10: Robotics, Edge AI & TinyML](#lesson-10-lesson-10-robotics-edge-ai-tinyml)
-- [11. Lesson 11: AI Product Management, Entrepreneurship & Research Methods](#lesson-11-lesson-11-ai-product-management-entrepreneurship-research-methods)
-- [12. Lesson 12: MLOps & LLMOps: Production AI & Operations](#lesson-12-lesson-12-mlops-llmops-production-ai-operations)
-- [13. Lesson 13: AI Safety, Security & Trustworthy AI](#lesson-13-lesson-13-ai-safety-security-trustworthy-ai)
-- [14. Lesson 14: Frontier & Emerging Directions in AI](#lesson-14-lesson-14-frontier-emerging-directions-in-ai)
-- [15. Lesson 15: AI Engineering Capstone & Professional Practice](#lesson-15-lesson-15-ai-engineering-capstone-professional-practice)
+- [1. Lesson 1: Foundations of Computing and Programming](#lesson-1-foundations-of-computing-and-programming)
+- [2. Lesson 2: Mathematics for AI](#lesson-2-mathematics-for-ai)
+- [3. Lesson 3: Classical Machine Learning](#lesson-3-classical-machine-learning)
+- [4. Lesson 4: Deep Learning Fundamentals](#lesson-4-deep-learning-fundamentals)
+- [5. Lesson 5: Generative Models & LLMs](#lesson-5-generative-models-llms)
+- [6. Lesson 6: MLOps & LLMOps: Production AI Systems](#lesson-6-mlops-llmops-production-ai-systems)
+- [7. Lesson 7: Agentic AI & Applied AI Systems Design](#lesson-7-agentic-ai-applied-ai-systems-design)
+- [8. Lesson 8: Responsible AI, Ethics, Policy & Career Readiness](#lesson-8-responsible-ai-ethics-policy-career-readiness)
+- [9. Lesson 9: Advanced AI Specializations (RL, CV, NLP, Domain AI)](#lesson-9-advanced-ai-specializations-rl-cv-nlp-domain-ai)
+- [10. Lesson 10: Robotics, Edge AI & TinyML](#lesson-10-robotics-edge-ai-tinyml)
+- [11. Lesson 11: AI Product Management, Entrepreneurship & Research Methods](#lesson-11-ai-product-management-entrepreneurship-research-methods)
+- [12. Lesson 12: MLOps & LLMOps: Production AI & Operations](#lesson-12-mlops-llmops-production-ai-operations)
+- [13. Lesson 13: AI Safety, Security & Trustworthy AI](#lesson-13-ai-safety-security-trustworthy-ai)
+- [14. Lesson 14: Frontier & Emerging Directions in AI](#lesson-14-frontier-emerging-directions-in-ai)
+- [15. Lesson 15: AI Engineering Capstone & Professional Practice](#lesson-15-ai-engineering-capstone-professional-practice)
 
-## Lesson 1 — Lesson 1: Foundations of Computing and Programming
+## Lesson 1: Foundations of Computing and Programming
+
+### Chapter Objectives
+- Understand the key concepts and where they fit in production AI engineering.
+- Apply one practical pattern from this lesson in code or system design.
+- Connect this lesson to your capstone or portfolio narrative.
+
+### How to Work Through This Chapter
+1. Read each sub-lesson theory section in order.
+2. Run the representative notebook examples and inspect outputs.
+3. Capture one reusable artifact (template/checklist/snippet) for future projects.
+
 
 ### What You Cover in This Lesson
 - **1.1 Programming Basics**
@@ -148,7 +167,24 @@ def risk_score(changes: List[FileChange]) -> int:
 {'risk_score': 11, 'review_tier': 'high'}
 ```
 
-## Lesson 2 — Lesson 2: Mathematics for AI
+
+### Bridge to Next Lesson
+You now have the core concepts and practical patterns from this lesson. Next, you will build on them in the following lesson with deeper abstraction, larger system scope, and stronger production tradeoff analysis.
+
+[Back to Table of Contents](#table-of-contents)
+
+## Lesson 2: Mathematics for AI
+
+### Chapter Objectives
+- Understand the key concepts and where they fit in production AI engineering.
+- Apply one practical pattern from this lesson in code or system design.
+- Connect this lesson to your capstone or portfolio narrative.
+
+### How to Work Through This Chapter
+1. Read each sub-lesson theory section in order.
+2. Run the representative notebook examples and inspect outputs.
+3. Capture one reusable artifact (template/checklist/snippet) for future projects.
+
 
 ### What You Cover in This Lesson
 - **2.1 Linear Algebra**
@@ -291,7 +327,24 @@ confusion_matrix:
  [ 1 89]]
 ```
 
-## Lesson 3 — Lesson 3: Classical Machine Learning
+
+### Bridge to Next Lesson
+You now have the core concepts and practical patterns from this lesson. Next, you will build on them in the following lesson with deeper abstraction, larger system scope, and stronger production tradeoff analysis.
+
+[Back to Table of Contents](#table-of-contents)
+
+## Lesson 3: Classical Machine Learning
+
+### Chapter Objectives
+- Understand the key concepts and where they fit in production AI engineering.
+- Apply one practical pattern from this lesson in code or system design.
+- Connect this lesson to your capstone or portfolio narrative.
+
+### How to Work Through This Chapter
+1. Read each sub-lesson theory section in order.
+2. Run the representative notebook examples and inspect outputs.
+3. Capture one reusable artifact (template/checklist/snippet) for future projects.
+
 
 ### What You Cover in This Lesson
 - **3.1 Supervised Learning**
@@ -396,7 +449,24 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 xgboost_available: True
 ```
 
-## Lesson 4 — Lesson 4: Deep Learning Fundamentals
+
+### Bridge to Next Lesson
+You now have the core concepts and practical patterns from this lesson. Next, you will build on them in the following lesson with deeper abstraction, larger system scope, and stronger production tradeoff analysis.
+
+[Back to Table of Contents](#table-of-contents)
+
+## Lesson 4: Deep Learning Fundamentals
+
+### Chapter Objectives
+- Understand the key concepts and where they fit in production AI engineering.
+- Apply one practical pattern from this lesson in code or system design.
+- Connect this lesson to your capstone or portfolio narrative.
+
+### How to Work Through This Chapter
+1. Read each sub-lesson theory section in order.
+2. Run the representative notebook examples and inspect outputs.
+3. Capture one reusable artifact (template/checklist/snippet) for future projects.
+
 
 ### What You Cover in This Lesson
 - **4.1 Neural Networks & Backpropagation**
@@ -546,7 +616,24 @@ print('bigram_probs for "model":', bigram_probs.get('model', {}))
 bigram_probs for "model": {'learns': 0.5, 'predicts': 0.5}
 ```
 
-## Lesson 5 — Lesson 5: Generative Models & LLMs
+
+### Bridge to Next Lesson
+You now have the core concepts and practical patterns from this lesson. Next, you will build on them in the following lesson with deeper abstraction, larger system scope, and stronger production tradeoff analysis.
+
+[Back to Table of Contents](#table-of-contents)
+
+## Lesson 5: Generative Models & LLMs
+
+### Chapter Objectives
+- Understand the key concepts and where they fit in production AI engineering.
+- Apply one practical pattern from this lesson in code or system design.
+- Connect this lesson to your capstone or portfolio narrative.
+
+### How to Work Through This Chapter
+1. Read each sub-lesson theory section in order.
+2. Run the representative notebook examples and inspect outputs.
+3. Capture one reusable artifact (template/checklist/snippet) for future projects.
+
 
 ### What You Cover in This Lesson
 - **5.1 Classical Deep Generative Models**
@@ -737,7 +824,24 @@ random.seed(SEED)
 {'torch': '2.12.1+cu130', 'device': 'cuda'}
 ```
 
-## Lesson 6 — Lesson 6: MLOps & LLMOps: Production AI Systems
+
+### Bridge to Next Lesson
+You now have the core concepts and practical patterns from this lesson. Next, you will build on them in the following lesson with deeper abstraction, larger system scope, and stronger production tradeoff analysis.
+
+[Back to Table of Contents](#table-of-contents)
+
+## Lesson 6: MLOps & LLMOps: Production AI Systems
+
+### Chapter Objectives
+- Understand the key concepts and where they fit in production AI engineering.
+- Apply one practical pattern from this lesson in code or system design.
+- Connect this lesson to your capstone or portfolio narrative.
+
+### How to Work Through This Chapter
+1. Read each sub-lesson theory section in order.
+2. Run the representative notebook examples and inspect outputs.
+3. Capture one reusable artifact (template/checklist/snippet) for future projects.
+
 
 ### What You Cover in This Lesson
 - **6.1 MLOps Fundamentals & Lifecycle**
@@ -963,7 +1067,24 @@ chunks_df
 5  LLMOps adds prompt versioning, retrieval obser...  
 ```
 
-## Lesson 7 — Lesson 7: Agentic AI & Applied AI Systems Design
+
+### Bridge to Next Lesson
+You now have the core concepts and practical patterns from this lesson. Next, you will build on them in the following lesson with deeper abstraction, larger system scope, and stronger production tradeoff analysis.
+
+[Back to Table of Contents](#table-of-contents)
+
+## Lesson 7: Agentic AI & Applied AI Systems Design
+
+### Chapter Objectives
+- Understand the key concepts and where they fit in production AI engineering.
+- Apply one practical pattern from this lesson in code or system design.
+- Connect this lesson to your capstone or portfolio narrative.
+
+### How to Work Through This Chapter
+1. Read each sub-lesson theory section in order.
+2. Run the representative notebook examples and inspect outputs.
+3. Capture one reusable artifact (template/checklist/snippet) for future projects.
+
 
 ### What You Cover in This Lesson
 - **7.1 Agentic AI Foundations & Architectures**
@@ -1200,7 +1321,24 @@ class MCPServer:
   'sensitive': True}]
 ```
 
-## Lesson 8 — Lesson 8: Responsible AI, Ethics, Policy & Career Readiness
+
+### Bridge to Next Lesson
+You now have the core concepts and practical patterns from this lesson. Next, you will build on them in the following lesson with deeper abstraction, larger system scope, and stronger production tradeoff analysis.
+
+[Back to Table of Contents](#table-of-contents)
+
+## Lesson 8: Responsible AI, Ethics, Policy & Career Readiness
+
+### Chapter Objectives
+- Understand the key concepts and where they fit in production AI engineering.
+- Apply one practical pattern from this lesson in code or system design.
+- Connect this lesson to your capstone or portfolio narrative.
+
+### How to Work Through This Chapter
+1. Read each sub-lesson theory section in order.
+2. Run the representative notebook examples and inspect outputs.
+3. Capture one reusable artifact (template/checklist/snippet) for future projects.
+
 
 ### What You Cover in This Lesson
 - **8.1 Foundations of AI Ethics**
@@ -1363,7 +1501,24 @@ def generate_roadmap(pref: TrackPreference) -> Dict[str, object]:
 ...
 ```
 
-## Lesson 9 — Lesson 9: Advanced AI Specializations (RL, CV, NLP, Domain AI)
+
+### Bridge to Next Lesson
+You now have the core concepts and practical patterns from this lesson. Next, you will build on them in the following lesson with deeper abstraction, larger system scope, and stronger production tradeoff analysis.
+
+[Back to Table of Contents](#table-of-contents)
+
+## Lesson 9: Advanced AI Specializations (RL, CV, NLP, Domain AI)
+
+### Chapter Objectives
+- Understand the key concepts and where they fit in production AI engineering.
+- Apply one practical pattern from this lesson in code or system design.
+- Connect this lesson to your capstone or portfolio narrative.
+
+### How to Work Through This Chapter
+1. Read each sub-lesson theory section in order.
+2. Run the representative notebook examples and inspect outputs.
+3. Capture one reusable artifact (template/checklist/snippet) for future projects.
+
 
 ### What You Cover in This Lesson
 - **9.1 Deep Reinforcement Learning (RL)**
@@ -1575,7 +1730,24 @@ transcript
 {'samples': 32000, 'duration_s': 2}
 ```
 
-## Lesson 10 — Lesson 10: Robotics, Edge AI & TinyML
+
+### Bridge to Next Lesson
+You now have the core concepts and practical patterns from this lesson. Next, you will build on them in the following lesson with deeper abstraction, larger system scope, and stronger production tradeoff analysis.
+
+[Back to Table of Contents](#table-of-contents)
+
+## Lesson 10: Robotics, Edge AI & TinyML
+
+### Chapter Objectives
+- Understand the key concepts and where they fit in production AI engineering.
+- Apply one practical pattern from this lesson in code or system design.
+- Connect this lesson to your capstone or portfolio narrative.
+
+### How to Work Through This Chapter
+1. Read each sub-lesson theory section in order.
+2. Run the representative notebook examples and inspect outputs.
+3. Capture one reusable artifact (template/checklist/snippet) for future projects.
+
 
 ### What You Cover in This Lesson
 - **10.1 Robotics & Control Foundations**
@@ -1731,7 +1903,24 @@ LOG: {'step': 3, 'observation': {'vibration': 0.5972732541515713, 'temperature':
 LOG: {'step': 4, 'observation': {'vibration': 0.13211352025004708, 'temperature': 40.577658749075916}, 'prediction': {'label': 'normal', 'risk_score': 0.3040326391565512}, 'action': 'continue', 'timestamp': 1783057565.9455647}
 ```
 
-## Lesson 11 — Lesson 11: AI Product Management, Entrepreneurship & Research Methods
+
+### Bridge to Next Lesson
+You now have the core concepts and practical patterns from this lesson. Next, you will build on them in the following lesson with deeper abstraction, larger system scope, and stronger production tradeoff analysis.
+
+[Back to Table of Contents](#table-of-contents)
+
+## Lesson 11: AI Product Management, Entrepreneurship & Research Methods
+
+### Chapter Objectives
+- Understand the key concepts and where they fit in production AI engineering.
+- Apply one practical pattern from this lesson in code or system design.
+- Connect this lesson to your capstone or portfolio narrative.
+
+### How to Work Through This Chapter
+1. Read each sub-lesson theory section in order.
+2. Run the representative notebook examples and inspect outputs.
+3. Capture one reusable artifact (template/checklist/snippet) for future projects.
+
 
 ### What You Cover in This Lesson
 - **11.1 AI Product Management Foundations**
@@ -1910,7 +2099,24 @@ def score_project(p: ProjectProfile) -> float:
 2                 6               5                      5   5.75  
 ```
 
-## Lesson 12 — Lesson 12: MLOps & LLMOps: Production AI & Operations
+
+### Bridge to Next Lesson
+You now have the core concepts and practical patterns from this lesson. Next, you will build on them in the following lesson with deeper abstraction, larger system scope, and stronger production tradeoff analysis.
+
+[Back to Table of Contents](#table-of-contents)
+
+## Lesson 12: MLOps & LLMOps: Production AI & Operations
+
+### Chapter Objectives
+- Understand the key concepts and where they fit in production AI engineering.
+- Apply one practical pattern from this lesson in code or system design.
+- Connect this lesson to your capstone or portfolio narrative.
+
+### How to Work Through This Chapter
+1. Read each sub-lesson theory section in order.
+2. Run the representative notebook examples and inspect outputs.
+3. Capture one reusable artifact (template/checklist/snippet) for future projects.
+
 
 ### What You Cover in This Lesson
 - **12.1 MLOps Foundations & ML Lifecycle in Production**
@@ -2252,7 +2458,24 @@ print({"labeled": len(X_l), "unlabeled": len(X_u), "test": len(X_test)})
 {'labeled': 120, 'unlabeled': 780, 'test': 300}
 ```
 
-## Lesson 13 — Lesson 13: AI Safety, Security & Trustworthy AI
+
+### Bridge to Next Lesson
+You now have the core concepts and practical patterns from this lesson. Next, you will build on them in the following lesson with deeper abstraction, larger system scope, and stronger production tradeoff analysis.
+
+[Back to Table of Contents](#table-of-contents)
+
+## Lesson 13: AI Safety, Security & Trustworthy AI
+
+### Chapter Objectives
+- Understand the key concepts and where they fit in production AI engineering.
+- Apply one practical pattern from this lesson in code or system design.
+- Connect this lesson to your capstone or portfolio narrative.
+
+### How to Work Through This Chapter
+1. Read each sub-lesson theory section in order.
+2. Run the representative notebook examples and inspect outputs.
+3. Capture one reusable artifact (template/checklist/snippet) for future projects.
+
 
 ### What You Cover in This Lesson
 - **13.1 AI Safety & Alignment Fundamentals**
@@ -2422,7 +2645,24 @@ SAFETY_POLICY
  'risk_threshold_for_human_review': 'medium'}
 ```
 
-## Lesson 14 — Lesson 14: Frontier & Emerging Directions in AI
+
+### Bridge to Next Lesson
+You now have the core concepts and practical patterns from this lesson. Next, you will build on them in the following lesson with deeper abstraction, larger system scope, and stronger production tradeoff analysis.
+
+[Back to Table of Contents](#table-of-contents)
+
+## Lesson 14: Frontier & Emerging Directions in AI
+
+### Chapter Objectives
+- Understand the key concepts and where they fit in production AI engineering.
+- Apply one practical pattern from this lesson in code or system design.
+- Connect this lesson to your capstone or portfolio narrative.
+
+### How to Work Through This Chapter
+1. Read each sub-lesson theory section in order.
+2. Run the representative notebook examples and inspect outputs.
+3. Capture one reusable artifact (template/checklist/snippet) for future projects.
+
 
 ### What You Cover in This Lesson
 - **14.1 Neurosymbolic AI & Causal Reasoning**
@@ -2638,7 +2878,24 @@ pd.DataFrame({"field": core_fields})
 9        user_rating
 ```
 
-## Lesson 15 — Lesson 15: AI Engineering Capstone & Professional Practice
+
+### Bridge to Next Lesson
+You now have the core concepts and practical patterns from this lesson. Next, you will build on them in the following lesson with deeper abstraction, larger system scope, and stronger production tradeoff analysis.
+
+[Back to Table of Contents](#table-of-contents)
+
+## Lesson 15: AI Engineering Capstone & Professional Practice
+
+### Chapter Objectives
+- Understand the key concepts and where they fit in production AI engineering.
+- Apply one practical pattern from this lesson in code or system design.
+- Connect this lesson to your capstone or portfolio narrative.
+
+### How to Work Through This Chapter
+1. Read each sub-lesson theory section in order.
+2. Run the representative notebook examples and inspect outputs.
+3. Capture one reusable artifact (template/checklist/snippet) for future projects.
+
 
 ### What You Cover in This Lesson
 - **15.1 Capstone Design & Scoping**
@@ -2801,6 +3058,12 @@ reflection_df
 4             What would you change in version 2?           
 5          How does this map to your target role?           
 ```
+
+
+### Bridge to Next Lesson
+You now have the core concepts and practical patterns from this lesson. Next, you will build on them in the following lesson with deeper abstraction, larger system scope, and stronger production tradeoff analysis.
+
+[Back to Table of Contents](#table-of-contents)
 
 ## Glossary
 
