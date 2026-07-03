@@ -2,6 +2,14 @@
 
 All notable changes to this repository are documented here.
 
+## v1.3.0 (2026-07-03)
+
+Release focused on strengthening the beginner practice loop through Lesson 6, with CI enforcing the practice structure for early lessons.
+
+- Added exercises + solutions for Lessons 4–6 (Deep Learning, GenAI, and MLOps/LLMOps) to make practice consistent for beginners.
+- Added a Lesson 6 LLMOps practice set covering prompt versioning, evaluation harnesses, cost/token gating, retrieval circuit breakers, and tool policy gates.
+- Updated `scripts/validate_curriculum.py` to require the “theory -> notebook -> exercises -> solutions” loop for Lessons 1–6.
+
 ## v1.2.0 (2026-07-03)
 
 Release focused on portability, lean release hygiene, and a consistent beginner practice loop.
