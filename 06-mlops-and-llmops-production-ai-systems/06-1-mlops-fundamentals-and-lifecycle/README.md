@@ -7,6 +7,10 @@ This sub-lesson introduces MLOps as an engineering discipline for production ML 
 1. `theory/06-1-mlops-fundamentals-and-lifecycle.md`
 2. `notebooks/06-1-mlops-fundamentals-and-lifecycle-demo.ipynb`
 
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`
+
 ## Coverage
 
 - MLOps lifecycle and maturity levels

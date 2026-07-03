@@ -7,6 +7,10 @@ This sub-lesson explains how trained models become reliable prediction services.
 1. `theory/06-3-model-deployment-and-serving.md`
 2. `notebooks/06-3-model-deployment-and-serving-fastapi-demo.ipynb`
 
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`
+
 ## Coverage
 
 - Online, batch, and streaming serving modes

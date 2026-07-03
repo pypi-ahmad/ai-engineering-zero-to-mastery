@@ -7,6 +7,10 @@ This sub-lesson covers operational excellence for LLM applications, RAG systems,
 1. `theory/06-5-llmops-operationalizing-llms-rag-and-agents.md`
 2. `notebooks/06-5-llmops-operationalizing-llms-rag-and-agents-demo.ipynb`
 
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`
+
 ## Coverage
 
 - LLM-specific reliability, latency, and cost controls

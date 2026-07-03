@@ -7,6 +7,10 @@ This sub-lesson covers production-grade data and feature engineering pipelines.
 1. `theory/06-2-data-and-feature-pipelines.md`
 2. `notebooks/06-2-data-and-feature-pipelines-demo.ipynb`
 
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`
+
 ## Coverage
 
 - Batch and streaming pipeline patterns
