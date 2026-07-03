@@ -4,6 +4,7 @@ Each release note captures the intent and verification steps for a tagged versio
 
 ## Recent Releases
 
+- [`v1.5.3.md`](./v1.5.3.md): final quality pass (notebook link validation + setup polish)
 - [`v1.5.2.md`](./v1.5.2.md): changelog + release navigation polish
 - [`v1.5.1.md`](./v1.5.1.md): release polish (README front door + command consistency)
 - [`v1.5.0.md`](./v1.5.0.md): tutorial-grade docs + notebook playbook

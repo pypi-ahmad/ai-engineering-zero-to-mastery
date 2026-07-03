@@ -9,6 +9,14 @@ Release polish focused on consistency and beginner onboarding.
 - Overhauled the root README into a clearer beginner-first “front door” with roadmap, navigation, curated references, and troubleshooting pointers.
 - Standardized `uv sync` commands across docs and capstone error messages to recommend `--frozen` for reproducible installs.
 
+## v1.5.3 (2026-07-03)
+
+Final polish: stronger validation and fewer beginner dead-ends.
+
+- Added notebook markdown link validation to `scripts/validate_curriculum.py`.
+- Improved Windows setup instructions in `docs/setup-and-troubleshooting.md`.
+- Fixed release navigation consistency (release index includes v1.5.2; changelog includes v1.5.2 entry).
+
 ## v1.5.2 (2026-07-03)
 
 Release-quality polish: improved release navigation and changelog readability.
