@@ -443,6 +443,77 @@ def validate_markdown_links(root: Path) -> list[ValidationError]:
     return errors
 
 
+def validate_notebook_markdown_links(root: Path) -> list[ValidationError]:
+    """Validate local markdown links inside notebook markdown cells.
+
+    Notebooks often serve as the first learning surface. If a notebook says
+    "read this theory" and the link is broken, beginners get stuck. This check
+    intentionally ignores links inside fenced code blocks.
+    """
+    errors: list[ValidationError] = []
+    notebooks = sorted(root.rglob("*.ipynb"))
+
+    for nb in notebooks:
+        if _is_excluded(nb):
+            continue
+
+        try:
+            data = json.loads(nb.read_text(encoding="utf-8"))
+        except Exception:
+            # Notebook JSON parsing is already validated in validate_notebooks().
+            continue
+
+        md_text = "\n".join(
+            "".join(c.get("source", ""))
+            for c in data.get("cells", [])
+            if c.get("cell_type") == "markdown"
+        )
+        md_text = _strip_fenced_code_blocks(md_text)
+
+        for raw in _iter_markdown_links(md_text):
+            link = raw.strip()
+            if not link:
+                continue
+            if link.startswith("#"):
+                continue
+            if link.startswith(("http://", "https://", "mailto:")):
+                continue
+            if "://" in link:
+                continue
+
+            link = link.split("#", 1)[0].replace("%20", " ")
+            if not link:
+                continue
+
+            if link.startswith("/"):
+                target = root / link.lstrip("/")
+            else:
+                target = (nb.parent / link).resolve()
+
+            try:
+                target.relative_to(root.resolve())
+            except Exception:
+                errors.append(
+                    ValidationError(
+                        code="NBLINK900",
+                        message=f"Suspicious local link outside repo: {raw}",
+                        path=str(nb),
+                    )
+                )
+                continue
+
+            if not target.exists():
+                errors.append(
+                    ValidationError(
+                        code="NBLINK001",
+                        message=f"Broken local link: {raw}",
+                        path=str(nb),
+                    )
+                )
+
+    return errors
+
+
 def validate_tracked_hygiene(root: Path) -> list[ValidationError]:
     """Ensure we don't ship generated artifacts, datasets, or maintainer dumps."""
     errors: list[ValidationError] = []
@@ -506,6 +577,7 @@ def main() -> int:
     errors.extend(validate_exercises(root))
     errors.extend(validate_placeholders(root))
     errors.extend(validate_markdown_links(root))
+    errors.extend(validate_notebook_markdown_links(root))
     errors.extend(validate_tracked_hygiene(root))
     errors.extend(validate_no_absolute_repo_paths(root))
 

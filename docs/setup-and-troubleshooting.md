@@ -36,6 +36,15 @@ uv sync --frozen --group dev
 jupyter lab
 ```
 
+Windows activation (PowerShell):
+
+```powershell
+uv venv --python 3.12
+.\.venv\Scripts\Activate.ps1
+uv sync --frozen --group dev
+jupyter lab
+```
+
 If you are new to environments: the virtual environment lives at `.venv/`.
 
 ## Quick Verification (Recommended)

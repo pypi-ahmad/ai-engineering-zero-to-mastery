@@ -9,6 +9,14 @@ Release polish focused on consistency and beginner onboarding.
 - Overhauled the root README into a clearer beginner-first “front door” with roadmap, navigation, curated references, and troubleshooting pointers.
 - Standardized `uv sync` commands across docs and capstone error messages to recommend `--frozen` for reproducible installs.
 
+## v1.5.2 (2026-07-03)
+
+Release-quality polish: improved release navigation and changelog readability.
+
+- Added a release notes index: `docs/release/README.md`.
+- Reordered `CHANGELOG.md` to be latest-first and added missing historical entries (v1.0.0/v1.0.1).
+- Minor CI consistency: use `python3` for curriculum validation.
+
 ## v1.5.0 (2026-07-03)
 
 Release focused on tutorial-grade pedagogy: clearer definitions, stronger verification steps, and fewer beginner dead-ends.
@@ -61,4 +69,3 @@ Beginner-first release focused on reproducibility, runnable scaffolds, and maint
 ## v1.0.0 (2026-07-03)
 
 - Initial complete 15-lesson curriculum with a professional README and consolidated handbook.
-
