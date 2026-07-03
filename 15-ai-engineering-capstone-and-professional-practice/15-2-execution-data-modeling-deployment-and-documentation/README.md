@@ -6,6 +6,7 @@ Provides a practical operating system for delivering a capstone from data and mo
 
 1. Theory: `theory/15-2-execution-data-modeling-deployment-and-documentation.md`
 2. Notebook: `notebooks/15-2-capstone-execution-checklists-and-skeleton.ipynb`
+3. Runnable scaffold: `projects/capstone-template/README.md`
 
 ## Outcomes
 
@@ -18,4 +19,4 @@ Provides a practical operating system for delivering a capstone from data and mo
 - execution sprint template,
 - deployment and documentation scoring rubric,
 - evidence package checklist for interviews and portfolio reviews,
-- reusable skeletons for data, modeling, serving, and runbooks.
+- a runnable beginner-first capstone scaffold (`projects/capstone-template/`) for data, modeling, evaluation, and serving.

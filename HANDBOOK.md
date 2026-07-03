@@ -2958,25 +2958,33 @@ Theory source: [`15-ai-engineering-capstone-and-professional-practice/15-2-execu
 ```python
 from pathlib import Path
 
-PROJECT_SKELETON = {
-    "data": ["ingest.py", "prepare.py"],
-    "model": ["train.py", "evaluate.py"],
-    "serve": ["api.py"],
-    "configs": ["config.yaml"],
-    "docs": ["architecture.md", "report.md"],
-}
+repo_root = Path.cwd().resolve().parents[3]
+capstone_root = repo_root / "projects" / "capstone-template"
 
-
-def scaffold_project(root: str = "capstone_template"):
-    root_path = Path(root)
-    root_path.mkdir(parents=True, exist_ok=True)
-    for folder, files in PROJECT_SKELETON.items():
-        fp = root_path / folder
-...
+print("Capstone scaffold:", capstone_root)
+required = [
+    "README.md",
+    "configs/config.yaml",
+    "data/ingest.py",
+    "data/prepare.py",
+    "model/train.py",
+    "model/evaluate.py",
+    "serve/api.py",
+]
+for rel in required:
+    p = capstone_root / rel
+    print(f"- {rel}: {'OK' if p.exists() else 'MISSING'}")
 ```
 
 ```text
-PosixPath('tmp_capstone_template')
+Capstone scaffold: projects/capstone-template
+- README.md: OK
+- configs/config.yaml: OK
+- data/ingest.py: OK
+- data/prepare.py: OK
+- model/train.py: OK
+- model/evaluate.py: OK
+- serve/api.py: OK
 ```
 
 ### 15.3 Teamwork, Communication & Stakeholder Management

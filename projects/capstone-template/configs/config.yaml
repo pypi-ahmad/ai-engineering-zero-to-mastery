@@ -1,0 +1,25 @@
+seed: 42
+
+paths:
+  raw_csv: data/raw/breast_cancer.csv
+  processed_train_csv: data/processed/train.csv
+  processed_test_csv: data/processed/test.csv
+  artifact_dir: artifacts
+
+split:
+  test_size: 0.25
+  stratify: true
+
+features:
+  - mean_radius
+  - mean_texture
+  - mean_perimeter
+  - mean_area
+  - mean_smoothness
+
+model:
+  type: logistic_regression
+  params:
+    max_iter: 2000
+    C: 1.0
+    solver: lbfgs

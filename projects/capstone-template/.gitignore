@@ -1,0 +1,8 @@
+# Generated data and artifacts
+data/raw/
+data/processed/
+artifacts/
+
+# Local caches
+__pycache__/
+.ipynb_checkpoints/
