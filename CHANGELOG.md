@@ -18,6 +18,15 @@ Release focused on making the repository easier for complete beginners to naviga
 - Updated onboarding docs and tracks to point to the guided curriculum path.
 - Added a `projects/` index and updated the capstone template quickstart to run scripts via `uv run python` for reproducible execution.
 
+## v1.5.0 (2026-07-03)
+
+Release focused on tutorial-grade pedagogy: clearer definitions, stronger verification steps, and fewer beginner dead-ends.
+
+- Added a beginner-friendly glossary (`docs/glossary.md`) and strengthened onboarding/verification in `docs/start-here.md` and `docs/setup-and-troubleshooting.md`.
+- Upgraded Lesson 1–6 READMEs (and their sub-lessons) with concise: why this matters, key terms, expected outcomes, verification, and common mistakes.
+- Upgraded Lessons 7–15 lesson READMEs with expected outcomes and verification guidance.
+- Added a notebook playbook and improved intros for selected beginner-critical notebooks with explicit run/verify steps.
+
 ## v1.2.0 (2026-07-03)
 
 Release focused on portability, lean release hygiene, and a consistent beginner practice loop.
