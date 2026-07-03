@@ -2,14 +2,17 @@
 
 ![Build](https://img.shields.io/badge/build-curriculum--ci-blue)
 ![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)
-![License](https://img.shields.io/badge/license-unlicensed-lightgrey)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-Production-oriented, end-to-end curriculum for AI engineering, GenAI, and agentic systems from fundamentals to shipped systems.
+Beginner-first, production-oriented curriculum for **AI engineering**: building AI systems end-to-end (data, modeling, evaluation, serving, and operations), not just training models in isolation.
 
 ## Start Here
 - Curriculum entrypoint: [Lesson 1](./01-foundations-of-computing-and-programming/README.md)
 - Consolidated study guide: [HANDBOOK.md](./HANDBOOK.md) / [HANDBOOK.pdf](./HANDBOOK.pdf)
 - Capstone culmination: [Lesson 15](./15-ai-engineering-capstone-and-professional-practice/README.md)
+- Runnable capstone scaffold: [projects/capstone-template](./projects/capstone-template/README.md)
+- Learning tracks: [docs/learning-tracks.md](./docs/learning-tracks.md)
+- Setup + troubleshooting: [docs/setup-and-troubleshooting.md](./docs/setup-and-troubleshooting.md)
 - Documentation architecture: [docs/documentation-map.md](./docs/documentation-map.md)
 
 ## What This Solves
@@ -20,6 +23,11 @@ Most learning paths teach isolated slices (ML only, LLM only, or deployment only
 - safety/governance,
 - capstone delivery and professional practice.
 
+## Who This Is For
+- **Absolute beginners** who want a structured, step-by-step path (start at Lesson 1).
+- **Intermediate learners** who know basic Python/ML and want end-to-end system skills (use the tracks).
+- **Practitioners** who want checklists, templates, and production tradeoffs (use the handbook + Lesson 6/12/13/15).
+
 ## Learning Outcomes
 By the end, you can:
 - build and evaluate ML/DL/LLM systems,
@@ -27,6 +35,12 @@ By the end, you can:
 - operate production AI with MLOps/LLMOps patterns,
 - apply safety, governance, and reliability controls,
 - present a portfolio-ready end-to-end capstone.
+
+## Learning Tracks (Recommended)
+See full details in [docs/learning-tracks.md](./docs/learning-tracks.md).
+
+- **Beginner Track (first wins):** Lessons 1–3, then the runnable [capstone template](./projects/capstone-template/README.md), then Lesson 6.
+- **Full Track (zero-to-mastery):** follow Lessons 1 → 15 sequentially.
 
 ## How to Use This Repo
 1. Study sequentially for best results.
@@ -41,10 +55,29 @@ Parallel-friendly paths (after Lesson 5):
 ```bash
 git clone https://github.com/pypi-ahmad/ai-engineering-zero-to-mastery.git
 cd ai-engineering-zero-to-mastery
-uv venv
+uv venv --python 3.12
 source .venv/bin/activate
-uv add -r requirements.txt
+uv sync --frozen --group dev
 jupyter lab
+```
+
+Optional extras (install only when you reach those lessons):
+
+```bash
+# Deep learning (torch/vision)
+uv sync --frozen --extra dl
+
+# GenAI / LLM lessons (HF stack + PEFT/TRL)
+uv sync --frozen --extra genai
+
+# RL demos
+uv sync --frozen --extra rl
+
+# Serving demos + capstone API
+uv sync --frozen --extra serving
+
+# Ops / experiment tracking
+uv sync --frozen --extra ops
 ```
 
 ## Curriculum Index
@@ -145,6 +178,19 @@ jupyter lab
 
 ## Sources and References
 - Full registry: [docs/sources-and-references.md](./docs/sources-and-references.md)
+
+Curated “start here” references (authoritative + beginner-friendly):
+- Python docs: https://docs.python.org/3/
+- uv docs: https://docs.astral.sh/uv/
+- NumPy: https://numpy.org/doc/stable/
+- pandas: https://pandas.pydata.org/docs/
+- scikit-learn User Guide: https://scikit-learn.org/stable/user_guide.html
+- PyTorch: https://pytorch.org/docs/stable/index.html
+- Hugging Face Transformers: https://huggingface.co/docs/transformers/
+- FastAPI: https://fastapi.tiangolo.com/
+- MLflow: https://mlflow.org/docs/latest/index.html
+- W&B: https://docs.wandb.ai/
+
 - Documentation benchmark sources used for doc quality:
   - GitHub README guidance: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
   - GitHub contributor guidelines: https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors
@@ -156,7 +202,7 @@ jupyter lab
 
 ## Contributing and Governance
 - Contribution process: open issue or pull request with lesson path + rationale + references.
-- Recommended governance files to add next: `LICENSE`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`.
+- Governance files may be added later as the repo evolves (for wider open-source contribution and security processes).
 
 ## License
-No `LICENSE` file is currently present. Add one before wider external reuse.
+MIT License. See `LICENSE`.

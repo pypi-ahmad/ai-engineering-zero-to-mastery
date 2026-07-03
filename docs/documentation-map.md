@@ -48,4 +48,8 @@ Purpose:
 ## Quick Navigation
 - Root index: [README.md](../README.md)
 - Handbook: [HANDBOOK.md](../HANDBOOK.md)
+- Start here: [start-here.md](./start-here.md)
+- Tracks: [learning-tracks.md](./learning-tracks.md)
+- Setup: [setup-and-troubleshooting.md](./setup-and-troubleshooting.md)
+- Notebook validation: [notebook-status.md](./notebook-status.md)
 - Sources: [sources-and-references.md](./sources-and-references.md)
