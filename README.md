@@ -4,64 +4,63 @@
 ![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-Beginner-first, production-oriented curriculum for **AI engineering**: building AI systems end-to-end (data, modeling, evaluation, serving, and operations), not just training models in isolation.
+Beginner-first, production-oriented curriculum for **AI engineering**: building reliable AI systems end-to-end (data -> training -> evaluation -> serving -> monitoring -> safety), not just training models in isolation.
 
-## Start Here
-- Beginner-first learning path: [curriculum/](./curriculum/README.md)
-- Curriculum entrypoint: [Lesson 1](./01-foundations-of-computing-and-programming/README.md)
-- Consolidated study guide: [HANDBOOK.md](./HANDBOOK.md) / [HANDBOOK.pdf](./HANDBOOK.pdf)
-- Capstone culmination: [Lesson 15](./15-ai-engineering-capstone-and-professional-practice/README.md)
-- Runnable capstone scaffold: [projects/capstone-template](./projects/capstone-template/README.md)
-- Learning tracks: [docs/learning-tracks.md](./docs/learning-tracks.md)
-- Setup + troubleshooting: [docs/setup-and-troubleshooting.md](./docs/setup-and-troubleshooting.md)
-- Glossary (key terms): [docs/glossary.md](./docs/glossary.md)
-- Documentation architecture: [docs/documentation-map.md](./docs/documentation-map.md)
+## Purpose
+This repository teaches AI engineering as a **systems discipline**:
+- you will learn ML/DL/GenAI fundamentals,
+- then learn how to ship and operate systems (MLOps/LLMOps),
+- then learn safety/security/governance,
+- and finish with a portfolio-grade capstone.
 
-## What This Solves
-Most learning paths teach isolated slices (ML only, LLM only, or deployment only). This repository teaches the full engineering lifecycle:
-- foundations and math,
-- ML/DL and GenAI,
-- agents and operations,
-- safety/governance,
-- capstone delivery and professional practice.
+## Start Here (Beginner-Friendly)
+1. Guided learning path (recommended): [`curriculum/README.md`](./curriculum/README.md)
+2. Setup + troubleshooting: [`docs/setup-and-troubleshooting.md`](./docs/setup-and-troubleshooting.md)
+3. “How to learn with notebooks”: [`docs/notebook-playbook.md`](./docs/notebook-playbook.md)
+4. Key terms (glossary): [`docs/glossary.md`](./docs/glossary.md)
+5. Runnable project scaffold (first shipped system): [`projects/capstone-template/README.md`](./projects/capstone-template/README.md)
 
-## Who This Is For
-- **Absolute beginners** who want a structured, step-by-step path (start at Lesson 1).
-- **Intermediate learners** who know basic Python/ML and want end-to-end system skills (use the tracks).
-- **Practitioners** who want checklists, templates, and production tradeoffs (use the handbook + Lesson 6/12/13/15).
+## Target Audience
+- **Complete beginners**: follow the guided curriculum path and the beginner track.
+- **Intermediate learners** (some Python/ML): use the tracks to jump to GenAI, ops, or safety.
+- **Practitioners**: use the handbook + operations/safety lessons for checklists and tradeoffs.
 
-## Learning Outcomes
+## Learning Outcomes (What You’ll Be Able To Do)
 By the end, you can:
-- build and evaluate ML/DL/LLM systems,
-- implement RAG/agent workflows and fine-tuning patterns,
-- operate production AI with MLOps/LLMOps patterns,
-- apply safety, governance, and reliability controls,
-- present a portfolio-ready end-to-end capstone.
+- train and evaluate baseline ML/DL models with correct splits/metrics,
+- build grounded LLM applications (RAG/tools) with an evaluation loop,
+- deploy and operate AI systems with explicit contracts, monitoring, and rollback,
+- apply practical safety/security/governance controls,
+- deliver a portfolio-ready capstone with reproducible artifacts and a clear story.
 
-## Learning Tracks (Recommended)
-See full details in [docs/learning-tracks.md](./docs/learning-tracks.md).
+## Roadmap (Recommended Study Order)
+Use the guided path for the full story: [`curriculum/README.md`](./curriculum/README.md).
 
-- **Beginner Track (first wins):** Lessons 1–3, then the runnable [capstone template](./projects/capstone-template/README.md), then Lesson 6.
-- **Full Track (zero-to-mastery):** follow Lessons 1 → 15 sequentially.
+If you want a practical beginner sequence:
+1. Lesson 1 (Python + engineering habits): [`01-foundations-of-computing-and-programming/README.md`](./01-foundations-of-computing-and-programming/README.md)
+2. Lesson 3 (ML baselines + evaluation): [`03-classical-machine-learning/README.md`](./03-classical-machine-learning/README.md)
+3. Ship your first system (offline-friendly): [`projects/capstone-template/README.md`](./projects/capstone-template/README.md)
+4. Lesson 6.1 + 6.2 (MLOps fundamentals): [`06-mlops-and-llmops-production-ai-systems/README.md`](./06-mlops-and-llmops-production-ai-systems/README.md)
+5. Lesson 4 -> 5 (DL -> GenAI/LLMs): [`04-deep-learning-fundamentals/README.md`](./04-deep-learning-fundamentals/README.md), [`05-generative-models-and-llms/README.md`](./05-generative-models-and-llms/README.md)
+6. Lesson 7 (agentic systems) + Lesson 13 (safety/security): [`07-agentic-ai-and-applied-ai-systems-design/README.md`](./07-agentic-ai-and-applied-ai-systems-design/README.md), [`13-ai-safety-security-and-trustworthy-ai/README.md`](./13-ai-safety-security-and-trustworthy-ai/README.md)
+7. Lesson 15 (capstone delivery): [`15-ai-engineering-capstone-and-professional-practice/README.md`](./15-ai-engineering-capstone-and-professional-practice/README.md)
 
-## How to Use This Repo
-1. Study sequentially for best results.
-2. Run each sub-lesson notebook after reading theory.
-3. Use the handbook for fast review and interview prep.
+Alternative routes are documented in: [`docs/learning-tracks.md`](./docs/learning-tracks.md).
 
-Parallel-friendly paths (after Lesson 5):
-- Lesson 6 and Lesson 12 both cover MLOps/LLMOps with different depth and framing.
-- Lesson 9 and Lesson 10 can be explored in parallel based on specialization goals.
+## Prerequisites
+- Python 3.10+ (3.12 recommended)
+- Comfort with basic terminal commands (cd, ls, running scripts)
+- No prior ML required if you start from Lesson 1
 
-## Setup
+## Setup (Reproducible)
+This repo uses [`uv`](https://docs.astral.sh/uv/) for reproducible Python environments.
 
-Install `uv` (recommended). Official instructions:
-https://docs.astral.sh/uv/getting-started/installation/
-
+Install `uv` (official installer):
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
+Clone + create environment:
 ```bash
 git clone https://github.com/pypi-ahmad/ai-engineering-zero-to-mastery.git
 cd ai-engineering-zero-to-mastery
@@ -71,14 +70,12 @@ uv sync --frozen --group dev
 jupyter lab
 ```
 
-Quick verification:
-
+Verification (recommended):
 ```bash
 python3 scripts/validate_curriculum.py
 ```
 
 Optional extras (install only when you reach those lessons):
-
 ```bash
 # Deep learning (torch/vision)
 uv sync --frozen --extra dl
@@ -96,8 +93,62 @@ uv sync --frozen --extra serving
 uv sync --frozen --extra ops
 ```
 
+## How to Navigate This Repo
+This repo is a curriculum, not a collection of scripts.
+
+- `curriculum/`:
+  - the guided learning path (recommended order + prerequisites)
+- `01-...` to `15-...`:
+  - lessons, each containing sub-lessons
+  - each sub-lesson typically has:
+    - `theory/` (plain English + tradeoffs, plus PDF export)
+    - `notebooks/` (teaching notebooks)
+    - `exercises/` (practice + solutions, especially for Lessons 1–6)
+- `projects/`:
+  - runnable scaffolds that turn lessons into portfolio artifacts
+- `docs/`:
+  - onboarding, troubleshooting, tracks, references, and notebook guidance
+- `scripts/`:
+  - repo validation tooling (CI-friendly)
+- `HANDBOOK.md` / `HANDBOOK.pdf`:
+  - consolidated study guide across the curriculum
+
+Documentation map: [`docs/documentation-map.md`](./docs/documentation-map.md)
+
+## How to Study (Beginner Workflow)
+For each sub-lesson:
+1. Read the sub-lesson `README.md` (what to do and why).
+2. Read the `theory/*.md` chapter (terms + tradeoffs).
+3. Run the notebook from a clean kernel (restart -> run all).
+4. Do `exercises/` and check against `solutions.md`.
+5. Produce a small artifact (metrics JSON, a saved model, a short note, or a simple API).
+
+If notebooks are new to you, start with: [`docs/notebook-playbook.md`](./docs/notebook-playbook.md).
+
+## Troubleshooting Pointers
+- Setup issues (uv, kernels, torch): [`docs/setup-and-troubleshooting.md`](./docs/setup-and-troubleshooting.md)
+- Notebook execution guidance: [`docs/notebook-playbook.md`](./docs/notebook-playbook.md)
+- CI validation rules and what’s enforced: [`docs/notebook-status.md`](./docs/notebook-status.md)
+
+## References (Curated, Authoritative)
+These are good “anchor references” for beginners and credible to advanced readers.
+
+- Python documentation (language reference + standard library): [`Python docs`](https://docs.python.org/3/)
+- uv documentation (reproducible environments and dependency management): [`uv docs`](https://docs.astral.sh/uv/)
+- scikit-learn user guide (classical ML baselines + evaluation): [`scikit-learn User Guide`](https://scikit-learn.org/stable/user_guide.html)
+- PyTorch documentation (deep learning fundamentals + training): [`PyTorch docs`](https://pytorch.org/docs/stable/index.html)
+- Hugging Face Transformers (LLM usage patterns, tokenization, training APIs): [`Transformers docs`](https://huggingface.co/docs/transformers/)
+- FastAPI documentation (model serving APIs + contracts): [`FastAPI docs`](https://fastapi.tiangolo.com/)
+- MLflow documentation (experiment tracking + model registry concepts): [`MLflow docs`](https://mlflow.org/docs/latest/index.html)
+- OpenTelemetry (observability concepts for production systems): [`OpenTelemetry docs`](https://opentelemetry.io/docs/)
+
+Full source registry for this curriculum (papers/standards/syllabi): [`docs/sources-and-references.md`](./docs/sources-and-references.md)
+
 ## Curriculum Index
-### Full Curriculum Index
+The full index is below (collapsed). Beginners: start with `curriculum/README.md`.
+
+<details>
+<summary><strong>Expand full 15-lesson index</strong></summary>
 
 1. [Lesson 1: Foundations of Computing and Programming](./01-foundations-of-computing-and-programming/README.md)
    - [1.1 Programming Basics](./01-foundations-of-computing-and-programming/01-1-programming-basics/README.md)
@@ -185,36 +236,13 @@ uv sync --frozen --extra ops
    - [15.3 Teamwork, Communication & Stakeholder Management](./15-ai-engineering-capstone-and-professional-practice/15-3-teamwork-communication-and-stakeholder-management/README.md)
    - [15.4 Final Presentation, Reflection & Next Steps](./15-ai-engineering-capstone-and-professional-practice/15-4-final-presentation-reflection-and-next-steps/README.md)
 
+</details>
 
 ## Tech Stack (Observed in Notebooks)
 - Python 3.10+, Jupyter, `uv`
 - ML: `scikit-learn`, `xgboost`
 - DL/LLM: `torch`, `torchvision`, `transformers`, `diffusers`, `datasets`, `peft`, `trl`
 - Systems: `fastapi`, `networkx` (Airflow appears as optional pseudo-code in one lesson)
-
-## Sources and References
-- Full registry: [docs/sources-and-references.md](./docs/sources-and-references.md)
-
-Curated “start here” references (authoritative + beginner-friendly):
-- Python docs: https://docs.python.org/3/
-- uv docs: https://docs.astral.sh/uv/
-- NumPy: https://numpy.org/doc/stable/
-- pandas: https://pandas.pydata.org/docs/
-- scikit-learn User Guide: https://scikit-learn.org/stable/user_guide.html
-- PyTorch: https://pytorch.org/docs/stable/index.html
-- Hugging Face Transformers: https://huggingface.co/docs/transformers/
-- FastAPI: https://fastapi.tiangolo.com/
-- MLflow: https://mlflow.org/docs/latest/index.html
-- W&B: https://docs.wandb.ai/
-
-- Documentation benchmark sources used for doc quality:
-  - GitHub README guidance: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes
-  - GitHub contributor guidelines: https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/setting-guidelines-for-repository-contributors
-  - Open Source Guides maintainer practices: https://opensource.guide/best-practices/
-  - Diátaxis framework: https://diataxis.fr/
-  - Google developer style guide: https://developers.google.com/style
-  - Read the Docs style guide: https://docs.readthedocs.com/dev/stable/style-guide.html
-  - The Good Docs Project templates: https://www.thegooddocsproject.dev/
 
 ## Contributing and Governance
 - Contribution process: open issue or pull request with lesson path + rationale + references.
