@@ -169,51 +169,50 @@ Practical constraints:
 
 # Interview Questions & Answers
 
-1. **Detection vs segmentation: what is the difference?**  
-Detection outputs boxes + labels; segmentation outputs pixel-level class or instance masks.
+1. **Q: Detection vs segmentation: what is the difference?**
+   **A:** Detection outputs boxes + labels; segmentation outputs pixel-level class or instance masks.
 
-2. **When would you choose Faster R-CNN?**  
-When accuracy is prioritized over raw inference speed.
+2. **Q: When would you choose Faster R-CNN?**
+   **A:** When accuracy is prioritized over raw inference speed.
 
-3. **When would you choose YOLO-like models?**  
-When near-real-time inference is required.
+3. **Q: When would you choose YOLO-like models?**
+   **A:** When near-real-time inference is required.
 
-4. **What is instance segmentation?**  
-Separating each individual object mask, not just class-wise pixel labeling.
+4. **Q: What is instance segmentation?**
+   **A:** Separating each individual object mask, not just class-wise pixel labeling.
 
-5. **What makes U-Net strong in medical imaging?**  
-Skip connections preserve spatial detail critical for fine boundaries.
+5. **Q: What makes U-Net strong in medical imaging?**
+   **A:** Skip connections preserve spatial detail critical for fine boundaries.
 
-6. **What is a Vision Transformer?**  
-A transformer-based vision model operating on patch tokens with self-attention.
+6. **Q: What is a Vision Transformer?**
+   **A:** A transformer-based vision model operating on patch tokens with self-attention.
 
-7. **What is CLIP useful for?**  
-Learning joint image-text representations enabling zero-shot and retrieval tasks.
+7. **Q: What is CLIP useful for?**
+   **A:** Learning joint image-text representations enabling zero-shot and retrieval tasks.
 
-8. **How do you optimize CV models for edge?**  
-Quantization, pruning/distillation, efficient backbones, and optimized runtimes.
+8. **Q: How do you optimize CV models for edge?**
+   **A:** Quantization, pruning/distillation, efficient backbones, and optimized runtimes.
 
-9. **What is a common failure mode in production CV?**  
-Domain shift from training data (lighting, camera angle, weather, clutter).
+9. **Q: What is a common failure mode in production CV?**
+   **A:** Domain shift from training data (lighting, camera angle, weather, clutter).
 
-10. **How do you evaluate detection models?**  
-Typically mAP and per-class precision/recall with IoU thresholds.
+10. **Q: How do you evaluate detection models?**
+   **A:** Typically mAP and per-class precision/recall with IoU thresholds.
 
-11. **How do you monitor a deployed vision model?**  
-Track latency, confidence drift, class distributions, and sampled human audits.
+11. **Q: How do you monitor a deployed vision model?**
+   **A:** Track latency, confidence drift, class distributions, and sampled human audits.
 
-12. **What is the trade-off between precision and recall in defect detection?**  
-Higher recall can increase false alarms; higher precision can miss true defects.
+12. **Q: What is the trade-off between precision and recall in defect detection?**
+   **A:** Higher recall can increase false alarms; higher precision can miss true defects.
 
-13. **Why is dataset curation critical for segmentation?**  
-Label quality and boundary consistency strongly impact pixel-level performance.
+13. **Q: Why is dataset curation critical for segmentation?**
+   **A:** Label quality and boundary consistency strongly impact pixel-level performance.
 
-14. **How do multimodal vision systems fail?**  
-Text-image misalignment, hallucinated associations, and biased retrieval.
+14. **Q: How do multimodal vision systems fail?**
+   **A:** Text-image misalignment, hallucinated associations, and biased retrieval.
 
-15. **How do you decide if edge deployment is needed?**  
-Based on latency, privacy, connectivity, and operational cost constraints.
-
+15. **Q: How do you decide if edge deployment is needed?**
+   **A:** Based on latency, privacy, connectivity, and operational cost constraints.
 # References
 
 - Stanford CS231n site: https://cs231n.stanford.edu/ and schedule archive: https://cs231n.stanford.edu/2021/schedule.html

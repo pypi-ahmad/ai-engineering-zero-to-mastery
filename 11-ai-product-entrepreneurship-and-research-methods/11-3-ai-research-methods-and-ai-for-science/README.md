@@ -2,7 +2,7 @@
 
 Covers experiment design, baselines, ablations, paper reading, reproducibility, and AI-for-science methodologies.
 
-## Start here
+## Start Here
 
 1. Theory: `theory/11-3-ai-research-methods-and-ai-for-science.md`
 2. Notebook: `notebooks/11-3-ai-research-methods-and-ai-for-science-experiment-template.ipynb`

@@ -1,27 +1,28 @@
-# Lesson 6: MLOps & LLMOps - Production AI Systems
+# Lesson 6: MLOps & LLMOps: Production AI Systems
 
-Lesson 6 focuses on taking models from experimentation to reliable, governed, continuously improving production systems.
+Lesson 6 introduces operational foundations for moving ML/LLM work from notebooks into repeatable production workflows.
 
-## Sub-lessons
+## Learning Objectives
+- Understand ML lifecycle stages, CI/CD/CT/CM, and artifact/version discipline.
+- Build baseline data/feature pipelines, deployment patterns, and drift monitoring.
+- Apply first-pass LLMOps patterns for RAG and tool-augmented applications.
 
-1. **6.1 MLOps Fundamentals & Lifecycle**
-2. **6.2 Data & Feature Pipelines**
-3. **6.3 Model Deployment & Serving**
-4. **6.4 Monitoring, Drift & Governance**
-5. **6.5 LLMOps: Operationalizing LLMs, RAG & Agents**
+## Start Here (Theory + Notebooks)
+- `06-1-mlops-fundamentals-and-lifecycle/theory/06-1-mlops-fundamentals-and-lifecycle.md`
+- `06-2-data-and-feature-pipelines/theory/06-2-data-and-feature-pipelines.md`
+- `06-3-model-deployment-and-serving/theory/06-3-model-deployment-and-serving.md`
+- `06-4-monitoring-drift-and-governance/theory/06-4-monitoring-drift-and-governance.md`
+- `06-5-llmops-operationalizing-llms-rag-and-agents/theory/06-5-llmops-operationalizing-llms-rag-and-agents.md`
+- Run the matching notebook in each sub-folder `notebooks/`.
 
-## How to Use Lesson 6
+## Prerequisites
+- Lessons 1-5 (programming, ML foundations, deep learning, and GenAI basics).
+- Python environment with common ML libraries and Jupyter.
 
-1. Start each sub-lesson with the `theory/` chapter.
-2. Run the notebook in `notebooks/` to ground concepts in runnable code.
-3. Use the business case and interview sections for practical and interview preparation.
+## Lesson Boundary
+This lesson is the foundational operations layer: lifecycle setup, baseline pipelines, serving, and first-pass monitoring/governance.
 
-## Outcomes
+Lesson 12 is intentionally separate and advanced: it assumes these basics and adds inference systems engineering, evaluation flywheels, distributed training strategy, privacy-preserving operations, and data-centric labeling loops for mature production environments.
 
-By the end of this lesson, you should be able to:
-
-- Design an end-to-end MLOps lifecycle with CI/CD/CT/CM thinking.
-- Build reliable data and feature pipelines without leakage.
-- Deploy and version models using safe rollout strategies.
-- Monitor drift and operational health with governance controls.
-- Operate LLM, RAG, and agent systems with LLMOps best practices.
+## What's Next
+Move to Lesson 7 to apply these ops fundamentals to agentic systems design and orchestration patterns.

@@ -18,6 +18,27 @@ How this curriculum maps into the capstone:
 - Lessons 12-14: MLOps/LLMOps, safety, and frontier awareness.
 - Lesson 11: product and research framing.
 
+### Lessons 1-14 Skill Traceability (Required)
+
+Use this matrix as a mandatory coverage check before final capstone review:
+
+| Lesson | Skill signal expected in capstone evidence |
+|---|---|
+| 1 | clean code, modularity, testing, API hygiene |
+| 2 | mathematically sound metrics, optimization/statistics reasoning |
+| 3 | baseline modeling and rigorous model selection |
+| 4 | deep learning architecture/training decisions (when relevant) |
+| 5 | GenAI/LLM workflow design (prompting, RAG, generation quality controls) |
+| 6 | foundational MLOps/LLMOps lifecycle and deployment discipline |
+| 7 | agent workflow design, orchestration, and context handling |
+| 8 | ethical risk framing, governance awareness, and responsible AI controls |
+| 9 | specialization depth (RL/CV/NLP/domain-specific techniques) where applicable |
+| 10 | edge/robotics constraints and system realism where applicable |
+| 11 | product thinking, business impact framing, and research literacy |
+| 12 | advanced observability, evaluation loops, and operational controls |
+| 13 | safety, robustness, security, and guardrail strategies |
+| 14 | frontier-awareness and evidence-based technical judgment |
+
 A capstone should not maximize complexity; it should maximize signal of competence.
 
 ## Capstone Objectives & Competencies
@@ -106,6 +127,61 @@ Decide with role and problem fit, not hype:
 - What is the smallest system that proves value?
 - Which lesson techniques are necessary vs optional?
 - What can be simulated if production infra is unavailable?
+
+## Capstone Architecture Pre-Design Template
+
+Before implementation, produce a one-page architecture sketch with these blocks:
+
+1. Ingestion and data contracts.
+2. Training/inference workflow (or RAG/agent workflow).
+3. Evaluation harness and metric store.
+4. Deployment target (batch, API, event-driven).
+5. Observability hooks (logs, metrics, traces).
+6. Safety/governance controls and escalation.
+
+Text template:
+
+```text
+User or data source -> data pipeline -> model/agent service -> decision/output layer
+                     -> evaluation + monitoring store -> alerting/feedback loop
+```
+
+Design rule:
+If any block has no owner or no measurable success condition, scope is not ready.
+
+## Milestone Plan and Definition of Done
+
+Recommended milestone cadence:
+
+- `M1 (Week 1)`: Problem framing, SoW, architecture draft, baseline KPI.
+- `M2 (Week 2-3)`: Data pipeline + baseline model/service.
+- `M3 (Week 4-5)`: Improved system + evaluation report + risk controls.
+- `M4 (Week 6+)`: Deployment/demo hardening + documentation + presentation pack.
+
+Definition of done per milestone should include:
+
+- objective evidence artifact,
+- quality threshold,
+- known risks and next actions.
+
+## Capstone Scoring Rubric (Detailed)
+
+Use this rubric to prevent subjective grading:
+
+| Dimension | Weight | Evidence |
+|---|---:|---|
+| Problem framing and scoping | 20% | clear SoW, non-objectives, measurable success criteria |
+| Architecture and implementation quality | 25% | coherent design, modular code, justified trade-offs |
+| Evaluation rigor | 20% | baseline comparison, error analysis, limitations |
+| Deployment/operations readiness | 15% | runnable service or realistic deployment simulation + monitoring plan |
+| Documentation and reproducibility | 10% | setup/runbook, configs, artefact traceability |
+| Communication and reflection | 10% | presentation quality, Q&A clarity, lessons learned |
+
+Pass guidance:
+
+- `<70`: incomplete lifecycle evidence.
+- `70-84`: solid execution with notable gaps.
+- `85+`: portfolio-ready capstone with credible end-to-end maturity.
 
 ## Capstone Case Studies & Exceptions
 

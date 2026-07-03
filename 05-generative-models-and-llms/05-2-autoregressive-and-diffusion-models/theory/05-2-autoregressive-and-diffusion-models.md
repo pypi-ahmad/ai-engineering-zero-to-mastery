@@ -213,51 +213,50 @@ Mitigation:
 
 # Interview Questions & Answers
 
-1. **What is an autoregressive model?**
-   A model that factorizes a joint distribution into conditional next-step probabilities and generates sequentially.
+1. **Q: What is an autoregressive model?**
+   **A:** A model that factorizes a joint distribution into conditional next-step probabilities and generates sequentially.
 
-2. **Why are autoregressive models naturally suited for text?**
-   Language is sequential and causal in many tasks, matching token-by-token conditional prediction.
+2. **Q: Why are autoregressive models naturally suited for text?**
+   **A:** Language is sequential and causal in many tasks, matching token-by-token conditional prediction.
 
 3. **Explain diffusion model intuition simply.**
    Corrupt training data with noise, then train a model to reverse corruption; generation starts from noise and iteratively denoises.
 
-4. **Why are diffusion models often slow to sample?**
-   They may require tens to hundreds of iterative denoising steps per sample.
+4. **Q: Why are diffusion models often slow to sample?**
+   **A:** They may require tens to hundreds of iterative denoising steps per sample.
 
-5. **What is the forward diffusion process?**
-   A fixed Markov process that progressively adds Gaussian noise according to a variance schedule.
+5. **Q: What is the forward diffusion process?**
+   **A:** A fixed Markov process that progressively adds Gaussian noise according to a variance schedule.
 
-6. **What does the diffusion network predict?**
-   Usually the added noise (or equivalent parameterization such as clean sample or velocity).
+6. **Q: What does the diffusion network predict?**
+   **A:** Usually the added noise (or equivalent parameterization such as clean sample or velocity).
 
-7. **How does AR sampling differ from diffusion sampling?**
-   AR appends one token per step; diffusion repeatedly refines a noisy sample toward clean data.
+7. **Q: How does AR sampling differ from diffusion sampling?**
+   **A:** AR appends one token per step; diffusion repeatedly refines a noisy sample toward clean data.
 
-8. **When might AR be preferred over diffusion?**
-   Long-form text/code generation where causal decoding and tokenizer-based modeling are mature and efficient.
+8. **Q: When might AR be preferred over diffusion?**
+   **A:** Long-form text/code generation where causal decoding and tokenizer-based modeling are mature and efficient.
 
-9. **When might diffusion be preferred over AR?**
-   High-fidelity image generation tasks where quality/diversity are critical.
+9. **Q: When might diffusion be preferred over AR?**
+   **A:** High-fidelity image generation tasks where quality/diversity are critical.
 
-10. **What are common AR decoding controls?**
-    Temperature, top-k, top-p (nucleus), repetition penalties, max tokens.
+10. **Q: What are common AR decoding controls?**
+   **A:** Temperature, top-k, top-p (nucleus), repetition penalties, max tokens.
 
-11. **How do you reduce diffusion latency in practice?**
-    Fewer-step samplers, latent diffusion, optimized schedulers, distillation, and hardware-specific acceleration.
+11. **Q: How do you reduce diffusion latency in practice?**
+   **A:** Fewer-step samplers, latent diffusion, optimized schedulers, distillation, and hardware-specific acceleration.
 
-12. **Can diffusion models overfit?**
-    Yes, especially with narrow datasets; monitor memorization and near-duplicate generations.
+12. **Q: Can diffusion models overfit?**
+   **A:** Yes, especially with narrow datasets; monitor memorization and near-duplicate generations.
 
-13. **What business risk is unique to generative creative systems?**
-    Brand and policy violations at scale if output controls and review workflows are weak.
+13. **Q: What business risk is unique to generative creative systems?**
+   **A:** Brand and policy violations at scale if output controls and review workflows are weak.
 
-14. **How do you evaluate model choice between AR and diffusion?**
-    Use task-specific quality metrics plus latency/cost/SLA constraints and human preference testing.
+14. **Q: How do you evaluate model choice between AR and diffusion?**
+   **A:** Use task-specific quality metrics plus latency/cost/SLA constraints and human preference testing.
 
-15. **What is classifier-free guidance (high level)?**
-    A conditioning technique in diffusion models that trades diversity for stronger prompt alignment.
-
+15. **Q: What is classifier-free guidance (high level)?**
+   **A:** A conditioning technique in diffusion models that trades diversity for stronger prompt alignment.
 # Further Reading & Sources
 
 - Stanford CS236 (deep generative model curriculum): https://deepgenerativemodels.github.io/

@@ -197,51 +197,50 @@ Decision:
 
 # Interview Questions & Answers
 
-1. **What are the core components of an ML pipeline?**  
-Data validation, feature engineering, training, evaluation, registration, deployment, and monitoring.
+1. **Q: What are the core components of an ML pipeline?**
+   **A:** Data validation, feature engineering, training, evaluation, registration, deployment, and monitoring.
 
-2. **When do you use batch vs online inference?**  
-Batch for non-urgent predictions; online for latency-critical decisions.
+2. **Q: When do you use batch vs online inference?**
+   **A:** Batch for non-urgent predictions; online for latency-critical decisions.
 
-3. **What is canary deployment for models?**  
-A partial rollout to evaluate behavior before full traffic migration.
+3. **Q: What is canary deployment for models?**
+   **A:** A partial rollout to evaluate behavior before full traffic migration.
 
-4. **What is blue-green deployment?**  
-Two parallel environments with traffic switching for fast rollback.
+4. **Q: What is blue-green deployment?**
+   **A:** Two parallel environments with traffic switching for fast rollback.
 
-5. **How do you monitor data drift?**  
-Compare production and reference distributions using statistical distance metrics and thresholds.
+5. **Q: How do you monitor data drift?**
+   **A:** Compare production and reference distributions using statistical distance metrics and thresholds.
 
-6. **Difference between covariate and concept drift?**  
-Covariate drift is input shift; concept drift is change in mapping from inputs to target.
+6. **Q: Difference between covariate and concept drift?**
+   **A:** Covariate drift is input shift; concept drift is change in mapping from inputs to target.
 
-7. **What metrics should be monitored for online model serving?**  
-Latency, errors, throughput, drift indicators, prediction health, and business KPIs.
+7. **Q: What metrics should be monitored for online model serving?**
+   **A:** Latency, errors, throughput, drift indicators, prediction health, and business KPIs.
 
-8. **How do you prevent data leakage in pipelines?**  
-Fit preprocessing on train split only and enforce temporal correctness.
+8. **Q: How do you prevent data leakage in pipelines?**
+   **A:** Fit preprocessing on train split only and enforce temporal correctness.
 
-9. **How do you design alerts for ML monitoring?**  
-Use severity, ownership, runbooks, and persistence windows to reduce noise.
+9. **Q: How do you design alerts for ML monitoring?**
+   **A:** Use severity, ownership, runbooks, and persistence windows to reduce noise.
 
-10. **What is a feature contract?**  
-A guarantee of feature semantics, schema, and availability across training and serving.
+10. **Q: What is a feature contract?**
+   **A:** A guarantee of feature semantics, schema, and availability across training and serving.
 
-11. **How do you choose rollback thresholds?**  
-Based on SLA violations and KPI degradation tolerance.
+11. **Q: How do you choose rollback thresholds?**
+   **A:** Based on SLA violations and KPI degradation tolerance.
 
-12. **Why do pipelines need integration tests?**  
-Because many failures occur at component boundaries, not inside individual steps.
+12. **Q: Why do pipelines need integration tests?**
+   **A:** Because many failures occur at component boundaries, not inside individual steps.
 
-13. **What is shadow deployment?**  
-Run a new model in parallel without affecting decisions, only for comparison.
+13. **Q: What is shadow deployment?**
+   **A:** Run a new model in parallel without affecting decisions, only for comparison.
 
-14. **How do you reduce inference cost?**  
-Optimize model size, caching, batch processing, and architecture choices.
+14. **Q: How do you reduce inference cost?**
+   **A:** Optimize model size, caching, batch processing, and architecture choices.
 
-15. **What makes monitoring useful beyond dashboards?**  
-Actionable alerts tied to specific response playbooks.
-
+15. **Q: What makes monitoring useful beyond dashboards?**
+   **A:** Actionable alerts tied to specific response playbooks.
 # References
 
 - Google Cloud MLOps architecture and maturity guidance: https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning

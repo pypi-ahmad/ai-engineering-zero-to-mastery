@@ -100,6 +100,26 @@ Professional practice includes communicating:
 
 Ethics is not a separate appendix; it should appear in decision records and stakeholder updates.
 
+## Communication Scoring Rubric
+
+| Dimension | Weight | Strong Evidence |
+|---|---:|---|
+| Role clarity and ownership | 20% | explicit owners, deadlines, and handoffs |
+| Stakeholder alignment | 20% | predictable updates and expectation management |
+| Decision quality transparency | 20% | decision logs with rationale and trade-offs |
+| Risk/escalation handling | 20% | early escalation and mitigation tracking |
+| Presentation and Q&A execution | 20% | concise narrative and confident handling of objections |
+
+## Team Reflection Template
+
+Use this at project close:
+
+1. Which communication practice prevented the most rework?
+2. Where did misunderstandings create delays?
+3. What stakeholder assumption was wrong?
+4. Which team norm should be retained for future projects?
+5. Which norm should be replaced immediately?
+
 ## Case Studies & Exceptions
 
 ### Case 1: High-Performing Team with Weak Updates

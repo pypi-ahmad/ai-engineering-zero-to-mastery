@@ -237,51 +237,50 @@ Pragmatic pattern:
 
 # Interview Questions & Answers
 
-1. **What are the main ethical concerns around AI-based hiring?**  
-Bias, opacity, contestability, and potential discrimination through proxy features.
+1. **Q: What are the main ethical concerns around AI-based hiring?**
+   **A:** Bias, opacity, contestability, and potential discrimination through proxy features.
 
 2. **Explain algorithmic bias.**  
 Systematic unfair outcomes caused by data, modeling, or deployment factors, often reflecting historical inequities.
 
-3. **How would you explain fairness vs accuracy trade-offs to non-technical stakeholders?**  
-A model can be globally accurate while repeatedly failing specific groups; fairness ensures benefits and errors are distributed justly.
+3. **Q: How would you explain fairness vs accuracy trade-offs to non-technical stakeholders?**
+   **A:** A model can be globally accurate while repeatedly failing specific groups; fairness ensures benefits and errors are distributed justly.
 
-4. **What is the difference between ethics and compliance?**  
-Compliance is legal minimum requirements; ethics asks what is right and responsible even when law is silent.
+4. **Q: What is the difference between ethics and compliance?**
+   **A:** Compliance is legal minimum requirements; ethics asks what is right and responsible even when law is silent.
 
-5. **When can a model be ethically problematic but technically strong?**  
-When it achieves high metrics but harms autonomy, dignity, or equal opportunity.
+5. **Q: When can a model be ethically problematic but technically strong?**
+   **A:** When it achieves high metrics but harms autonomy, dignity, or equal opportunity.
 
-6. **Why is transparency important in AI systems?**  
-It enables trust, auditing, contestability, and informed oversight.
+6. **Q: Why is transparency important in AI systems?**
+   **A:** It enables trust, auditing, contestability, and informed oversight.
 
 7. **Give an example of autonomy harm in AI products.**  
 A recommendation engine nudging users into compulsive behavior using manipulative design.
 
-8. **How do consequentialism and deontology differ in AI decisions?**  
-Consequentialism prioritizes aggregate outcomes; deontology enforces rights and duties regardless of aggregate gain.
+8. **Q: How do consequentialism and deontology differ in AI decisions?**
+   **A:** Consequentialism prioritizes aggregate outcomes; deontology enforces rights and duties regardless of aggregate gain.
 
-9. **What is accountability in AI practice?**  
-Clear ownership, traceability, and mechanisms to investigate and remediate harms.
+9. **Q: What is accountability in AI practice?**
+   **A:** Clear ownership, traceability, and mechanisms to investigate and remediate harms.
 
-10. **Why can predictive policing systems be controversial?**  
-They can reinforce historical over-policing and create self-reinforcing bias loops.
+10. **Q: Why can predictive policing systems be controversial?**
+   **A:** They can reinforce historical over-policing and create self-reinforcing bias loops.
 
-11. **Can removing protected attributes solve fairness?**  
-Not always; proxies can preserve bias and hide disparate impact.
+11. **Q: Can removing protected attributes solve fairness?**
+   **A:** Not always; proxies can preserve bias and hide disparate impact.
 
-12. **How should teams prioritize ethical risks?**  
-By severity, affected populations, reversibility, and scale of potential harm.
+12. **Q: How should teams prioritize ethical risks?**
+   **A:** By severity, affected populations, reversibility, and scale of potential harm.
 
-13. **What is ethical debt?**  
-Accumulated unresolved ethical risk from shortcuts, similar to technical debt.
+13. **Q: What is ethical debt?**
+   **A:** Accumulated unresolved ethical risk from shortcuts, similar to technical debt.
 
-14. **How do you respond when business pressure conflicts with ethics?**  
-Escalate risk with evidence, propose safer alternatives, and document decisions and ownership.
+14. **Q: How do you respond when business pressure conflicts with ethics?**
+   **A:** Escalate risk with evidence, propose safer alternatives, and document decisions and ownership.
 
-15. **What does human oversight mean in ethics terms?**  
-Humans retain meaningful control over high-impact decisions and can intervene effectively.
-
+15. **Q: What does human oversight mean in ethics terms?**
+   **A:** Humans retain meaningful control over high-impact decisions and can intervene effectively.
 # References
 
 - Georgia Tech PHIL 3101 course page (AI Ethics and Policy): https://syllabus.gatech.edu/syllabi/3101/rm

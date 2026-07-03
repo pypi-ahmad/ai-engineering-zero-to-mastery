@@ -111,51 +111,50 @@ Common compromise:
 
 # Interview Questions & Answers
 
-1. **What is TinyML?**  
-Machine learning on resource-constrained embedded devices, typically microcontrollers.
+1. **Q: What is TinyML?**
+   **A:** Machine learning on resource-constrained embedded devices, typically microcontrollers.
 
-2. **Edge AI vs cloud AI?**  
-Edge runs inference near data source; cloud runs centrally with higher compute but higher latency/dependency.
+2. **Q: Edge AI vs cloud AI?**
+   **A:** Edge runs inference near data source; cloud runs centrally with higher compute but higher latency/dependency.
 
-3. **Why quantize a model?**  
-To reduce model size and improve inference speed on constrained hardware.
+3. **Q: Why quantize a model?**
+   **A:** To reduce model size and improve inference speed on constrained hardware.
 
-4. **What metrics matter for TinyML deployment?**  
-Accuracy, RAM/Flash usage, latency, and power consumption.
+4. **Q: What metrics matter for TinyML deployment?**
+   **A:** Accuracy, RAM/Flash usage, latency, and power consumption.
 
-5. **What is a typical TinyML workflow?**  
-Collect data, train, optimize, convert, deploy, validate, monitor.
+5. **Q: What is a typical TinyML workflow?**
+   **A:** Collect data, train, optimize, convert, deploy, validate, monitor.
 
-6. **Why is offline capability valuable?**  
-It preserves functionality in unreliable or disconnected environments.
+6. **Q: Why is offline capability valuable?**
+   **A:** It preserves functionality in unreliable or disconnected environments.
 
-7. **When should edge inference be preferred?**  
-When latency, privacy, or bandwidth constraints are strict.
+7. **Q: When should edge inference be preferred?**
+   **A:** When latency, privacy, or bandwidth constraints are strict.
 
-8. **What is a common TinyML failure mode?**  
-Good lab metrics but poor field robustness due to sensor/environment drift.
+8. **Q: What is a common TinyML failure mode?**
+   **A:** Good lab metrics but poor field robustness due to sensor/environment drift.
 
-9. **How do you reduce on-device memory use?**  
-Smaller architectures, quantization, operator selection, and careful buffer planning.
+9. **Q: How do you reduce on-device memory use?**
+   **A:** Smaller architectures, quantization, operator selection, and careful buffer planning.
 
-10. **Why is dataset design crucial in TinyML?**  
-Small models are sensitive to data coverage and noise quality.
+10. **Q: Why is dataset design crucial in TinyML?**
+   **A:** Small models are sensitive to data coverage and noise quality.
 
-11. **How do you update models in deployed devices?**  
-Use controlled OTA pipelines with versioning and rollback.
+11. **Q: How do you update models in deployed devices?**
+   **A:** Use controlled OTA pipelines with versioning and rollback.
 
-12. **What is the main trade-off with aggressive compression?**  
-Footprint improvement vs accuracy/robustness loss.
+12. **Q: What is the main trade-off with aggressive compression?**
+   **A:** Footprint improvement vs accuracy/robustness loss.
 
-13. **How do you test edge models before rollout?**  
-Hardware-in-loop benchmarks and scenario replay under realistic conditions.
+13. **Q: How do you test edge models before rollout?**
+   **A:** Hardware-in-loop benchmarks and scenario replay under realistic conditions.
 
-14. **Can TinyML replace all edge AI workloads?**  
-No, high-compute tasks may require stronger edge accelerators or cloud assistance.
+14. **Q: Can TinyML replace all edge AI workloads?**
+   **A:** No, high-compute tasks may require stronger edge accelerators or cloud assistance.
 
-15. **How does TinyML relate to MLOps?**  
-It extends MLOps into embedded constraints: conversion, firmware integration, and fleet telemetry.
-
+15. **Q: How does TinyML relate to MLOps?**
+   **A:** It extends MLOps into embedded constraints: conversion, firmware integration, and fleet telemetry.
 # References
 
 - Harvard TinyML professional certificate overview: https://harvardonline.harvard.edu/program/professional-certificate-in-tiny-machine-learning-tinyml

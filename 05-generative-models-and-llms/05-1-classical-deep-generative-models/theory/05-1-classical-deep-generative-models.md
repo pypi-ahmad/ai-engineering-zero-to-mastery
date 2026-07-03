@@ -290,51 +290,50 @@ Guardrails:
 
 # Interview Questions & Answers
 
-1. **What is a latent variable model?**
-   A model that explains observed data $x$ using hidden variables $z$, usually via $p(x)=\int p(x\mid z)p(z)dz$.
+1. **Q: What is a latent variable model?**
+   **A:** A model that explains observed data $x$ using hidden variables $z$, usually via $p(x)=\int p(x\mid z)p(z)dz$.
 
 2. **Explain VAE intuition in one minute.**
    A VAE learns a compressed probabilistic representation of data and reconstructs from it, while regularizing latents toward a known prior for smooth sampling.
 
-3. **What does the ELBO optimize?**
-   A lower bound to log-likelihood: reconstruction quality minus KL regularization between approximate posterior and prior.
+3. **Q: What does the ELBO optimize?**
+   **A:** A lower bound to log-likelihood: reconstruction quality minus KL regularization between approximate posterior and prior.
 
-4. **Why do VAEs sometimes produce blurry images?**
-   Reconstruction losses (e.g., pixel-wise) can average plausible outputs, reducing sharp high-frequency detail.
+4. **Q: Why do VAEs sometimes produce blurry images?**
+   **A:** Reconstruction losses (e.g., pixel-wise) can average plausible outputs, reducing sharp high-frequency detail.
 
-5. **What is mode collapse in GANs?**
-   The generator maps many latent inputs to similar outputs, reducing diversity despite possibly fooling discriminator locally.
+5. **Q: What is mode collapse in GANs?**
+   **A:** The generator maps many latent inputs to similar outputs, reducing diversity despite possibly fooling discriminator locally.
 
-6. **How do GANs conceptually differ from VAEs?**
-   GANs learn via adversarial game and implicit sampling; VAEs optimize probabilistic evidence lower bound with explicit latent inference.
+6. **Q: How do GANs conceptually differ from VAEs?**
+   **A:** GANs learn via adversarial game and implicit sampling; VAEs optimize probabilistic evidence lower bound with explicit latent inference.
 
-7. **When would you choose a flow over GAN/VAE?**
-   When exact likelihood and invertibility are important (density estimation, exact latent inference, some anomaly tasks).
+7. **Q: When would you choose a flow over GAN/VAE?**
+   **A:** When exact likelihood and invertibility are important (density estimation, exact latent inference, some anomaly tasks).
 
-8. **Why are GANs hard to train?**
-   Non-stationary two-player optimization, sensitivity to architecture and hyperparameters, and unstable gradient dynamics.
+8. **Q: Why are GANs hard to train?**
+   **A:** Non-stationary two-player optimization, sensitivity to architecture and hyperparameters, and unstable gradient dynamics.
 
-9. **What is the role of the prior in VAE?**
-   It regularizes latent organization and enables sampling by drawing $z$ from known distribution (usually standard normal).
+9. **Q: What is the role of the prior in VAE?**
+   **A:** It regularizes latent organization and enables sampling by drawing $z$ from known distribution (usually standard normal).
 
 10. **Name practical GAN stabilization methods.**
     Wasserstein loss with gradient penalty, spectral normalization, careful architecture design, balanced update schedules.
 
-11. **How would you evaluate a generative model in production?**
-    Combine perceptual/diversity metrics, downstream task utility, privacy checks, and bias/slice analysis.
+11. **Q: How would you evaluate a generative model in production?**
+   **A:** Combine perceptual/diversity metrics, downstream task utility, privacy checks, and bias/slice analysis.
 
-12. **Can synthetic data replace real data entirely?**
-    Usually no. It augments or unlocks early experimentation; final validation should rely heavily on real representative data.
+12. **Q: Can synthetic data replace real data entirely?**
+   **A:** Usually no. It augments or unlocks early experimentation; final validation should rely heavily on real representative data.
 
-13. **What is posterior collapse?**
-    In VAEs, decoder ignores latent code and approximate posterior matches prior too closely, reducing useful latent information.
+13. **Q: What is posterior collapse?**
+   **A:** In VAEs, decoder ignores latent code and approximate posterior matches prior too closely, reducing useful latent information.
 
-14. **Why are explicit likelihoods useful?**
-    They provide density-based scoring for anomaly detection and clearer probabilistic interpretation.
+14. **Q: Why are explicit likelihoods useful?**
+   **A:** They provide density-based scoring for anomaly detection and clearer probabilistic interpretation.
 
-15. **What is a practical first baseline for image generation projects?**
-    Start with a small VAE for stability/diagnostics, then move to GAN/diffusion if quality targets demand it.
-
+15. **Q: What is a practical first baseline for image generation projects?**
+   **A:** Start with a small VAE for stability/diagnostics, then move to GAN/diffusion if quality targets demand it.
 # Further Reading & Sources
 
 - Stanford CS236: Deep Generative Models (course structure and topic sequencing): https://deepgenerativemodels.github.io/

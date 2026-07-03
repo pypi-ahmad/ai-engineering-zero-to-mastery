@@ -68,6 +68,36 @@ Reflection should produce reusable interview stories:
 - trade-off decisions under constraints,
 - failure recovery and adaptation.
 
+## Final Presentation Rubric
+
+Use a scoring rubric to evaluate presentation quality objectively:
+
+| Dimension | Weight | What “strong” looks like |
+|---|---:|---|
+| Problem clarity and relevance | 15% | clear stakeholders, baseline pain, bounded scope |
+| Technical narrative | 20% | architecture decisions and trade-offs are concrete |
+| Evidence and metrics | 20% | baseline vs final with limitations acknowledged |
+| Operational readiness | 15% | deployment, monitoring, rollback discussed |
+| Communication quality | 15% | concise structure, audience-appropriate language |
+| Reflection and next steps | 15% | honest lessons + realistic roadmap |
+
+## Reflection Scorecard Template
+
+After presentation, score each area from 1-5:
+
+1. Problem framing quality.
+2. Technical correctness and depth.
+3. Evaluation rigor.
+4. Reliability/safety readiness.
+5. Communication and stakeholder alignment.
+6. Career relevance of final artefacts.
+
+Convert scores into an action plan:
+
+- `<=3`: immediate improvement backlog.
+- `4`: acceptable with targeted polish.
+- `5`: portfolio-ready evidence.
+
 ## Next Steps After Capstone
 
 ### Path 1: Portfolio Asset

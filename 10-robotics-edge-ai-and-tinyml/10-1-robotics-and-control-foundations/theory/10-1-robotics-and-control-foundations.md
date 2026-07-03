@@ -150,48 +150,47 @@ Exception:
 1. **Explain feedback control in simple terms.**  
 It measures error between target and actual state, then continuously corrects actuator commands to reduce that error.
 
-2. **Forward vs inverse kinematics?**  
-Forward maps joint values to pose; inverse computes joint values needed for a desired pose.
+2. **Q: Forward vs inverse kinematics?**
+   **A:** Forward maps joint values to pose; inverse computes joint values needed for a desired pose.
 
-3. **What is a degree of freedom?**  
-An independent variable needed to define robot configuration.
+3. **Q: What is a degree of freedom?**
+   **A:** An independent variable needed to define robot configuration.
 
-4. **What does the P term do in PID?**  
-Applies correction proportional to current error.
+4. **Q: What does the P term do in PID?**
+   **A:** Applies correction proportional to current error.
 
-5. **What does the I term do?**  
-Removes persistent steady-state error by accumulating past error.
+5. **Q: What does the I term do?**
+   **A:** Removes persistent steady-state error by accumulating past error.
 
-6. **What does the D term do?**  
-Predicts error trend and adds damping to reduce overshoot.
+6. **Q: What does the D term do?**
+   **A:** Predicts error trend and adds damping to reduce overshoot.
 
-7. **What is overshoot?**  
-When the response exceeds target before settling.
+7. **Q: What is overshoot?**
+   **A:** When the response exceeds target before settling.
 
-8. **Why can integral windup be harmful?**  
-Integral term accumulates excessively under saturation, causing instability/slow recovery.
+8. **Q: Why can integral windup be harmful?**
+   **A:** Integral term accumulates excessively under saturation, causing instability/slow recovery.
 
-9. **How does AI integrate into robotics?**  
-AI supports perception/planning, while control executes safe physical behavior.
+9. **Q: How does AI integrate into robotics?**
+   **A:** AI supports perception/planning, while control executes safe physical behavior.
 
-10. **On-board vs cloud control trade-off?**  
-On-board gives low latency and reliability; cloud gives scale and heavier compute.
+10. **Q: On-board vs cloud control trade-off?**
+   **A:** On-board gives low latency and reliability; cloud gives scale and heavier compute.
 
-11. **Why is latency critical in robotics?**  
-Control loops must update quickly to remain stable and safe.
+11. **Q: Why is latency critical in robotics?**
+   **A:** Control loops must update quickly to remain stable and safe.
 
-12. **What is C-space used for?**  
-Planning feasible motion while respecting robot geometry and joint limits.
+12. **Q: What is C-space used for?**
+   **A:** Planning feasible motion while respecting robot geometry and joint limits.
 
-13. **Why are models alone insufficient in robotics?**  
-Real hardware has disturbances, noise, and nonideal dynamics requiring feedback.
+13. **Q: Why are models alone insufficient in robotics?**
+   **A:** Real hardware has disturbances, noise, and nonideal dynamics requiring feedback.
 
-14. **What is a common robotics deployment failure?**  
-Good simulation performance but poor real-world robustness due to unmodeled dynamics.
+14. **Q: What is a common robotics deployment failure?**
+   **A:** Good simulation performance but poor real-world robustness due to unmodeled dynamics.
 
-15. **When should simple controllers be preferred over learned policies?**  
-In tightly bounded repetitive tasks where interpretability and certification matter.
-
+15. **Q: When should simple controllers be preferred over learned policies?**
+   **A:** In tightly bounded repetitive tasks where interpretability and certification matter.
 # References
 
 - Modern Robotics specialization (mechanics/planning/control outcomes): https://www.coursera.org/specializations/modernrobotics

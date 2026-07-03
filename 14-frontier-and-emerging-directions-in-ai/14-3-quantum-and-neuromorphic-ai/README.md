@@ -2,7 +2,7 @@
 
 Provides a practical conceptual map of hardware-centric AI frontiers: quantum ML and neuromorphic computing.
 
-## Start here
+## Start Here
 
 1. Theory: `theory/14-3-quantum-and-neuromorphic-ai.md`
 2. Notebook: `notebooks/14-3-frontier-technologies-concept-map.ipynb`

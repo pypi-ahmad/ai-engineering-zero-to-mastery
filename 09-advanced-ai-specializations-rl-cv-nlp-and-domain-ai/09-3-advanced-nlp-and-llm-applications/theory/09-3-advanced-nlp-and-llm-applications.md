@@ -156,45 +156,44 @@ MLM masks tokens and trains the model to predict them using bidirectional contex
 2. **Explain causal language modeling.**  
 CLM predicts the next token given previous tokens in autoregressive generation.
 
-3. **Fine-tuning vs instruction tuning?**  
-Fine-tuning targets specific tasks; instruction tuning improves broad instruction-following behavior.
+3. **Q: Fine-tuning vs instruction tuning?**
+   **A:** Fine-tuning targets specific tasks; instruction tuning improves broad instruction-following behavior.
 
-4. **What is RLHF and why use it?**  
-Alignment method using human preference signals to steer outputs toward helpful/safe behavior.
+4. **Q: What is RLHF and why use it?**
+   **A:** Alignment method using human preference signals to steer outputs toward helpful/safe behavior.
 
-5. **What makes seq2seq suitable for summarization?**  
-It naturally maps long input text to shorter target output with conditional generation.
+5. **Q: What makes seq2seq suitable for summarization?**
+   **A:** It naturally maps long input text to shorter target output with conditional generation.
 
-6. **Why do LLM apps need structured outputs?**  
-To improve reliability and integration with downstream services.
+6. **Q: Why do LLM apps need structured outputs?**
+   **A:** To improve reliability and integration with downstream services.
 
-7. **How do you evaluate LLM applications?**  
-Combine automatic metrics, human evaluation, groundedness checks, and operational metrics.
+7. **Q: How do you evaluate LLM applications?**
+   **A:** Combine automatic metrics, human evaluation, groundedness checks, and operational metrics.
 
-8. **What is hallucination in LLM systems?**  
-Confident generation of unsupported or incorrect content.
+8. **Q: What is hallucination in LLM systems?**
+   **A:** Confident generation of unsupported or incorrect content.
 
-9. **How can retrieval reduce hallucinations?**  
-It injects relevant evidence that constrains generation.
+9. **Q: How can retrieval reduce hallucinations?**
+   **A:** It injects relevant evidence that constrains generation.
 
-10. **What is a jailbreak?**  
-Prompt strategy attempting to bypass safety constraints.
+10. **Q: What is a jailbreak?**
+   **A:** Prompt strategy attempting to bypass safety constraints.
 
-11. **How do you test robustness?**  
-Adversarial prompts, perturbation tests, and scenario-based stress suites.
+11. **Q: How do you test robustness?**
+   **A:** Adversarial prompts, perturbation tests, and scenario-based stress suites.
 
-12. **When would a smaller model be preferred?**  
-When latency/cost/privacy constraints dominate and task complexity is moderate.
+12. **Q: When would a smaller model be preferred?**
+   **A:** When latency/cost/privacy constraints dominate and task complexity is moderate.
 
-13. **How do you handle sensitive data in LLM pipelines?**  
-PII redaction, scoped access, logging controls, and policy-compliant retention.
+13. **Q: How do you handle sensitive data in LLM pipelines?**
+   **A:** PII redaction, scoped access, logging controls, and policy-compliant retention.
 
-14. **Why is human evaluation still important?**  
-Automated metrics often miss usefulness, nuance, and domain correctness.
+14. **Q: Why is human evaluation still important?**
+   **A:** Automated metrics often miss usefulness, nuance, and domain correctness.
 
-15. **How do you productionize a summarization system?**  
-Add chunking/retrieval, structured templates, evaluation harnesses, and monitoring + fallback.
-
+15. **Q: How do you productionize a summarization system?**
+   **A:** Add chunking/retrieval, structured templates, evaluation harnesses, and monitoring + fallback.
 # References
 
 - Stanford CS224N: https://web.stanford.edu/class/cs224n/

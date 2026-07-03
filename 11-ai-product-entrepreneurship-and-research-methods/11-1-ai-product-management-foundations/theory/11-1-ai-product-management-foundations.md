@@ -229,66 +229,65 @@ Principle:
 
 # Interview Questions & Answers
 
-1. **How do you decide whether a feature should use AI at all?**  
-By testing problem frequency, data signal, expected impact, operational cost, and error tolerance; if simpler rules solve it well, avoid AI.
+1. **Q: How do you decide whether a feature should use AI at all?**
+   **A:** By testing problem frequency, data signal, expected impact, operational cost, and error tolerance; if simpler rules solve it well, avoid AI.
 
 2. **Describe an AI feature lifecycle.**  
 Discovery, definition, data/model build, integration, staged launch, post-launch monitoring, and iterative improvement.
 
-3. **What is unique about AI PRDs?**  
-They include data assumptions, model behavior requirements, uncertainty handling, and safety/rollback criteria.
+3. **Q: What is unique about AI PRDs?**
+   **A:** They include data assumptions, model behavior requirements, uncertainty handling, and safety/rollback criteria.
 
-4. **How do offline and online metrics differ?**  
-Offline metrics evaluate model quality on historical data; online metrics evaluate user/business impact in production.
+4. **Q: How do offline and online metrics differ?**
+   **A:** Offline metrics evaluate model quality on historical data; online metrics evaluate user/business impact in production.
 
-5. **Why can high offline AUC still fail in production?**  
-Distribution shift, UX mismatch, poor calibration, and weak integration can break user outcomes.
+5. **Q: Why can high offline AUC still fail in production?**
+   **A:** Distribution shift, UX mismatch, poor calibration, and weak integration can break user outcomes.
 
-6. **How would you define success for a GenAI assistant?**  
-Task success, latency, cost per task, user trust, escalation rate, and groundedness quality.
+6. **Q: How would you define success for a GenAI assistant?**
+   **A:** Task success, latency, cost per task, user trust, escalation rate, and groundedness quality.
 
-7. **What is a good launch strategy for AI features?**  
-Shadow mode, limited beta, guardrails, monitoring dashboards, and rollback triggers.
+7. **Q: What is a good launch strategy for AI features?**
+   **A:** Shadow mode, limited beta, guardrails, monitoring dashboards, and rollback triggers.
 
-8. **How do you prioritize AI roadmap items?**  
-Use impact, confidence, cost, risk, and dependency scoring with explicit uncertainty.
+8. **Q: How do you prioritize AI roadmap items?**
+   **A:** Use impact, confidence, cost, risk, and dependency scoring with explicit uncertainty.
 
-9. **What are common AI PM anti-patterns?**  
-Hype-driven use cases, missing baseline comparisons, and shipping without observability.
+9. **Q: What are common AI PM anti-patterns?**
+   **A:** Hype-driven use cases, missing baseline comparisons, and shipping without observability.
 
-10. **How do you manage non-deterministic outputs in UX?**  
-Add confidence signaling, user controls, recoverable workflows, and deterministic fallbacks.
+10. **Q: How do you manage non-deterministic outputs in UX?**
+   **A:** Add confidence signaling, user controls, recoverable workflows, and deterministic fallbacks.
 
-11. **When do you choose RAG over fine-tuning?**  
-When knowledge changes frequently, citations are needed, and lower update friction matters.
+11. **Q: When do you choose RAG over fine-tuning?**
+   **A:** When knowledge changes frequently, citations are needed, and lower update friction matters.
 
-12. **How do you handle hallucination risk?**  
-Grounding constraints, retrieval checks, abstention behavior, and domain-specific evaluation suites.
+12. **Q: How do you handle hallucination risk?**
+   **A:** Grounding constraints, retrieval checks, abstention behavior, and domain-specific evaluation suites.
 
-13. **What role does governance play in AI PM?**  
-It sets boundaries for fairness, privacy, accountability, auditability, and incident response.
+13. **Q: What role does governance play in AI PM?**
+   **A:** It sets boundaries for fairness, privacy, accountability, auditability, and incident response.
 
-14. **How do you align ML and business teams?**  
-Translate business goals into metric trees and define shared launch criteria.
+14. **Q: How do you align ML and business teams?**
+   **A:** Translate business goals into metric trees and define shared launch criteria.
 
-15. **What is a metric tree?**  
-A hierarchy linking top-line goals to leading indicators and model-level diagnostics.
+15. **Q: What is a metric tree?**
+   **A:** A hierarchy linking top-line goals to leading indicators and model-level diagnostics.
 
-16. **How do you reason about AI cost?**  
-Estimate training, inference, operations, and human-review costs versus incremental value.
+16. **Q: How do you reason about AI cost?**
+   **A:** Estimate training, inference, operations, and human-review costs versus incremental value.
 
-17. **How do you evaluate agent workflows?**  
-Measure task completion, tool accuracy, latency, failure recovery, and safety incidents.
+17. **Q: How do you evaluate agent workflows?**
+   **A:** Measure task completion, tool accuracy, latency, failure recovery, and safety incidents.
 
-18. **What is a practical rollback trigger?**  
-A sustained degradation threshold on critical KPIs plus elevated incident rate.
+18. **Q: What is a practical rollback trigger?**
+   **A:** A sustained degradation threshold on critical KPIs plus elevated incident rate.
 
-19. **How do you prevent silent quality drift?**  
-Continuous monitoring, canary checks, benchmark refreshes, and scheduled audits.
+19. **Q: How do you prevent silent quality drift?**
+   **A:** Continuous monitoring, canary checks, benchmark refreshes, and scheduled audits.
 
-20. **What makes an AI PM strong?**  
-Ability to connect model uncertainty with product decisions, not just feature ideation.
-
+20. **Q: What makes an AI PM strong?**
+   **A:** Ability to connect model uncertainty with product decisions, not just feature ideation.
 # References
 
 - Udacity AI Product Manager Nanodegree (updated Jan 27, 2026): https://www.udacity.com/course/ai-product-manager-nanodegree--nd088

@@ -153,48 +153,47 @@ Mitigations:
 1. **Describe a Responsible AI process for an ML system.**  
 Define risk tier, document data/model assumptions, run fairness/safety tests, set human oversight, deploy with monitoring, and maintain incident response.
 
-2. **How would you test a model for fairness?**  
-Compare outcome and error rates across protected groups, investigate disparities, and evaluate mitigation impact on overall utility.
+2. **Q: How would you test a model for fairness?**
+   **A:** Compare outcome and error rates across protected groups, investigate disparities, and evaluate mitigation impact on overall utility.
 
-3. **What does human-in-the-loop mean?**  
-Humans have meaningful authority to review, override, or halt AI decisions in high-impact contexts.
+3. **Q: What does human-in-the-loop mean?**
+   **A:** Humans have meaningful authority to review, override, or halt AI decisions in high-impact contexts.
 
-4. **Why is data provenance critical?**  
-It supports traceability, legal defensibility, and root-cause analysis when harms occur.
+4. **Q: Why is data provenance critical?**
+   **A:** It supports traceability, legal defensibility, and root-cause analysis when harms occur.
 
-5. **How is Responsible AI related to MLOps?**  
-Responsible AI overlays risk and ethics controls on top of MLOps delivery pipelines.
+5. **Q: How is Responsible AI related to MLOps?**
+   **A:** Responsible AI overlays risk and ethics controls on top of MLOps delivery pipelines.
 
-6. **What is a model card/system card used for?**  
-Communicating intended use, limitations, performance, and risk controls to stakeholders.
+6. **Q: What is a model card/system card used for?**
+   **A:** Communicating intended use, limitations, performance, and risk controls to stakeholders.
 
-7. **How do you prioritize mitigations?**  
-By harm severity, impacted population size, and reversibility of potential damage.
+7. **Q: How do you prioritize mitigations?**
+   **A:** By harm severity, impacted population size, and reversibility of potential damage.
 
-8. **What if fairness and business KPIs conflict?**  
-Escalate trade-offs explicitly, test alternatives, and align with policy/risk thresholds before launch.
+8. **Q: What if fairness and business KPIs conflict?**
+   **A:** Escalate trade-offs explicitly, test alternatives, and align with policy/risk thresholds before launch.
 
-9. **What should be logged for auditability?**  
-Inputs, model version, outputs, confidence, key features, decision path, and operator actions.
+9. **Q: What should be logged for auditability?**
+   **A:** Inputs, model version, outputs, confidence, key features, decision path, and operator actions.
 
-10. **How do you handle low-confidence predictions?**  
-Route to fallback logic or manual review rather than forcing automated action.
+10. **Q: How do you handle low-confidence predictions?**
+   **A:** Route to fallback logic or manual review rather than forcing automated action.
 
-11. **What is the role of a Responsible AI committee?**  
-Independent review, policy enforcement, and escalation governance for high-risk deployments.
+11. **Q: What is the role of a Responsible AI committee?**
+   **A:** Independent review, policy enforcement, and escalation governance for high-risk deployments.
 
-12. **How often should high-risk systems be reviewed?**  
-At launch and on a recurring cadence (for example monthly/quarterly), plus incident-triggered reviews.
+12. **Q: How often should high-risk systems be reviewed?**
+   **A:** At launch and on a recurring cadence (for example monthly/quarterly), plus incident-triggered reviews.
 
-13. **How do LLM systems change Responsible AI practice?**  
-They add prompt injection, hallucination, and content safety risks requiring stronger runtime controls.
+13. **Q: How do LLM systems change Responsible AI practice?**
+   **A:** They add prompt injection, hallucination, and content safety risks requiring stronger runtime controls.
 
-14. **What evidence proves Responsible AI is working?**  
-Improved subgroup outcomes, lower incident rates, fast remediation, and complete audit records.
+14. **Q: What evidence proves Responsible AI is working?**
+   **A:** Improved subgroup outcomes, lower incident rates, fast remediation, and complete audit records.
 
-15. **What is a common implementation failure?**  
-Writing principles without integrating checks into CI/CD, deployment gates, and monitoring.
-
+15. **Q: What is a common implementation failure?**
+   **A:** Writing principles without integrating checks into CI/CD, deployment gates, and monitoring.
 # References
 
 - NIST AI Risk Management Framework: https://www.nist.gov/itl/ai-risk-management-framework

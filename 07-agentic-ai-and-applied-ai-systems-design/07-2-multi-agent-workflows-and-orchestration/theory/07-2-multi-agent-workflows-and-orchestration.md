@@ -180,51 +180,50 @@ Risk:
 
 # Interview Questions & Answers
 
-1. **Why use multi-agent systems instead of one agent?**  
-To partition complexity across specialized roles and optionally parallelize work.
+1. **Q: Why use multi-agent systems instead of one agent?**
+   **A:** To partition complexity across specialized roles and optionally parallelize work.
 
 2. **Explain coordinator-worker pattern.**  
 A central controller decomposes tasks, delegates to workers, then aggregates results.
 
-3. **What is orchestration vs choreography?**  
-Orchestration uses central control; choreography relies on decentralized event coordination.
+3. **Q: What is orchestration vs choreography?**
+   **A:** Orchestration uses central control; choreography relies on decentralized event coordination.
 
-4. **What is a deadlock in multi-agent workflows?**  
-A state where agents wait indefinitely on each other and no progress is possible.
+4. **Q: What is a deadlock in multi-agent workflows?**
+   **A:** A state where agents wait indefinitely on each other and no progress is possible.
 
-5. **How do you prevent oscillation loops?**  
-Set iteration limits, convergence criteria, and explicit termination rules.
+5. **Q: How do you prevent oscillation loops?**
+   **A:** Set iteration limits, convergence criteria, and explicit termination rules.
 
-6. **When is hierarchical design useful?**  
-Large workflows with multiple domains where one coordinator becomes a bottleneck.
+6. **Q: When is hierarchical design useful?**
+   **A:** Large workflows with multiple domains where one coordinator becomes a bottleneck.
 
-7. **How do you resolve conflicting agent outputs?**  
-Use arbitration rules, confidence scoring, or a dedicated verifier agent.
+7. **Q: How do you resolve conflicting agent outputs?**
+   **A:** Use arbitration rules, confidence scoring, or a dedicated verifier agent.
 
-8. **What metrics matter most?**  
-Task success, cost, latency, override rate, and policy compliance.
+8. **Q: What metrics matter most?**
+   **A:** Task success, cost, latency, override rate, and policy compliance.
 
-9. **How does LangGraph help reliability?**  
-It models state transitions explicitly with controlled routing and checkpoints.
+9. **Q: How does LangGraph help reliability?**
+   **A:** It models state transitions explicitly with controlled routing and checkpoints.
 
-10. **What does CrewAI emphasize?**  
-Role-based collaborative crews and flow orchestration primitives.
+10. **Q: What does CrewAI emphasize?**
+   **A:** Role-based collaborative crews and flow orchestration primitives.
 
-11. **What does AutoGen emphasize?**  
-Asynchronous, event-driven, distributed agent communication.
+11. **Q: What does AutoGen emphasize?**
+   **A:** Asynchronous, event-driven, distributed agent communication.
 
-12. **What is tool thrashing?**  
-Repeated unnecessary tool calls caused by weak planner policies.
+12. **Q: What is tool thrashing?**
+   **A:** Repeated unnecessary tool calls caused by weak planner policies.
 
-13. **How do you secure multi-agent systems?**  
-Least-privilege tools, signed actions, policy checks, and auditable traces.
+13. **Q: How do you secure multi-agent systems?**
+   **A:** Least-privilege tools, signed actions, policy checks, and auditable traces.
 
-14. **Can multi-agent improve quality?**  
-Yes, especially with critic-verifier loops, but only if coordination overhead is controlled.
+14. **Q: Can multi-agent improve quality?**
+   **A:** Yes, especially with critic-verifier loops, but only if coordination overhead is controlled.
 
-15. **When should you simplify architecture?**  
-If reliability gains are small relative to operational complexity and cost.
-
+15. **Q: When should you simplify architecture?**
+   **A:** If reliability gains are small relative to operational complexity and cost.
 # References
 
 - LangGraph docs: https://docs.langchain.com/oss/python/langgraph/graph-api and https://docs.langchain.com/oss/python/langgraph/workflows-agents

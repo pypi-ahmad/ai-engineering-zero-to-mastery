@@ -81,6 +81,29 @@ Strong evidence:
 
 - adaptation of generic AI methods to real domain requirements.
 
+## Portfolio and Capstone Scoring Rubric
+
+Use this rubric before publishing or applying:
+
+| Dimension | Weight | Evidence |
+|---|---:|---|
+| Technical depth | 25% | meaningful architecture + verified implementation |
+| Product/business framing | 20% | clear user/job-to-be-done + KPI logic |
+| Evaluation rigor | 20% | baseline comparison + limits/failure analysis |
+| Delivery quality | 15% | reproducible docs, demo, and maintainable repo structure |
+| Responsible AI/governance | 10% | risk controls, constraints, and mitigation notes |
+| Communication quality | 10% | concise narrative for technical and non-technical audiences |
+
+## Curriculum-to-Capstone Mapping
+
+Show explicit coverage of prior lessons in your final narrative:
+
+- `Foundations + Math + Classical ML`: baseline design and metric discipline.
+- `Deep Learning + GenAI`: advanced model/system choices.
+- `MLOps/LLMOps`: deployment, monitoring, operations.
+- `Agentic + Safety`: orchestration and guardrail design.
+- `Ethics/Policy/Product/Research`: decision quality and external impact framing.
+
 # Documentation & Publication
 
 ## Artifact stack
@@ -121,6 +144,23 @@ Collect three classes of feedback:
 - operator/developer incident logs.
 
 Then map findings into prioritized next experiments.
+
+# Presentation and Reflection Playbook
+
+For each flagship capstone, prepare two presentation variants:
+
+- `Technical`: architecture, evaluation, reliability, and limitations.
+- `Business/PM`: user pain, KPI movement, rollout economics, and risks.
+
+Reflection template:
+
+1. Most valuable decision made.
+2. Most expensive mistake and recovery.
+3. Evidence still missing.
+4. Next 30-day improvement plan.
+
+Interview packaging tip:
+Convert reflection outputs into STAR-style narratives with measurable outcomes.
 
 # Business / Research Case Studies & Exceptions
 
@@ -174,66 +214,65 @@ Exception:
 
 # Interview Questions & Answers
 
-1. **How would you describe your strongest AI project?**  
-Using problem, constraints, architecture, metrics, outcomes, and next-step improvements.
+1. **Q: How would you describe your strongest AI project?**
+   **A:** Using problem, constraints, architecture, metrics, outcomes, and next-step improvements.
 
-2. **How do you choose capstone scope?**  
-Constrain by one core user/job and one measurable success metric.
+2. **Q: How do you choose capstone scope?**
+   **A:** Constrain by one core user/job and one measurable success metric.
 
-3. **What makes a portfolio project high-signal?**  
-Clear decisions, reproducible evidence, and realistic trade-off handling.
+3. **Q: What makes a portfolio project high-signal?**
+   **A:** Clear decisions, reproducible evidence, and realistic trade-off handling.
 
-4. **How do you balance breadth vs depth in portfolio design?**  
-Maintain one deep flagship project and supporting projects that show range.
+4. **Q: How do you balance breadth vs depth in portfolio design?**
+   **A:** Maintain one deep flagship project and supporting projects that show range.
 
-5. **What should be in a project README for AI roles?**  
-Problem, approach, architecture, evaluation, limitations, run instructions, and future work.
+5. **Q: What should be in a project README for AI roles?**
+   **A:** Problem, approach, architecture, evaluation, limitations, run instructions, and future work.
 
-6. **How do you prove impact if data is limited?**  
-Use pilot proxies, baseline comparisons, and explicit assumptions.
+6. **Q: How do you prove impact if data is limited?**
+   **A:** Use pilot proxies, baseline comparisons, and explicit assumptions.
 
-7. **How do you discuss project failures in interviews?**  
-Explain hypothesis, what failed, diagnostic process, and design changes made.
+7. **Q: How do you discuss project failures in interviews?**
+   **A:** Explain hypothesis, what failed, diagnostic process, and design changes made.
 
-8. **What is a strong capstone launch plan?**  
-Narrow pilot, predefined success criteria, safety checks, and rollback protocol.
+8. **Q: What is a strong capstone launch plan?**
+   **A:** Narrow pilot, predefined success criteria, safety checks, and rollback protocol.
 
-9. **How do you show product thinking as an engineer?**  
-Link technical choices to user outcomes and business constraints.
+9. **Q: How do you show product thinking as an engineer?**
+   **A:** Link technical choices to user outcomes and business constraints.
 
-10. **How do you show research rigor in a portfolio?**  
-Publish baseline parity, ablations, variance, and reproducibility details.
+10. **Q: How do you show research rigor in a portfolio?**
+   **A:** Publish baseline parity, ablations, variance, and reproducibility details.
 
-11. **How do you make capstone results credible?**  
-Document methodology, control confounders, and include limitations.
+11. **Q: How do you make capstone results credible?**
+   **A:** Document methodology, control confounders, and include limitations.
 
-12. **What are common portfolio mistakes?**  
-Too many shallow demos, no metric evidence, and missing operational considerations.
+12. **Q: What are common portfolio mistakes?**
+   **A:** Too many shallow demos, no metric evidence, and missing operational considerations.
 
-13. **How do you prioritize next iterations post-launch?**  
-Rank by user impact, risk reduction, and learning value.
+13. **Q: How do you prioritize next iterations post-launch?**
+   **A:** Rank by user impact, risk reduction, and learning value.
 
-14. **How do you adapt one project for PM vs engineering interviews?**  
-PM version emphasizes outcomes/roadmap; engineering version emphasizes architecture/reliability.
+14. **Q: How do you adapt one project for PM vs engineering interviews?**
+   **A:** PM version emphasizes outcomes/roadmap; engineering version emphasizes architecture/reliability.
 
-15. **How do you choose publication format?**  
-Match audience: practitioners need deployment clarity; researchers need methodological rigor.
+15. **Q: How do you choose publication format?**
+   **A:** Match audience: practitioners need deployment clarity; researchers need methodological rigor.
 
-16. **How do you include responsible AI in portfolio narratives?**  
-Show risk controls, fairness checks, governance decisions, and incident handling.
+16. **Q: How do you include responsible AI in portfolio narratives?**
+   **A:** Show risk controls, fairness checks, governance decisions, and incident handling.
 
-17. **What metrics should you show for GenAI projects?**  
-Task success, groundedness, latency, cost per task, and escalation rate.
+17. **Q: What metrics should you show for GenAI projects?**
+   **A:** Task success, groundedness, latency, cost per task, and escalation rate.
 
-18. **How do you justify model choices in interviews?**  
-Compare alternatives by performance, cost, reliability, and maintainability.
+18. **Q: How do you justify model choices in interviews?**
+   **A:** Compare alternatives by performance, cost, reliability, and maintainability.
 
-19. **What if your project had no real users?**  
-Use realistic simulation, expert review, and explicit validation limits.
+19. **Q: What if your project had no real users?**
+   **A:** Use realistic simulation, expert review, and explicit validation limits.
 
-20. **What would you do next with a finished capstone?**  
-Harden data/monitoring, run a controlled pilot, and expand scope only after evidence.
-
+20. **Q: What would you do next with a finished capstone?**
+   **A:** Harden data/monitoring, run a controlled pilot, and expand scope only after evidence.
 # References
 
 - Udacity AI Product Manager Nanodegree (project and PM framing): https://www.udacity.com/course/ai-product-manager-nanodegree--nd088
@@ -242,3 +281,10 @@ Harden data/monitoring, run a controlled pilot, and expand scope only after evid
 - UCSB Applied AI and Innovation (portfolio/team studio framing): https://www.professional.ucsb.edu/certificate-applied-ai-and-innovation
 - JHU AI for Entrepreneurs (startup-oriented AI course context): https://ep.jhu.edu/courses/635674-ai-for-entrepreneurs/
 - DeepMind Science overview for AI-for-science positioning: https://deepmind.google/science/
+
+## Bridge to Next Lesson
+
+- **What you now know:** You now know how to convert technical work into product artifacts, startup narratives, research-quality experiments, and publishable portfolio assets.
+- **Why the next lesson follows:** The next lesson follows because scaling these outcomes in practice depends on strong operational systems for deployment, telemetry, and governance.
+- **What you'll build next:** You will build advanced MLOps/LLMOps operations patterns for production architecture, observability, evaluation loops, and compliance-oriented controls.
+

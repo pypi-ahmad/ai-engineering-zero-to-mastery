@@ -2,7 +2,7 @@
 
 Covers hybrid neural-symbolic system design and practical causal reasoning concepts for robust, explainable AI beyond pure pattern matching.
 
-## Start here
+## Start Here
 
 1. Theory: `theory/14-1-neurosymbolic-ai-and-causal-reasoning.md`
 2. Notebook: `notebooks/14-1-neurosymbolic-and-causal-reasoning-toy-demo.ipynb`

@@ -260,54 +260,53 @@ Business impact:
 1. **Define MLOps and contrast it with DevOps.**  
    MLOps extends DevOps for ML systems by adding data/model lifecycle controls such as experiment tracking, retraining, and drift monitoring.
 
-2. **Why is MLOps necessary if the model already has good offline metrics?**  
-   Offline metrics do not guarantee production reliability under evolving data, latency constraints, and operational failures.
+2. **Q: Why is MLOps necessary if the model already has good offline metrics?**
+   **A:** Offline metrics do not guarantee production reliability under evolving data, latency constraints, and operational failures.
 
-3. **What is continuous training (CT)?**  
-   Automated retraining and validation workflow triggered by time, data updates, or performance/drift signals.
+3. **Q: What is continuous training (CT)?**
+   **A:** Automated retraining and validation workflow triggered by time, data updates, or performance/drift signals.
 
-4. **What is continuous monitoring (CM)?**  
-   Ongoing measurement of data quality, drift, model behavior, and service health with alerting and response loops.
+4. **Q: What is continuous monitoring (CM)?**
+   **A:** Ongoing measurement of data quality, drift, model behavior, and service health with alerting and response loops.
 
-5. **What does “ML systems are more than ML code” mean?**  
-   Most production complexity lies in data pipelines, testing, deployment infra, governance, and monitoring, not model math alone.
+5. **Q: What does “ML systems are more than ML code” mean?**
+   **A:** Most production complexity lies in data pipelines, testing, deployment infra, governance, and monitoring, not model math alone.
 
-6. **How do you make experiments reproducible?**  
-   Track code version, data snapshot, params, environment, metrics, and artifacts per run.
+6. **Q: How do you make experiments reproducible?**
+   **A:** Track code version, data snapshot, params, environment, metrics, and artifacts per run.
 
-7. **What are key CI checks for ML repos?**  
-   Unit tests, schema checks, training smoke tests, lint/type checks, and dependency vulnerability scans.
+7. **Q: What are key CI checks for ML repos?**
+   **A:** Unit tests, schema checks, training smoke tests, lint/type checks, and dependency vulnerability scans.
 
-8. **How do you prevent bad retrained models from deploying?**  
-   Use validation gates: metric thresholds, fairness/calibration checks, and staged rollout with rollback triggers.
+8. **Q: How do you prevent bad retrained models from deploying?**
+   **A:** Use validation gates: metric thresholds, fairness/calibration checks, and staged rollout with rollback triggers.
 
-9. **What is a model registry used for?**  
-   Versioning models, tracking lineage and approval states, and managing promotion lifecycle.
+9. **Q: What is a model registry used for?**
+   **A:** Versioning models, tracking lineage and approval states, and managing promotion lifecycle.
 
-10. **How do MLOps team structures vary?**  
-   Embedded, centralized platform, or hybrid; choice depends on org size and model portfolio.
+10. **Q: How do MLOps team structures vary?**
+   **A:** Embedded, centralized platform, or hybrid; choice depends on org size and model portfolio.
 
-11. **What is model rot?**  
-   Performance decay over time due to data drift, concept drift, or environment changes.
+11. **Q: What is model rot?**
+   **A:** Performance decay over time due to data drift, concept drift, or environment changes.
 
-12. **What is a practical maturity roadmap?**  
-   Manual notebooks -> scripted pipelines -> automated CI/CD/CT/CM with governance gates.
+12. **Q: What is a practical maturity roadmap?**
+   **A:** Manual notebooks -> scripted pipelines -> automated CI/CD/CT/CM with governance gates.
 
-13. **When would you avoid full automation?**  
-   Low-risk, low-frequency models where manual controls are cheaper and sufficient.
+13. **Q: When would you avoid full automation?**
+   **A:** Low-risk, low-frequency models where manual controls are cheaper and sufficient.
 
-14. **How do you align MLOps with business outcomes?**  
-   Tie model monitoring to product KPIs and define SLOs for both model quality and service reliability.
+14. **Q: How do you align MLOps with business outcomes?**
+   **A:** Tie model monitoring to product KPIs and define SLOs for both model quality and service reliability.
 
-15. **What is the biggest anti-pattern in early ML teams?**  
-   Treating deployment as a one-time handoff instead of a continuously operated system.
+15. **Q: What is the biggest anti-pattern in early ML teams?**
+   **A:** Treating deployment as a one-time handoff instead of a continuously operated system.
 
-16. **How does DataOps connect to MLOps?**  
-   Reliable, validated data pipelines are prerequisites for stable training and inference behavior.
+16. **Q: How does DataOps connect to MLOps?**
+   **A:** Reliable, validated data pipelines are prerequisites for stable training and inference behavior.
 
-17. **Why should rollback be designed upfront?**  
-   Production incidents are inevitable; rollback speed and safety determine user/business impact.
-
+17. **Q: Why should rollback be designed upfront?**
+   **A:** Production incidents are inevitable; rollback speed and safety determine user/business impact.
 # Further Reading & Sources
 
 - Google Cloud MLOps lifecycle and levels: https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning

@@ -98,6 +98,50 @@ Documentation should answer:
 - what evidence supports quality,
 - what remains risky or future work.
 
+## Implementation Playbook (Execution Template)
+
+Use this execution pattern to keep work auditable:
+
+1. Create baseline branch and reproducible config.
+2. Implement smallest runnable vertical slice.
+3. Add evaluation + failure analysis before adding features.
+4. Add deployment interface (API or batch runner).
+5. Add telemetry and incident notes.
+6. Freeze release candidate and write final docs.
+
+Sprint-level template:
+
+```text
+Sprint goal:
+Planned deliverables:
+Verification commands:
+Metrics to report:
+Risks discovered:
+Rollback/fallback decision:
+```
+
+## Deployment and Documentation Rubric
+
+| Dimension | Weight | Minimum Bar |
+|---|---:|---|
+| Data and pipeline integrity | 20% | schema checks + reproducible transforms |
+| Modeling and evaluation quality | 25% | baseline + improvements + error analysis |
+| Deployment readiness | 20% | runnable serving/batch artifact with versioning |
+| Observability and operations | 15% | latency/error metrics + monitoring notes |
+| Documentation quality | 20% | setup, architecture, results, limitations, runbook |
+
+Use this rubric with the capstone-grade rubric from 15.1 to ensure both technical depth and delivery discipline.
+
+## Capstone Evidence Package (Interview Ready)
+
+By the end of execution, you should have:
+
+- architecture diagram and rationale,
+- metrics table (baseline vs final),
+- short demo script,
+- reproducibility commands,
+- known-risks log with mitigation status.
+
 ## Capstone Case Studies & Exceptions
 
 ### Case 1: Deep Learning Capstone to Product Prototype

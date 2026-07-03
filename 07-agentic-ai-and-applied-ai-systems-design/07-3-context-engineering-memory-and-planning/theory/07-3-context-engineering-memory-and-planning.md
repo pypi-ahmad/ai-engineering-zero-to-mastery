@@ -170,51 +170,50 @@ Planning must be dynamic; static plans fail in changing environments.
 
 # Interview Questions & Answers
 
-1. **What is context engineering?**  
-Designing what information enters model context, when, and in what format to improve outcomes.
+1. **Q: What is context engineering?**
+   **A:** Designing what information enters model context, when, and in what format to improve outcomes.
 
-2. **Why is context engineering critical for agents?**  
-Agents run over many steps; poor context management leads to drift and failure.
+2. **Q: Why is context engineering critical for agents?**
+   **A:** Agents run over many steps; poor context management leads to drift and failure.
 
-3. **Difference between short-term and long-term memory?**  
-Short-term is session-local; long-term persists across sessions.
+3. **Q: Difference between short-term and long-term memory?**
+   **A:** Short-term is session-local; long-term persists across sessions.
 
-4. **What is episodic memory in AI agents?**  
-Memory of specific past events/interactions.
+4. **Q: What is episodic memory in AI agents?**
+   **A:** Memory of specific past events/interactions.
 
-5. **What is semantic memory?**  
-Generalized stable facts extracted from past interactions.
+5. **Q: What is semantic memory?**
+   **A:** Generalized stable facts extracted from past interactions.
 
-6. **How does RAG support memory?**  
-It retrieves relevant external knowledge on demand instead of storing everything in prompt.
+6. **Q: How does RAG support memory?**
+   **A:** It retrieves relevant external knowledge on demand instead of storing everything in prompt.
 
-7. **What causes context overflow?**  
-Unbounded chat history, large retrieval payloads, and verbose tool outputs.
+7. **Q: What causes context overflow?**
+   **A:** Unbounded chat history, large retrieval payloads, and verbose tool outputs.
 
-8. **How do you handle long conversations?**  
-Summarize old turns, keep recent critical turns, and retrieve details as needed.
+8. **Q: How do you handle long conversations?**
+   **A:** Summarize old turns, keep recent critical turns, and retrieve details as needed.
 
-9. **What is re-planning?**  
-Updating task plan during execution based on new evidence or failures.
+9. **Q: What is re-planning?**
+   **A:** Updating task plan during execution based on new evidence or failures.
 
-10. **When should planning be deterministic?**  
-For safety-critical or compliance-critical substeps.
+10. **Q: When should planning be deterministic?**
+   **A:** For safety-critical or compliance-critical substeps.
 
-11. **How do you validate summary quality?**  
-Compare summary facts with source excerpts and run consistency checks.
+11. **Q: How do you validate summary quality?**
+   **A:** Compare summary facts with source excerpts and run consistency checks.
 
-12. **What metrics assess memory quality?**  
-Recall accuracy, contradiction rate, and retrieval precision.
+12. **Q: What metrics assess memory quality?**
+   **A:** Recall accuracy, contradiction rate, and retrieval precision.
 
-13. **What is label leakage analog in context systems?**  
-Injecting future or unauthorized information that should not be used for decision-making.
+13. **Q: What is label leakage analog in context systems?**
+   **A:** Injecting future or unauthorized information that should not be used for decision-making.
 
-14. **How can routing improve context quality?**  
-By sending tasks to specialized prompts/tools and limiting irrelevant context.
+14. **Q: How can routing improve context quality?**
+   **A:** By sending tasks to specialized prompts/tools and limiting irrelevant context.
 
-15. **What is the main production risk in context-heavy systems?**  
-Silent degradation due to stale summaries and weak retrieval relevance.
-
+15. **Q: What is the main production risk in context-heavy systems?**
+   **A:** Silent degradation due to stale summaries and weak retrieval relevance.
 # References
 
 - Anthropic context engineering guide: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents

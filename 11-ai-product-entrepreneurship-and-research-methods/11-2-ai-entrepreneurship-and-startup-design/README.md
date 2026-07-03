@@ -2,7 +2,7 @@
 
 Covers opportunity discovery, AI-native business models, startup design constraints, growth loops, and responsible innovation.
 
-## Start here
+## Start Here
 
 1. Theory: `theory/11-2-ai-entrepreneurship-and-startup-design.md`
 2. Notebook: `notebooks/11-2-ai-entrepreneurship-and-startup-design-idea-lab.ipynb`

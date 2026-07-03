@@ -2,7 +2,7 @@
 
 Focuses on sustained growth strategies: reading systems, community participation, open-source contribution, and research/product pathways.
 
-## Start here
+## Start Here
 
 1. Theory: `theory/14-4-lifelong-learning-reading-groups-and-contributing.md`
 2. Notebook: `notebooks/14-4-personal-ai-learning-roadmap-planner.ipynb`

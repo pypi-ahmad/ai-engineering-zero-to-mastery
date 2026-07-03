@@ -184,66 +184,65 @@ Lesson:
 
 # Interview Questions & Answers
 
-1. **How do you design a fair comparison between two models?**  
-Use the same data split, preprocessing, compute budget assumptions, and repeated runs with variance reporting.
+1. **Q: How do you design a fair comparison between two models?**
+   **A:** Use the same data split, preprocessing, compute budget assumptions, and repeated runs with variance reporting.
 
-2. **What is an ablation study?**  
-A controlled experiment that removes or alters components to isolate their contribution.
+2. **Q: What is an ablation study?**
+   **A:** A controlled experiment that removes or alters components to isolate their contribution.
 
-3. **Why are strong baselines important?**  
-Without them, improvements may reflect weak competition rather than true progress.
+3. **Q: Why are strong baselines important?**
+   **A:** Without them, improvements may reflect weak competition rather than true progress.
 
-4. **What is data leakage in ML experiments?**  
-Any use of future or target-correlated information unavailable at inference time.
+4. **Q: What is data leakage in ML experiments?**
+   **A:** Any use of future or target-correlated information unavailable at inference time.
 
-5. **How do you read AI papers efficiently?**  
-Start with claims, then verify data, baselines, metrics, ablations, and reproducibility artifacts.
+5. **Q: How do you read AI papers efficiently?**
+   **A:** Start with claims, then verify data, baselines, metrics, ablations, and reproducibility artifacts.
 
-6. **What makes a hypothesis testable?**  
-Clear measurable prediction, predefined protocol, and falsifiable outcome criteria.
+6. **Q: What makes a hypothesis testable?**
+   **A:** Clear measurable prediction, predefined protocol, and falsifiable outcome criteria.
 
-7. **What is simulation-based inference in simple terms?**  
-Use simulations to generate synthetic observations and infer which hidden parameters best explain real observations.
+7. **Q: What is simulation-based inference in simple terms?**
+   **A:** Use simulations to generate synthetic observations and infer which hidden parameters best explain real observations.
 
-8. **How do you report uncertainty in experiments?**  
-Provide confidence intervals, variance across seeds, and calibration or uncertainty estimates.
+8. **Q: How do you report uncertainty in experiments?**
+   **A:** Provide confidence intervals, variance across seeds, and calibration or uncertainty estimates.
 
-9. **Why do benchmark gains fail in production?**  
-Dataset mismatch, hidden leakage, and untested operational constraints.
+9. **Q: Why do benchmark gains fail in production?**
+   **A:** Dataset mismatch, hidden leakage, and untested operational constraints.
 
-10. **What are signs of cherry-picking?**  
-Selective tasks, selective metrics, and missing negative results.
+10. **Q: What are signs of cherry-picking?**
+   **A:** Selective tasks, selective metrics, and missing negative results.
 
-11. **How do you improve reproducibility?**  
-Version data/code, disclose training recipe, publish environment details, and provide scripts.
+11. **Q: How do you improve reproducibility?**
+   **A:** Version data/code, disclose training recipe, publish environment details, and provide scripts.
 
-12. **What is external validity?**  
-Whether results generalize beyond the specific benchmark setup.
+12. **Q: What is external validity?**
+   **A:** Whether results generalize beyond the specific benchmark setup.
 
-13. **How does AI-for-science differ from generic ML?**  
-It must respect domain laws, experimental constraints, and scientific interpretation needs.
+13. **Q: How does AI-for-science differ from generic ML?**
+   **A:** It must respect domain laws, experimental constraints, and scientific interpretation needs.
 
-14. **Why are domain-informed models useful?**  
-They reduce sample complexity and improve physically plausible predictions.
+14. **Q: Why are domain-informed models useful?**
+   **A:** They reduce sample complexity and improve physically plausible predictions.
 
-15. **How do you evaluate LLMs in research workflows?**  
-Assess factual grounding, citation integrity, and effect on human research productivity.
+15. **Q: How do you evaluate LLMs in research workflows?**
+   **A:** Assess factual grounding, citation integrity, and effect on human research productivity.
 
-16. **What are ethical risks in AI-for-science?**  
-Misleading claims, opaque methods, dual-use misuse, and inequitable access to tools.
+16. **Q: What are ethical risks in AI-for-science?**
+   **A:** Misleading claims, opaque methods, dual-use misuse, and inequitable access to tools.
 
-17. **What is a robust evaluation protocol?**  
-Predefined metrics, fixed splits, baseline parity, ablations, and stress tests.
+17. **Q: What is a robust evaluation protocol?**
+   **A:** Predefined metrics, fixed splits, baseline parity, ablations, and stress tests.
 
-18. **How do you avoid p-hacking in ML research?**  
-Pre-register key decisions, limit exploratory post-hoc claims, and report full experiment logs.
+18. **Q: How do you avoid p-hacking in ML research?**
+   **A:** Pre-register key decisions, limit exploratory post-hoc claims, and report full experiment logs.
 
-19. **What should a paper discussion section include?**  
-Limitations, failure cases, assumptions, and transfer constraints.
+19. **Q: What should a paper discussion section include?**
+   **A:** Limitations, failure cases, assumptions, and transfer constraints.
 
-20. **Why should engineers learn research methods?**  
-It improves decision quality in model selection, product experiments, and system reliability claims.
-
+20. **Q: Why should engineers learn research methods?**
+   **A:** It improves decision quality in model selection, product experiments, and system reliability claims.
 # References
 
 - Jönköping University TRIS22 course context: https://ju.se/en/study-at-ju/courses/programme-course/research-methods-for-intelligent-systems-spring-2026-t1002.html

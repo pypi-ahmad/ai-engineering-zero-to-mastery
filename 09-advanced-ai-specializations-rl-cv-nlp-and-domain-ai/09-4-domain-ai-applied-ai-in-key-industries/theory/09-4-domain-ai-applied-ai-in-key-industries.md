@@ -211,51 +211,50 @@ Constraints:
 
 # Interview Questions & Answers
 
-1. **Why does domain specialization matter in AI engineering?**  
-Because constraints, data properties, and failure costs differ sharply by domain.
+1. **Q: Why does domain specialization matter in AI engineering?**
+   **A:** Because constraints, data properties, and failure costs differ sharply by domain.
 
-2. **How would you design an AI system for healthcare triage?**  
-Use multimodal patient data, calibrated risk outputs, clinician oversight, and outcome monitoring.
+2. **Q: How would you design an AI system for healthcare triage?**
+   **A:** Use multimodal patient data, calibrated risk outputs, clinician oversight, and outcome monitoring.
 
-3. **What are key constraints in finance AI?**  
-Regulatory compliance, auditability, fairness, and low-latency risk decisions.
+3. **Q: What are key constraints in finance AI?**
+   **A:** Regulatory compliance, auditability, fairness, and low-latency risk decisions.
 
-4. **What makes smart city AI difficult?**  
-Heterogeneous infrastructure, privacy concerns, and multi-stakeholder governance.
+4. **Q: What makes smart city AI difficult?**
+   **A:** Heterogeneous infrastructure, privacy concerns, and multi-stakeholder governance.
 
-5. **What is sim-to-real gap in robotics?**  
-Difference between simulation-trained behavior and real-world performance.
+5. **Q: What is sim-to-real gap in robotics?**
+   **A:** Difference between simulation-trained behavior and real-world performance.
 
-6. **How do you evaluate domain AI beyond model accuracy?**  
-Use domain KPIs, operational reliability, safety incidents, and stakeholder acceptance.
+6. **Q: How do you evaluate domain AI beyond model accuracy?**
+   **A:** Use domain KPIs, operational reliability, safety incidents, and stakeholder acceptance.
 
-7. **Why use hybrid rule+ML systems in finance?**  
-Rules provide hard guarantees while ML handles complex patterns.
+7. **Q: Why use hybrid rule+ML systems in finance?**
+   **A:** Rules provide hard guarantees while ML handles complex patterns.
 
-8. **How do you reduce alert fatigue in clinical AI systems?**  
-Calibrate thresholds, prioritize precision in specific workflows, and route alerts by severity.
+8. **Q: How do you reduce alert fatigue in clinical AI systems?**
+   **A:** Calibrate thresholds, prioritize precision in specific workflows, and route alerts by severity.
 
-9. **When is RL appropriate in operations?**  
-When decisions have long-term sequential impact and environment feedback is rich.
+9. **Q: When is RL appropriate in operations?**
+   **A:** When decisions have long-term sequential impact and environment feedback is rich.
 
-10. **What is a common deployment failure in domain AI?**  
-Ignoring process integration and human workflow constraints.
+10. **Q: What is a common deployment failure in domain AI?**
+   **A:** Ignoring process integration and human workflow constraints.
 
-11. **How do you adapt a generic AI skillset to a new industry?**  
-Learn domain objectives, regulations, data semantics, and operational failure costs.
+11. **Q: How do you adapt a generic AI skillset to a new industry?**
+   **A:** Learn domain objectives, regulations, data semantics, and operational failure costs.
 
-12. **Why is explainability more important in some domains?**  
-Because decisions affect rights, safety, or legal accountability.
+12. **Q: Why is explainability more important in some domains?**
+   **A:** Because decisions affect rights, safety, or legal accountability.
 
-13. **How do you structure cross-functional collaboration?**  
-Pair engineers with domain experts, legal/compliance, and operations owners from day one.
+13. **Q: How do you structure cross-functional collaboration?**
+   **A:** Pair engineers with domain experts, legal/compliance, and operations owners from day one.
 
-14. **What is a practical first step in domain AI discovery?**  
-Map decision points, baseline process metrics, and pain points before choosing models.
+14. **Q: What is a practical first step in domain AI discovery?**
+   **A:** Map decision points, baseline process metrics, and pain points before choosing models.
 
-15. **How do you move from pilot to production in regulated domains?**  
-Use phased rollout, robust documentation, monitoring, and incident playbooks with clear ownership.
-
+15. **Q: How do you move from pilot to production in regulated domains?**
+   **A:** Use phased rollout, robust documentation, monitoring, and incident playbooks with clear ownership.
 # References
 
 - Stanford AI-assisted healthcare course: https://cs337.stanford.edu/
@@ -265,3 +264,9 @@ Use phased rollout, robust documentation, monitoring, and incident playbooks wit
 - MIT Sloan AI in Finance syllabus PDF: https://mitsloan.mit.edu/sites/default/files/inline-files/2025JA_15.S52_AI%20in%20Finance_Syllabus.pdf
 - Smart city AI/traffic and predictive maintenance examples: https://arxiv.org/abs/2502.02821 and https://arxiv.org/abs/2306.04653
 - Robotics specialization example (curriculum framing): https://www.iams.uni-stuttgart.de/teaching/specialization-area-robotics/
+
+## Bridge to Next Lesson
+
+- **What you now know:** You now understand how AI design changes across regulated and high-stakes industries, where relationship structure often matters as much as model accuracy.
+- **Why the next lesson follows:** The next lesson introduces graph AI and GraphRAG because many enterprise problems require multi-hop relational retrieval, provenance paths, and knowledge-graph reasoning.
+- **What you'll build next:** You will build hybrid graph + vector retrieval flows, then move to speech/voice systems before transitioning to robotics and edge AI in Lesson 10.

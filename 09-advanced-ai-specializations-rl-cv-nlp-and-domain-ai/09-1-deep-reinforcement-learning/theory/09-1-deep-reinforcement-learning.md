@@ -247,48 +247,47 @@ Risks:
 1. **Define an MDP.**  
 An MDP is a tuple $(S,A,P,R,\gamma)$ describing states, actions, transition dynamics, rewards, and discounting for sequential decision-making.
 
-2. **What is the objective of RL?**  
-To learn a policy maximizing expected cumulative discounted reward.
+2. **Q: What is the objective of RL?**
+   **A:** To learn a policy maximizing expected cumulative discounted reward.
 
 3. **Explain Q-learning update rule.**  
 It bootstraps Q-value toward immediate reward plus discounted max future Q from next state.
 
-4. **Difference between Q-learning and SARSA?**  
-Q-learning is off-policy (greedy target), SARSA is on-policy (uses actual next action).
+4. **Q: Difference between Q-learning and SARSA?**
+   **A:** Q-learning is off-policy (greedy target), SARSA is on-policy (uses actual next action).
 
-5. **What is exploration vs exploitation?**  
-Exploration gathers new information; exploitation uses current best-known action.
+5. **Q: What is exploration vs exploitation?**
+   **A:** Exploration gathers new information; exploitation uses current best-known action.
 
-6. **Why is deep RL unstable?**  
-Bootstrapping, non-stationary targets, correlated data, and sensitive hyperparameters.
+6. **Q: Why is deep RL unstable?**
+   **A:** Bootstrapping, non-stationary targets, correlated data, and sensitive hyperparameters.
 
-7. **Why use replay buffers?**  
-To decorrelate samples and reuse past experiences for better sample efficiency.
+7. **Q: Why use replay buffers?**
+   **A:** To decorrelate samples and reuse past experiences for better sample efficiency.
 
-8. **Why use target networks in DQN?**  
-To stabilize learning by slowing movement of bootstrapped targets.
+8. **Q: Why use target networks in DQN?**
+   **A:** To stabilize learning by slowing movement of bootstrapped targets.
 
-9. **What is policy gradient?**  
-A class of methods that directly optimize policy parameters via gradient ascent on expected return.
+9. **Q: What is policy gradient?**
+   **A:** A class of methods that directly optimize policy parameters via gradient ascent on expected return.
 
-10. **When would PPO be preferred in practice?**  
-For robust policy optimization with stable clipped updates in continuous or complex control.
+10. **Q: When would PPO be preferred in practice?**
+   **A:** For robust policy optimization with stable clipped updates in continuous or complex control.
 
-11. **What is sample inefficiency in RL?**  
-Needing very many environment interactions to learn useful behavior.
+11. **Q: What is sample inefficiency in RL?**
+   **A:** Needing very many environment interactions to learn useful behavior.
 
-12. **How do you evaluate an RL agent?**  
-Average return across multiple seeds, robustness tests, and constraint violation rates.
+12. **Q: How do you evaluate an RL agent?**
+   **A:** Average return across multiple seeds, robustness tests, and constraint violation rates.
 
-13. **What are sparse rewards?**  
-Reward signals that occur infrequently, making credit assignment difficult.
+13. **Q: What are sparse rewards?**
+   **A:** Reward signals that occur infrequently, making credit assignment difficult.
 
-14. **When is a bandit better than RL?**  
-When each action has mostly immediate effects and little long-term state dependence.
+14. **Q: When is a bandit better than RL?**
+   **A:** When each action has mostly immediate effects and little long-term state dependence.
 
-15. **How do you move RL from simulation to production?**  
-Use high-fidelity simulators, domain randomization, conservative rollout, and human/constraint guardrails.
-
+15. **Q: How do you move RL from simulation to production?**
+   **A:** Use high-fidelity simulators, domain randomization, conservative rollout, and human/constraint guardrails.
 # References
 
 - UC Berkeley CS285: https://www2.eecs.berkeley.edu/Courses/CS285/ and https://rail.eecs.berkeley.edu/deeprlcourse-fa23/

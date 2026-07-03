@@ -11,5 +11,7 @@ This sub-lesson provides project templates that integrate sensing, edge inferenc
 
 - Capstone project briefs and scope boundaries
 - Architecture templates for robotics + IoT
+- Implementation roadmap for simulation-to-deployment progression
 - Evaluation and monitoring plans
+- Weighted rubric for grading and self-assessment
 - Interview storytelling for embedded AI projects

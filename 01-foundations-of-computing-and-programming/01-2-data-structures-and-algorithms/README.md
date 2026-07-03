@@ -1,8 +1,15 @@
 # 1.2 Data Structures & Algorithms
 
-This lesson covers practical data structures and algorithms for AI engineering workflows:
-- Lists, stacks, queues, and hash maps.
-- Search and sorting algorithms with timing intuition.
-- Basic graph traversal using DFS and BFS.
+This lesson covers the core data structures and algorithmic thinking patterns needed for efficient AI/ML code.
 
-Use the notebook for hands-on code and the theory notes for conceptual + interview preparation.
+## Learning Goals
+- Choose appropriate structures (lists, dicts, sets, stacks, queues, graphs).
+- Analyze time/space complexity for common operations.
+- Implement and reason about search, sorting, BFS/DFS, and traversal trade-offs.
+
+## How It Fits in the Curriculum
+Efficient data handling and algorithmic reasoning are critical for feature engineering, retrieval systems, and scalable AI pipelines in later modules.
+
+## Start Here
+1. Theory: `theory/01-2-data-structures-and-algorithms.md`
+2. Notebook: `notebooks/01-2-data-structures-and-algorithms.ipynb`

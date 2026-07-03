@@ -166,48 +166,47 @@ Mitigation pattern:
 1. **Explain the risk-category idea in the EU AI Act.**  
 It classifies AI systems by potential harm level, with stricter obligations for higher-risk uses.
 
-2. **What does accountability mean in AI systems?**  
-Clear ownership of decisions, monitoring, incident handling, and remediation.
+2. **Q: What does accountability mean in AI systems?**
+   **A:** Clear ownership of decisions, monitoring, incident handling, and remediation.
 
-3. **Why should engineers care about policy?**  
-Because policy determines technical requirements, launch constraints, and liability exposure.
+3. **Q: Why should engineers care about policy?**
+   **A:** Because policy determines technical requirements, launch constraints, and liability exposure.
 
-4. **How do GDPR principles influence model development?**  
-They constrain data collection, usage scope, retention, and transparency obligations.
+4. **Q: How do GDPR principles influence model development?**
+   **A:** They constrain data collection, usage scope, retention, and transparency obligations.
 
-5. **What is an AI impact assessment?**  
-A structured process to identify, evaluate, and mitigate potential harms before and after deployment.
+5. **Q: What is an AI impact assessment?**
+   **A:** A structured process to identify, evaluate, and mitigate potential harms before and after deployment.
 
-6. **How would you collaborate with legal/compliance teams?**  
-Use shared risk artifacts, recurring reviews, and explicit sign-off milestones tied to delivery gates.
+6. **Q: How would you collaborate with legal/compliance teams?**
+   **A:** Use shared risk artifacts, recurring reviews, and explicit sign-off milestones tied to delivery gates.
 
-7. **What does transparency require in practice?**  
-Clear disclosure of AI usage, purpose, limitations, and user rights.
+7. **Q: What does transparency require in practice?**
+   **A:** Clear disclosure of AI usage, purpose, limitations, and user rights.
 
-8. **Why is documentation critical for governance?**  
-It creates auditable evidence for decisions, controls, and compliance posture.
+8. **Q: Why is documentation critical for governance?**
+   **A:** It creates auditable evidence for decisions, controls, and compliance posture.
 
-9. **Can a technically good model still be legally risky?**  
-Yes, if it lacks required controls, documentation, or lawful data basis.
+9. **Q: Can a technically good model still be legally risky?**
+   **A:** Yes, if it lacks required controls, documentation, or lawful data basis.
 
-10. **What is post-market monitoring?**  
-Ongoing surveillance of system behavior, incidents, and risk after deployment.
+10. **Q: What is post-market monitoring?**
+   **A:** Ongoing surveillance of system behavior, incidents, and risk after deployment.
 
-11. **How do you operationalize policy in CI/CD?**  
-Add deployment gates that enforce required metadata, approvals, and risk checks.
+11. **Q: How do you operationalize policy in CI/CD?**
+   **A:** Add deployment gates that enforce required metadata, approvals, and risk checks.
 
-12. **What is a common governance anti-pattern?**  
-Treating compliance as final paperwork instead of built-in engineering requirements.
+12. **Q: What is a common governance anti-pattern?**
+   **A:** Treating compliance as final paperwork instead of built-in engineering requirements.
 
-13. **How do global differences affect AI products?**  
-Teams must design configurable controls and region-aware compliance workflows.
+13. **Q: How do global differences affect AI products?**
+   **A:** Teams must design configurable controls and region-aware compliance workflows.
 
-14. **When is human oversight mandatory?**  
-Typically for high-impact decisions where errors can significantly harm rights or safety.
+14. **Q: When is human oversight mandatory?**
+   **A:** Typically for high-impact decisions where errors can significantly harm rights or safety.
 
-15. **How do you handle regulatory ambiguity?**  
-Adopt conservative controls, document assumptions, and maintain legal review cadence as guidance evolves.
-
+15. **Q: How do you handle regulatory ambiguity?**
+   **A:** Adopt conservative controls, document assumptions, and maintain legal review cadence as guidance evolves.
 # References
 
 - EU AI Act overview (European Commission): https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai

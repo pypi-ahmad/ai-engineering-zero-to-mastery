@@ -77,6 +77,28 @@ Required architectural elements:
 5. Logging/tracing and error handling.
 6. Evaluation harness.
 
+# Implementation Plan Template
+
+Use a phased implementation sequence:
+
+1. Problem and KPI baseline definition.
+2. Retrieval/data layer setup.
+3. Minimal orchestrator and single-agent workflow.
+4. Multi-step agent/tool integration.
+5. Evaluation harness + observability instrumentation.
+6. Guardrails, fallback paths, and final demo hardening.
+
+Execution template:
+
+```text
+Phase:
+Objective:
+Deliverable:
+Verification evidence:
+Known risk:
+Fallback path:
+```
+
 # Evaluation Criteria
 
 ## Technical Robustness
@@ -106,6 +128,16 @@ $$
 \text{Net Impact} = \text{Time Saved} + \text{Risk Reduced} + \text{Revenue Lift} - \text{Run Cost}
 $$
 
+# Capstone Scoring Rubric
+
+| Dimension | Weight | Evidence |
+|---|---:|---|
+| Scope and problem framing | 15% | clear target workflow + measurable KPI |
+| Architecture and implementation | 25% | coherent orchestration, tools, and traceability |
+| Evaluation and reliability | 20% | groundedness, success metrics, failure analysis |
+| Operations and governance | 20% | monitoring, policy checks, rollback/fallback |
+| Communication and reflection | 20% | demo clarity, limitations, and iteration roadmap |
+
 # Guidance & Pitfalls
 
 ## Scope Management Rules
@@ -128,6 +160,30 @@ $$
 3. Add agent loop and tool calls.
 4. Add eval and monitoring hooks.
 5. Add risk controls and human review.
+
+# Documentation, Presentation, and Reflection
+
+Minimum capstone documentation set:
+
+- architecture note with component boundaries,
+- runbook (setup, run, verify),
+- evaluation report (baseline vs final),
+- operations notes (alerts, fallback, incident handling),
+- short demo script for final presentation.
+
+Presentation structure:
+
+1. Problem and user workflow.
+2. Why this architecture was chosen.
+3. Measured outcomes (quality, latency, cost, safety).
+4. Failure modes and mitigations.
+5. Next iteration roadmap.
+
+Reflection prompts:
+
+- Which agent/tool boundary caused most reliability issues?
+- What metric changed your architecture decision?
+- What would be simplified in V2 to reduce operational risk?
 
 # Business Case Studies & Exceptions
 
@@ -173,48 +229,47 @@ Fix:
 1. **Describe your capstone in one minute.**  
 State problem, architecture, measurable outcomes, and risk controls.
 
-2. **How did you choose the use case?**  
-Based on high-frequency pain point, measurable baseline, and feasible data/tool access.
+2. **Q: How did you choose the use case?**
+   **A:** Based on high-frequency pain point, measurable baseline, and feasible data/tool access.
 
-3. **How did you evaluate model quality?**  
-Task success, groundedness, latency, and cost metrics.
+3. **Q: How did you evaluate model quality?**
+   **A:** Task success, groundedness, latency, and cost metrics.
 
-4. **What failures did you observe?**  
-Retrieval misses, ambiguous prompts, tool timeouts, and mitigation strategy.
+4. **Q: What failures did you observe?**
+   **A:** Retrieval misses, ambiguous prompts, tool timeouts, and mitigation strategy.
 
-5. **How did you handle monitoring?**  
-Added structured traces, step-level metrics, and alert thresholds.
+5. **Q: How did you handle monitoring?**
+   **A:** Added structured traces, step-level metrics, and alert thresholds.
 
-6. **How did you manage safety?**  
-Policy checks, blocked actions, and human-in-the-loop for high-risk tasks.
+6. **Q: How did you manage safety?**
+   **A:** Policy checks, blocked actions, and human-in-the-loop for high-risk tasks.
 
-7. **Why not fine-tune instead of RAG?**  
-RAG gave faster update cycle and easier source grounding for dynamic knowledge.
+7. **Q: Why not fine-tune instead of RAG?**
+   **A:** RAG gave faster update cycle and easier source grounding for dynamic knowledge.
 
-8. **How did you control costs?**  
-Caching, model routing, context budgeting, and bounded retries.
+8. **Q: How did you control costs?**
+   **A:** Caching, model routing, context budgeting, and bounded retries.
 
-9. **What was your rollback plan?**  
-Fallback to deterministic baseline workflow and disable risky actions.
+9. **Q: What was your rollback plan?**
+   **A:** Fallback to deterministic baseline workflow and disable risky actions.
 
-10. **If you had two more months, what would you improve?**  
-Better eval harness, richer monitoring, and broader scenario coverage.
+10. **Q: If you had two more months, what would you improve?**
+   **A:** Better eval harness, richer monitoring, and broader scenario coverage.
 
-11. **How did you split deterministic vs LLM logic?**  
-Deterministic for policy/transactions, LLM for interpretation and synthesis.
+11. **Q: How did you split deterministic vs LLM logic?**
+   **A:** Deterministic for policy/transactions, LLM for interpretation and synthesis.
 
-12. **What did you learn about productionizing agents?**  
-Observability and failure design matter as much as prompt quality.
+12. **Q: What did you learn about productionizing agents?**
+   **A:** Observability and failure design matter as much as prompt quality.
 
-13. **How did you justify ROI?**  
-Compared baseline process time/error against post-deployment metrics.
+13. **Q: How did you justify ROI?**
+   **A:** Compared baseline process time/error against post-deployment metrics.
 
-14. **What made your system trustworthy?**  
-Citations, explicit uncertainty handling, and review gates.
+14. **Q: What made your system trustworthy?**
+   **A:** Citations, explicit uncertainty handling, and review gates.
 
-15. **What architecture trade-off did you choose?**  
-Simpler orchestrator initially, added complexity only where metrics demanded it.
-
+15. **Q: What architecture trade-off did you choose?**
+   **A:** Simpler orchestrator initially, added complexity only where metrics demanded it.
 # References
 
 - NYU Stern Foundations of AI Agents: https://aiagents.stern.nyu.edu/
@@ -223,3 +278,10 @@ Simpler orchestrator initially, added complexity only where metrics demanded it.
 - Google Cloud GenAI architecture guides: https://docs.cloud.google.com/architecture/genai-overview?hl=en
 - Google enterprise GenAI/MLOps blueprint: https://docs.cloud.google.com/architecture/blueprints/genai-mlops-blueprint
 - IITM Pravartak Applied AI with Context Engineering: https://futurense.com/iitm-pravartak/advanced-engineering-program-in-applied-ai-ml-with-context-engineering
+
+## Bridge to Next Lesson
+
+- **What you now know:** You now know how to design and implement agentic systems that combine planning, tools, retrieval, and production-aware architecture decisions.
+- **Why the next lesson follows:** The next lesson follows because high-capability agent systems require explicit ethical, legal, and policy grounding to be deployable in real settings.
+- **What you'll build next:** You will build responsible AI practice across ethics frameworks, governance constraints, and career-ready communication of risk trade-offs.
+

@@ -2,7 +2,7 @@
 
 Introduces LLMOps lifecycle stages, architecture decisions, cost/performance optimization, and evaluation methods for LLM-based systems.
 
-## Start here
+## Start Here
 
 1. Theory: `theory/12-3-llmops-foundations-and-llm-lifecycle.md`
 2. Notebook: `notebooks/12-3-llmops-foundations-lifecycle-architecture.ipynb`

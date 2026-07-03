@@ -1,15 +1,37 @@
-# 2. Mathematics for AI
+# Lesson 2: Mathematics for AI
 
-This section connects mathematical rigor to ML engineering decisions.
+This module connects math theory to applied ML decisions, so formulas translate into model behavior, diagnostics, and better engineering judgment.
 
-## How This Section Is Structured
-Each subtopic has:
-- Theory chapter with formulas + intuition + interview prep
-- Notebook with runnable numerical demos
-- Business case studies and failure modes
+## Learning Goals
+- Build intuition for vectors, gradients, probability, and statistical inference.
+- Connect mathematical concepts to real model training and evaluation workflows.
+- Avoid common mistakes in metrics, uncertainty, and bias/variance trade-offs.
 
-## Subtopics
-- 2.1 Linear Algebra
-- 2.2 Calculus & Optimization
-- 2.3 Probability & Statistics
-- 2.4 Applied Stats for ML
+## How It Fits in the Curriculum
+Lesson 2 provides the mathematical backbone for classical ML (Lesson 3), deep learning (Lesson 4), and later optimization/evaluation topics.
+
+## Sub-lessons
+- `2.1 Linear Algebra`
+- `2.2 Calculus & Optimization`
+- `2.3 Probability & Statistics`
+- `2.4 Applied Stats for ML`
+
+## Artifacts
+Each sub-lesson includes:
+- `theory/` chapter markdown (+ PDF export)
+- `notebooks/` runnable numerical demos and exercises
+
+## How to Use This Lesson
+1. Work through `2.1 -> 2.4` in order.
+2. Pair formulas in `theory/` with numeric intuition in notebooks.
+3. Validate understanding through metric and error-analysis exercises.
+
+## Bridge from Lesson 1
+**Why this follows:** coding fluency is now paired with mathematical reasoning so implementation choices become principled.
+
+**You should already know:** clean Python workflows, algorithm basics, and testing discipline.
+
+**What you will do next:** convert math concepts into model training and evaluation intuition.
+
+## Bridge to Lesson 3
+Lesson 3 applies these mathematical tools to full classical ML workflows: supervised/unsupervised modeling and rigorous model selection.

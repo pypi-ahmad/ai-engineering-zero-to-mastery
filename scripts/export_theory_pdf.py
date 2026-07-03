@@ -49,7 +49,7 @@ def main() -> int:
     parser.add_argument(
         "--all",
         action="store_true",
-        help="Export all markdown files under */*/theory/ and */*/ */theory/ patterns for lessons 1-3.",
+        help="Export all lesson theory markdown files for lessons 1-5.",
     )
     args = parser.parse_args()
 
@@ -58,6 +58,7 @@ def main() -> int:
             Path("01-foundations-of-computing-and-programming"),
             Path("02-mathematics-for-ai"),
             Path("03-classical-machine-learning"),
+            Path("05-generative-models-and-llms"),
         ]
         md_files: list[Path] = []
         for root in theory_roots:

@@ -221,57 +221,56 @@ Mitigations:
 
 # Interview Questions & Answers
 
-1. **What is LLMOps?**  
-   The practice of building, deploying, monitoring, and governing LLM applications in production, including prompts, retrieval, tools, and agent behavior.
+1. **Q: What is LLMOps?**
+   **A:** The practice of building, deploying, monitoring, and governing LLM applications in production, including prompts, retrieval, tools, and agent behavior.
 
-2. **How is LLMOps different from MLOps?**  
-   LLMOps adds prompt/context management, token economics, RAG/tool orchestration, and runtime safety controls.
+2. **Q: How is LLMOps different from MLOps?**
+   **A:** LLMOps adds prompt/context management, token economics, RAG/tool orchestration, and runtime safety controls.
 
 3. **Explain RAG vs fine-tuning in production.**  
    RAG injects external knowledge at inference for freshness; fine-tuning adapts model behavior/skills and is slower to update for factual changes.
 
-4. **What are core RAG components?**  
-   Ingestion/chunking, embeddings/index, retrieval/reranking, prompt augmentation, generation.
+4. **Q: What are core RAG components?**
+   **A:** Ingestion/chunking, embeddings/index, retrieval/reranking, prompt augmentation, generation.
 
-5. **How do you monitor an LLM application?**  
-   Track groundedness, retrieval quality, latency, token cost, tool-call errors, and user feedback outcomes.
+5. **Q: How do you monitor an LLM application?**
+   **A:** Track groundedness, retrieval quality, latency, token cost, tool-call errors, and user feedback outcomes.
 
-6. **What causes cost explosions in LLM systems?**  
-   Prompt bloat, unnecessary long outputs, repeated retries, and uncontrolled agent loops.
+6. **Q: What causes cost explosions in LLM systems?**
+   **A:** Prompt bloat, unnecessary long outputs, repeated retries, and uncontrolled agent loops.
 
-7. **What is groundedness?**  
-   Degree to which response claims are supported by retrieved evidence/context.
+7. **Q: What is groundedness?**
+   **A:** Degree to which response claims are supported by retrieved evidence/context.
 
-8. **Why is retrieval observability critical?**  
-   Poor retrieval silently degrades answer quality even if model service appears healthy.
+8. **Q: Why is retrieval observability critical?**
+   **A:** Poor retrieval silently degrades answer quality even if model service appears healthy.
 
-9. **How do you control agent risk?**  
-   Tool schemas, permission boundaries, approval checkpoints, and action audit logs.
+9. **Q: How do you control agent risk?**
+   **A:** Tool schemas, permission boundaries, approval checkpoints, and action audit logs.
 
-10. **When should a system abstain?**  
-   When retrieval confidence is low, evidence conflicts, or policy constraints are unmet.
+10. **Q: When should a system abstain?**
+   **A:** When retrieval confidence is low, evidence conflicts, or policy constraints are unmet.
 
-11. **What should be versioned in LLMOps?**  
-   Prompt templates, model IDs, retrieval settings, index versions, tool interfaces, and evaluation datasets.
+11. **Q: What should be versioned in LLMOps?**
+   **A:** Prompt templates, model IDs, retrieval settings, index versions, tool interfaces, and evaluation datasets.
 
-12. **What is a good LLMOps promotion workflow?**  
-   Offline eval -> shadow/limited rollout -> monitor quality/cost/safety -> staged promotion.
+12. **Q: What is a good LLMOps promotion workflow?**
+   **A:** Offline eval -> shadow/limited rollout -> monitor quality/cost/safety -> staged promotion.
 
-13. **How do you reduce latency in RAG systems?**  
-   Optimize retrieval pipeline, cache frequent queries, cap context size, and tune model size/decoding.
+13. **Q: How do you reduce latency in RAG systems?**
+   **A:** Optimize retrieval pipeline, cache frequent queries, cap context size, and tune model size/decoding.
 
-14. **What metrics are specific to tool-using agents?**  
-   tool success rate, invalid call rate, retry count, step depth, and task completion fidelity.
+14. **Q: What metrics are specific to tool-using agents?**
+   **A:** tool success rate, invalid call rate, retry count, step depth, and task completion fidelity.
 
-15. **How do you debug a sudden quality drop?**  
-   Trace request path across prompt changes, retriever behavior, index freshness, and model version changes.
+15. **Q: How do you debug a sudden quality drop?**
+   **A:** Trace request path across prompt changes, retriever behavior, index freshness, and model version changes.
 
-16. **Can a high-quality base model compensate for weak retrieval?**  
-   Only partially; in factual tasks weak retrieval typically dominates failure patterns.
+16. **Q: Can a high-quality base model compensate for weak retrieval?**
+   **A:** Only partially; in factual tasks weak retrieval typically dominates failure patterns.
 
-17. **What is the highest-risk anti-pattern in LLMOps?**  
-   Shipping an agent with broad tool access and no policy enforcement or observability.
-
+17. **Q: What is the highest-risk anti-pattern in LLMOps?**
+   **A:** Shipping an agent with broad tool access and no policy enforcement or observability.
 # Further Reading & Sources
 
 - Duke/Coursera LLMOps specialization: https://www.coursera.org/specializations/large-language-model-operations
@@ -284,3 +283,10 @@ Mitigations:
 - NVIDIA RAG evaluation docs: https://docs.nvidia.com/rag/latest/evaluate.html
 - NVIDIA RAG metrics: https://docs.nvidia.com/nemo-platform/documentation/evaluate-models/metrics/rag-metrics
 - Azure MLOps/GenAIOps perspective: https://learn.microsoft.com/en-us/azure/well-architected/ai/mlops-genaiops
+
+## Bridge to Next Lesson
+
+- **What you now know:** You can operationalize ML and LLM applications with lifecycle thinking, pipelines, deployment controls, and observability basics.
+- **Why the next lesson follows:** The next lesson follows because once systems are operable, the key challenge becomes architecting agentic workflows and multi-step AI product behavior.
+- **What you'll build next:** You will build agentic AI designs with orchestration patterns, context engineering, memory/planning, and end-to-end agent system blueprints.
+

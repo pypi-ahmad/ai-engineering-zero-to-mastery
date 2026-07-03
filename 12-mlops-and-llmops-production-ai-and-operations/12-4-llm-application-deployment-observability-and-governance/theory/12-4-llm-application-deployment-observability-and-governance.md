@@ -180,51 +180,50 @@ Decision:
 
 # Interview Questions & Answers
 
-1. **What should be monitored in an LLM app beyond latency and errors?**  
-Prompt versions, retrieval quality, token usage, safety events, and output quality metrics.
+1. **Q: What should be monitored in an LLM app beyond latency and errors?**
+   **A:** Prompt versions, retrieval quality, token usage, safety events, and output quality metrics.
 
-2. **Why is tracing important for LLM systems?**  
-It reveals multi-step behavior across prompts, tools, and retrieval dependencies.
+2. **Q: Why is tracing important for LLM systems?**
+   **A:** It reveals multi-step behavior across prompts, tools, and retrieval dependencies.
 
-3. **How do you evaluate LLM quality in production?**  
-With automated evaluations, human sampling, and regression comparisons against baselines.
+3. **Q: How do you evaluate LLM quality in production?**
+   **A:** With automated evaluations, human sampling, and regression comparisons against baselines.
 
-4. **What is a good rollback trigger for LLM apps?**  
-Sustained degradation on quality/safety metrics or major SLA violations.
+4. **Q: What is a good rollback trigger for LLM apps?**
+   **A:** Sustained degradation on quality/safety metrics or major SLA violations.
 
-5. **How do you manage token cost explosions?**  
-Token caps, prompt compaction, caching, and model routing by complexity.
+5. **Q: How do you manage token cost explosions?**
+   **A:** Token caps, prompt compaction, caching, and model routing by complexity.
 
-6. **What is groundedness and why does it matter?**  
-Degree to which output is supported by trusted context; it reduces hallucination risk.
+6. **Q: What is groundedness and why does it matter?**
+   **A:** Degree to which output is supported by trusted context; it reduces hallucination risk.
 
-7. **How do you detect retrieval failures?**  
-Monitor relevance scores, citation mismatch rates, and freshness metrics.
+7. **Q: How do you detect retrieval failures?**
+   **A:** Monitor relevance scores, citation mismatch rates, and freshness metrics.
 
-8. **What is policy guardrailing?**  
-Rule-based checks that block or transform unsafe/non-compliant outputs.
+8. **Q: What is policy guardrailing?**
+   **A:** Rule-based checks that block or transform unsafe/non-compliant outputs.
 
-9. **How does LLM observability differ from classical API monitoring?**  
-It requires semantic quality and safety signals in addition to infrastructure telemetry.
+9. **Q: How does LLM observability differ from classical API monitoring?**
+   **A:** It requires semantic quality and safety signals in addition to infrastructure telemetry.
 
-10. **What governance artifacts should every LLM service maintain?**  
-Risk register, system card, change logs, incident history, and review checklist.
+10. **Q: What governance artifacts should every LLM service maintain?**
+   **A:** Risk register, system card, change logs, incident history, and review checklist.
 
-11. **How do you design LLM SLOs?**  
-Combine latency/availability with quality and safety thresholds.
+11. **Q: How do you design LLM SLOs?**
+   **A:** Combine latency/availability with quality and safety thresholds.
 
-12. **What role does OpenTelemetry play in LLMOps?**  
-Standardizes telemetry vocabulary for better interoperability and analysis.
+12. **Q: What role does OpenTelemetry play in LLMOps?**
+   **A:** Standardizes telemetry vocabulary for better interoperability and analysis.
 
-13. **How do you handle provider outages for hosted LLMs?**  
-Use retries, circuit breakers, fallback providers/models, and degraded-mode responses.
+13. **Q: How do you handle provider outages for hosted LLMs?**
+   **A:** Use retries, circuit breakers, fallback providers/models, and degraded-mode responses.
 
-14. **When is stricter output constraint preferable to open generation?**  
-In regulated or high-consequence workflows requiring deterministic compliance.
+14. **Q: When is stricter output constraint preferable to open generation?**
+   **A:** In regulated or high-consequence workflows requiring deterministic compliance.
 
-15. **What is an effective governance operating rhythm?**  
-Continuous telemetry review + periodic risk audits + post-incident control updates.
-
+15. **Q: What is an effective governance operating rhythm?**
+   **A:** Continuous telemetry review + periodic risk audits + post-incident control updates.
 # References
 
 - Coursera: Orchestrate, Analyze, and Evaluate AI Deployments: https://www.coursera.org/learn/orchestrate-analyze-and-evaluate-ai-deployments
@@ -234,3 +233,10 @@ Continuous telemetry review + periodic risk audits + post-incident control updat
 - NIST AI RMF overview: https://www.nist.gov/itl/ai-risk-management-framework
 - NIST Generative AI Profile (AI 600-1 PDF): https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf
 - IBM LLMOps overview for lifecycle framing: https://www.ibm.com/think/topics/llmops
+
+## Bridge to Next Lesson
+
+- **What you now know:** You can run ML and LLM applications with production telemetry, deployment safety, evaluation discipline, cost controls, and governance structures.
+- **Why the next lesson follows:** The next lesson follows because production maturity must be paired with explicit robustness, adversarial resilience, and safety-by-design methods.
+- **What you'll build next:** You will build AI safety and security capabilities across alignment concepts, adversarial ML defenses, trustworthy AI, and guardrail playbooks.
+

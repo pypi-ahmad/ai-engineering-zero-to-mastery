@@ -119,48 +119,47 @@ Practical pattern:
 1. **Explain SLAM in simple language.**  
 The robot builds a map and estimates its own location at the same time.
 
-2. **What is an occupancy grid?**  
-A cell-based map indicating free, occupied, and unknown regions for planning.
+2. **Q: What is an occupancy grid?**
+   **A:** A cell-based map indicating free, occupied, and unknown regions for planning.
 
-3. **What is A* used for in robotics?**  
-Finding low-cost paths from start to goal on map graphs.
+3. **Q: What is A* used for in robotics?**
+   **A:** Finding low-cost paths from start to goal on map graphs.
 
-4. **Why do robots use multiple sensors?**  
-Different sensors fail differently; fusion improves robustness.
+4. **Q: Why do robots use multiple sensors?**
+   **A:** Different sensors fail differently; fusion improves robustness.
 
-5. **What is localization drift?**  
-Accumulated pose error over time, common with pure odometry.
+5. **Q: What is localization drift?**
+   **A:** Accumulated pose error over time, common with pure odometry.
 
-6. **Global planner vs local planner?**  
-Global planner gives route; local planner generates near-term safe motions.
+6. **Q: Global planner vs local planner?**
+   **A:** Global planner gives route; local planner generates near-term safe motions.
 
-7. **How do perception errors affect planning?**  
-Wrong obstacle/pose estimates can produce unsafe or infeasible paths.
+7. **Q: How do perception errors affect planning?**
+   **A:** Wrong obstacle/pose estimates can produce unsafe or infeasible paths.
 
-8. **What is a recovery behavior?**  
-Fallback action when robot gets stuck, e.g., replan, backtrack, rotate.
+8. **Q: What is a recovery behavior?**
+   **A:** Fallback action when robot gets stuck, e.g., replan, backtrack, rotate.
 
-9. **Why are costmaps important?**  
-They encode obstacle risk and clearance for local control.
+9. **Q: Why are costmaps important?**
+   **A:** They encode obstacle risk and clearance for local control.
 
-10. **When is full autonomy unnecessary?**  
-In constrained repetitive routes where deterministic guidance is enough.
+10. **Q: When is full autonomy unnecessary?**
+   **A:** In constrained repetitive routes where deterministic guidance is enough.
 
-11. **What role do behavior trees play in navigation stacks?**  
-They orchestrate planners/controllers/recoveries into robust workflows.
+11. **Q: What role do behavior trees play in navigation stacks?**
+   **A:** They orchestrate planners/controllers/recoveries into robust workflows.
 
-12. **How do you validate navigation safety?**  
-Simulation stress tests, scenario replay, hardware-in-loop checks, and runtime safety guards.
+12. **Q: How do you validate navigation safety?**
+   **A:** Simulation stress tests, scenario replay, hardware-in-loop checks, and runtime safety guards.
 
-13. **What is the biggest deployment challenge in mobile robotics?**  
-Handling domain shift from controlled tests to dynamic real-world scenes.
+13. **Q: What is the biggest deployment challenge in mobile robotics?**
+   **A:** Handling domain shift from controlled tests to dynamic real-world scenes.
 
-14. **Why does latency matter in navigation loops?**  
-Slow loops react too late to obstacles and destabilize motion.
+14. **Q: Why does latency matter in navigation loops?**
+   **A:** Slow loops react too late to obstacles and destabilize motion.
 
-15. **How would you debug repeated path failures?**  
-Inspect map quality, localization confidence, planner parameters, and local obstacle layers.
-
+15. **Q: How would you debug repeated path failures?**
+   **A:** Inspect map quality, localization confidence, planner parameters, and local obstacle layers.
 # References
 
 - Nav2 documentation (architecture and behavior trees): https://docs.nav2.org/

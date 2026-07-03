@@ -234,57 +234,56 @@ Exceptions/Risks:
 
 # Interview Questions & Answers
 
-1. **What is an LLM?**
-   A large Transformer-based language model trained to predict tokens and adapted for downstream instructions/tasks.
+1. **Q: What is an LLM?**
+   **A:** A large Transformer-based language model trained to predict tokens and adapted for downstream instructions/tasks.
 
-2. **Difference between pre-training and fine-tuning?**
-   Pre-training learns general language representations from large unlabeled corpora; fine-tuning specializes behavior for tasks/domains.
+2. **Q: Difference between pre-training and fine-tuning?**
+   **A:** Pre-training learns general language representations from large unlabeled corpora; fine-tuning specializes behavior for tasks/domains.
 
-3. **What is in-context learning?**
-   Task adaptation from prompt examples without updating model weights.
+3. **Q: What is in-context learning?**
+   **A:** Task adaptation from prompt examples without updating model weights.
 
-4. **Why does prompt engineering matter even with strong models?**
-   Prompt structure strongly affects reliability, formatting, and factual grounding.
+4. **Q: Why does prompt engineering matter even with strong models?**
+   **A:** Prompt structure strongly affects reliability, formatting, and factual grounding.
 
-5. **What causes hallucinations?**
-   Missing grounding, ambiguous prompts, weak retrieval, and probabilistic generation under uncertainty.
+5. **Q: What causes hallucinations?**
+   **A:** Missing grounding, ambiguous prompts, weak retrieval, and probabilistic generation under uncertainty.
 
-6. **How do few-shot prompts help?**
-   They demonstrate expected mapping patterns, reducing ambiguity for task behavior.
+6. **Q: How do few-shot prompts help?**
+   **A:** They demonstrate expected mapping patterns, reducing ambiguity for task behavior.
 
-7. **What is LoRA?**
-   A PEFT method that learns low-rank adaptation matrices while freezing most base model weights.
+7. **Q: What is LoRA?**
+   **A:** A PEFT method that learns low-rank adaptation matrices while freezing most base model weights.
 
-8. **When should you choose fine-tuning over prompting?**
-   When repeated prompt tuning cannot achieve quality/cost/latency targets or when consistent specialized behavior is required.
+8. **Q: When should you choose fine-tuning over prompting?**
+   **A:** When repeated prompt tuning cannot achieve quality/cost/latency targets or when consistent specialized behavior is required.
 
-9. **How do you evaluate an LLM-powered assistant?**
-   Combine offline benchmarks, human ratings, hallucination audits, latency/cost tracking, and business KPIs.
+9. **Q: How do you evaluate an LLM-powered assistant?**
+   **A:** Combine offline benchmarks, human ratings, hallucination audits, latency/cost tracking, and business KPIs.
 
-10. **Why is temperature important?**
-    It controls sampling randomness: lower for determinism, higher for diversity.
+10. **Q: Why is temperature important?**
+   **A:** It controls sampling randomness: lower for determinism, higher for diversity.
 
-11. **What is instruction tuning?**
-    Supervised tuning on instruction-response pairs to improve task following and helpfulness.
+11. **Q: What is instruction tuning?**
+   **A:** Supervised tuning on instruction-response pairs to improve task following and helpfulness.
 
-12. **How do you reduce unsafe outputs?**
-    Safety-aligned prompts, policy filters, refusal handling, retrieval constraints, and human review for sensitive cases.
+12. **Q: How do you reduce unsafe outputs?**
+   **A:** Safety-aligned prompts, policy filters, refusal handling, retrieval constraints, and human review for sensitive cases.
 
-13. **What are limitations of perplexity as a metric?**
-    It measures predictive fit, not factuality, usefulness, or safety in downstream tasks.
+13. **Q: What are limitations of perplexity as a metric?**
+   **A:** It measures predictive fit, not factuality, usefulness, or safety in downstream tasks.
 
-14. **What is a practical LLM baseline strategy in production?**
-    Start with prompt + retrieval + deterministic output schema and add fine-tuning only if measurable gaps remain.
+14. **Q: What is a practical LLM baseline strategy in production?**
+   **A:** Start with prompt + retrieval + deterministic output schema and add fine-tuning only if measurable gaps remain.
 
-15. **How do you control format reliability?**
-    Use explicit schema instructions, examples, and strict post-parse validation with retries.
+15. **Q: How do you control format reliability?**
+   **A:** Use explicit schema instructions, examples, and strict post-parse validation with retries.
 
-16. **Why can long context hurt?**
-    Relevant evidence may be diluted; retrieval quality and context compression become critical.
+16. **Q: Why can long context hurt?**
+   **A:** Relevant evidence may be diluted; retrieval quality and context compression become critical.
 
-17. **What is the key trade-off in PEFT?**
-    Lower adaptation cost and modularity versus potential ceiling in task-specific performance compared with full fine-tuning.
-
+17. **Q: What is the key trade-off in PEFT?**
+   **A:** Lower adaptation cost and modularity versus potential ceiling in task-specific performance compared with full fine-tuning.
 # Further Reading & Sources
 
 - DeepLearning.AI: Generative AI with LLMs (curriculum framing): https://www.deeplearning.ai/courses/generative-ai-with-llms

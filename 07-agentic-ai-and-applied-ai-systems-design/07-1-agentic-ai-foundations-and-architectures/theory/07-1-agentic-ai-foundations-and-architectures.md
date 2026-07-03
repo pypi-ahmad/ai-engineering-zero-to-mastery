@@ -211,48 +211,47 @@ Risks:
 1. **Define agentic AI in your own words.**  
 Agentic AI is an AI system that actively pursues goals over multiple steps by planning actions, using tools, and adapting to feedback instead of producing one-off responses.
 
-2. **What are the core components of an AI agent architecture?**  
-Environment interface, observation pipeline, internal state/memory, decision policy, action/tool layer, and objective/termination criteria.
+2. **Q: What are the core components of an AI agent architecture?**
+   **A:** Environment interface, observation pipeline, internal state/memory, decision policy, action/tool layer, and objective/termination criteria.
 
-3. **How is a chatbot different from an agent?**  
-A chatbot focuses on response generation; an agent focuses on outcome completion through iterative action.
+3. **Q: How is a chatbot different from an agent?**
+   **A:** A chatbot focuses on response generation; an agent focuses on outcome completion through iterative action.
 
-4. **What is a plan-act-observe loop?**  
-A control loop where the agent plans next action, executes it, observes result, updates state, and repeats until goal completion.
+4. **Q: What is a plan-act-observe loop?**
+   **A:** A control loop where the agent plans next action, executes it, observes result, updates state, and repeats until goal completion.
 
-5. **Why is tool calling central to agentic systems?**  
-Because real tasks require external actions such as database reads, API calls, and transactional updates.
+5. **Q: Why is tool calling central to agentic systems?**
+   **A:** Because real tasks require external actions such as database reads, API calls, and transactional updates.
 
-6. **When should you avoid multi-agent architecture?**  
-When one agent can handle the task reliably; multi-agent systems add complexity and coordination overhead.
+6. **Q: When should you avoid multi-agent architecture?**
+   **A:** When one agent can handle the task reliably; multi-agent systems add complexity and coordination overhead.
 
-7. **What is guarded autonomy?**  
-Allowing autonomous execution under explicit safety constraints like approval gates, policy checks, and budget limits.
+7. **Q: What is guarded autonomy?**
+   **A:** Allowing autonomous execution under explicit safety constraints like approval gates, policy checks, and budget limits.
 
 8. **Name a common reliability failure in agents.**  
 Error accumulation across long tool chains where each small mistake propagates downstream.
 
-9. **How do you evaluate an agent?**  
-Use task success rate, step efficiency, cost per task, latency, policy violations, and human override frequency.
+9. **Q: How do you evaluate an agent?**
+   **A:** Use task success rate, step efficiency, cost per task, latency, policy violations, and human override frequency.
 
-10. **Why does observability matter for agentic AI?**  
-Without traces and logs, teams cannot debug action choices, reproduce failures, or pass compliance audits.
+10. **Q: Why does observability matter for agentic AI?**
+   **A:** Without traces and logs, teams cannot debug action choices, reproduce failures, or pass compliance audits.
 
-11. **What is the role of memory in an agent?**  
-Memory keeps contextual facts and intermediate decisions so the agent can remain coherent over multi-step tasks.
+11. **Q: What is the role of memory in an agent?**
+   **A:** Memory keeps contextual facts and intermediate decisions so the agent can remain coherent over multi-step tasks.
 
-12. **What is a hybrid agent?**  
-An architecture combining reactive rules for safety/latency and deliberative planning for complex decisions.
+12. **Q: What is a hybrid agent?**
+   **A:** An architecture combining reactive rules for safety/latency and deliberative planning for complex decisions.
 
-13. **How would you reduce hallucinations in agent workflows?**  
-Use retrieval grounding, tool-verified data, schema-constrained outputs, and verifier steps before final action.
+13. **Q: How would you reduce hallucinations in agent workflows?**
+   **A:** Use retrieval grounding, tool-verified data, schema-constrained outputs, and verifier steps before final action.
 
-14. **What organizational roles are involved in production agentic AI?**  
-Product, AI/ML engineering, platform/MLOps, security, and domain operations teams.
+14. **Q: What organizational roles are involved in production agentic AI?**
+   **A:** Product, AI/ML engineering, platform/MLOps, security, and domain operations teams.
 
-15. **How do you decide autonomy level?**  
-Base it on failure cost, confidence thresholds, regulatory constraints, and quality of monitoring.
-
+15. **Q: How do you decide autonomy level?**
+   **A:** Base it on failure cost, confidence thresholds, regulatory constraints, and quality of monitoring.
 # References
 
 - NYU Stern Foundations of AI Agents course page: https://aiagents.stern.nyu.edu/

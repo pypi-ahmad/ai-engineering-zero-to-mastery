@@ -218,3 +218,10 @@ Key factor:
 - Stanford CS120 AI Safety: https://web.stanford.edu/class/cs120/index.html
 - Harvard DMAI reading group (AI-for-science context): https://zitniklab.hms.harvard.edu/DMAI/
 - AI Safety at UCLA reading groups: https://aisafetyatucla.org/reading-groups
+
+## Bridge to Next Lesson
+
+- **What you now know:** You now have a forward-looking framework to stay current, evaluate frontier ideas, and contribute through reading groups, projects, and community work.
+- **Why the next lesson follows:** The next lesson follows because frontier awareness becomes most valuable when converted into a concrete, portfolio-grade capstone with professional delivery standards.
+- **What you'll build next:** You will build and present an end-to-end AI engineering capstone with scope discipline, execution checklists, stakeholder communication, and reflective improvement.
+

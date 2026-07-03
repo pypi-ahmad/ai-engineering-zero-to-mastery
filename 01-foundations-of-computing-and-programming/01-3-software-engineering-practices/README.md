@@ -1,11 +1,25 @@
 # 1.3 Software Engineering Practices
 
-This lesson covers software engineering fundamentals that AI engineers use in daily delivery:
-- Version control workflows with Git, branching, and pull requests.
-- Clean code, modular design, and practical documentation habits.
-- Basic REST API usage with HTTP and JSON in Python.
+This sub-lesson builds engineering discipline needed to ship reliable AI systems: version control, clean design, and API fundamentals.
 
-## Sub-lessons
-- 1.3.1 Version Control (Git, Branching, PRs)
-- 1.3.2 Clean Code, Modular Design, Documentation
-- 1.3.3 Basic REST APIs (HTTP, JSON)
+## Learning Objectives
+- Apply safe Git workflows with branches, pull requests, and review hygiene.
+- Structure Python code for readability, modularity, and testability.
+- Understand HTTP/JSON API patterns used by ML and GenAI services.
+
+## Theory Chapters
+- `theory/01-3-1-version-control-git-branching-prs.md`
+- `theory/01-3-2-clean-code-modular-design-documentation.md`
+- `theory/01-3-3-basic-rest-apis-http-json.md`
+
+## Teaching Notebooks
+- `notebooks/01-3-1-version-control-git-branching-prs.ipynb`
+- `notebooks/01-3-2-clean-code-modular-design-documentation.ipynb`
+- `notebooks/01-3-3-basic-rest-apis-http-json.ipynb`
+
+## Prerequisites
+- Lesson 1.1 and 1.2 basics (Python syntax, data structures, control flow).
+- Basic command-line familiarity.
+
+## What's Next
+Continue to Lesson 2 (Mathematics for AI) with stronger engineering habits for implementing and validating ML workflows.

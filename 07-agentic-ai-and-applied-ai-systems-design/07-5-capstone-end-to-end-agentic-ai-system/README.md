@@ -11,5 +11,7 @@ This capstone chapter integrates architecture, retrieval, orchestration, evaluat
 
 - Capstone project options and scoping rules
 - Reusable architecture template
+- Implementation plan template (phase-by-phase)
 - Evaluation framework for technical and business outcomes
+- Weighted capstone scoring rubric
 - Interview narrative preparation for portfolio projects

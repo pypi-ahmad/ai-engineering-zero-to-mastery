@@ -211,54 +211,53 @@ Risks:
 1. **Explain batch vs streaming pipelines.**  
    Batch processes data on schedules; streaming processes event-by-event with low latency and higher operational complexity.
 
-2. **What is a feature store and why use it?**  
-   A system for managing reusable, versioned, offline/online-consistent features for training and serving.
+2. **Q: What is a feature store and why use it?**
+   **A:** A system for managing reusable, versioned, offline/online-consistent features for training and serving.
 
-3. **What is point-in-time correctness?**  
-   Ensuring each training feature value uses only information available at prediction time to avoid leakage.
+3. **Q: What is point-in-time correctness?**
+   **A:** Ensuring each training feature value uses only information available at prediction time to avoid leakage.
 
-4. **What causes training-serving skew?**  
-   Differences in feature definitions, transformations, or data sources between training and inference.
+4. **Q: What causes training-serving skew?**
+   **A:** Differences in feature definitions, transformations, or data sources between training and inference.
 
-5. **How do you detect schema drift?**  
-   Compare incoming schema/column stats against contract baselines and alert on incompatible changes.
+5. **Q: How do you detect schema drift?**
+   **A:** Compare incoming schema/column stats against contract baselines and alert on incompatible changes.
 
-6. **What is the difference between ETL and ELT?**  
-   ETL transforms before loading target store; ELT loads raw first and transforms in destination system.
+6. **Q: What is the difference between ETL and ELT?**
+   **A:** ETL transforms before loading target store; ELT loads raw first and transforms in destination system.
 
-7. **Why do data quality gates matter for ML?**  
-   Bad data propagates silently into features and model outputs, causing downstream failures.
+7. **Q: Why do data quality gates matter for ML?**
+   **A:** Bad data propagates silently into features and model outputs, causing downstream failures.
 
-8. **How do feature freshness SLAs affect model quality?**  
-   Stale features degrade prediction relevance, especially for fast-changing domains.
+8. **Q: How do feature freshness SLAs affect model quality?**
+   **A:** Stale features degrade prediction relevance, especially for fast-changing domains.
 
-9. **When is a custom feature store overkill?**  
-   Small teams with few models and slow update cycles can often succeed with strong SQL pipelines first.
+9. **Q: When is a custom feature store overkill?**
+   **A:** Small teams with few models and slow update cycles can often succeed with strong SQL pipelines first.
 
-10. **How do you version features?**  
-   Track transformation code, source schema, timestamps, and feature set definitions in a registry/metadata store.
+10. **Q: How do you version features?**
+   **A:** Track transformation code, source schema, timestamps, and feature set definitions in a registry/metadata store.
 
-11. **How do late events affect streaming features?**  
-   They can distort windowed aggregates unless event-time logic and watermarks are correctly configured.
+11. **Q: How do late events affect streaming features?**
+   **A:** They can distort windowed aggregates unless event-time logic and watermarks are correctly configured.
 
-12. **What is feature lineage?**  
-   End-to-end trace of a feature from source tables/events through transformation logic to model usage.
+12. **Q: What is feature lineage?**
+   **A:** End-to-end trace of a feature from source tables/events through transformation logic to model usage.
 
-13. **How do you prevent leakage in joined datasets?**  
-   Use time-aware joins and enforce feature timestamps relative to label/prediction time.
+13. **Q: How do you prevent leakage in joined datasets?**
+   **A:** Use time-aware joins and enforce feature timestamps relative to label/prediction time.
 
-14. **What is offline vs online feature parity?**  
-   The same feature value should be reproducible in training and real-time inference contexts.
+14. **Q: What is offline vs online feature parity?**
+   **A:** The same feature value should be reproducible in training and real-time inference contexts.
 
-15. **What is a good first step to improve a fragile data pipeline?**  
-   Introduce schema contracts + automated validation tests + failure alerts before adding more complexity.
+15. **Q: What is a good first step to improve a fragile data pipeline?**
+   **A:** Introduce schema contracts + automated validation tests + failure alerts before adding more complexity.
 
-16. **Why are feature ownership models important?**  
-   They define responsibility for reliability, documentation, and incident response.
+16. **Q: Why are feature ownership models important?**
+   **A:** They define responsibility for reliability, documentation, and incident response.
 
-17. **How do you evaluate pipeline reliability?**  
-   Track SLA adherence, freshness, data quality incidents, and downstream model impact.
-
+17. **Q: How do you evaluate pipeline reliability?**
+   **A:** Track SLA adherence, freshness, data quality incidents, and downstream model impact.
 # Further Reading & Sources
 
 - Google MLOps guidance: https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning

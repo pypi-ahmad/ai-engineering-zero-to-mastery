@@ -209,66 +209,65 @@ Outcome:
 
 # Interview Questions & Answers
 
-1. **How would you design a 12-month AI upskilling plan?**  
-Sequence fundamentals -> ML -> DL/LLMs -> RAG/agents -> MLOps/RAI -> portfolio and interviews, each with concrete deliverables.
+1. **Q: How would you design a 12-month AI upskilling plan?**
+   **A:** Sequence fundamentals -> ML -> DL/LLMs -> RAG/agents -> MLOps/RAI -> portfolio and interviews, each with concrete deliverables.
 
-2. **What projects should a junior AI engineer portfolio include?**  
-At least one predictive ML project, one LLM/RAG system, and one deployment/monitoring-focused project.
+2. **Q: What projects should a junior AI engineer portfolio include?**
+   **A:** At least one predictive ML project, one LLM/RAG system, and one deployment/monitoring-focused project.
 
-3. **How do you choose between breadth and depth?**  
-Build broad familiarity first, then depth in one track aligned to target roles.
+3. **Q: How do you choose between breadth and depth?**
+   **A:** Build broad familiarity first, then depth in one track aligned to target roles.
 
-4. **What makes an AI project interview-ready?**  
-Clear problem framing, measurable metrics, architecture rationale, and honest failure analysis.
+4. **Q: What makes an AI project interview-ready?**
+   **A:** Clear problem framing, measurable metrics, architecture rationale, and honest failure analysis.
 
-5. **How many portfolio projects are ideal?**  
-Usually 3-5 high-quality projects with strong documentation.
+5. **Q: How many portfolio projects are ideal?**
+   **A:** Usually 3-5 high-quality projects with strong documentation.
 
-6. **How do you show business impact for personal projects?**  
-Define proxy KPIs (time saved, error reduction, cost) and compare against a baseline.
+6. **Q: How do you show business impact for personal projects?**
+   **A:** Define proxy KPIs (time saved, error reduction, cost) and compare against a baseline.
 
-7. **How should a non-CS candidate approach AI careers?**  
-Leverage domain expertise, strengthen coding/math foundations, and build applied projects in familiar domains.
+7. **Q: How should a non-CS candidate approach AI careers?**
+   **A:** Leverage domain expertise, strengthen coding/math foundations, and build applied projects in familiar domains.
 
-8. **What role fits someone who likes reliability and deployment?**  
-MLOps/LLMOps or production AI engineer roles.
+8. **Q: What role fits someone who likes reliability and deployment?**
+   **A:** MLOps/LLMOps or production AI engineer roles.
 
-9. **How do you discuss model limitations in interviews?**  
-State known failure modes, mitigation plans, and what monitoring catches in production.
+9. **Q: How do you discuss model limitations in interviews?**
+   **A:** State known failure modes, mitigation plans, and what monitoring catches in production.
 
-10. **What should go in a project README?**  
-Problem, data, method, metrics, architecture, run steps, limitations, and next steps.
+10. **Q: What should go in a project README?**
+   **A:** Problem, data, method, metrics, architecture, run steps, limitations, and next steps.
 
-11. **How do you prepare for AI system design rounds?**  
-Practice end-to-end designs including data, model, serving, monitoring, safety, and cost.
+11. **Q: How do you prepare for AI system design rounds?**
+   **A:** Practice end-to-end designs including data, model, serving, monitoring, safety, and cost.
 
-12. **How do you stand out from tutorial-copy portfolios?**  
-Add original problem framing, production constraints, and evidence-based iteration.
+12. **Q: How do you stand out from tutorial-copy portfolios?**
+   **A:** Add original problem framing, production constraints, and evidence-based iteration.
 
-13. **What is a good response to “Tell me about a failure”?**  
-Explain diagnosis, mitigation, and process improvement with ownership.
+13. **Q: What is a good response to “Tell me about a failure”?**
+   **A:** Explain diagnosis, mitigation, and process improvement with ownership.
 
-14. **How do you present Responsible AI work in interviews?**  
-Describe risk assessment, fairness checks, governance gates, and concrete decisions made.
+14. **Q: How do you present Responsible AI work in interviews?**
+   **A:** Describe risk assessment, fairness checks, governance gates, and concrete decisions made.
 
-15. **What is the best first project for job seekers?**  
-An end-to-end project in a domain you understand, deployed and documented like a product.
+15. **Q: What is the best first project for job seekers?**
+   **A:** An end-to-end project in a domain you understand, deployed and documented like a product.
 
-16. **How much math is required for applied AI roles?**  
-Enough to reason about optimization, probability, and evaluation trade-offs confidently.
+16. **Q: How much math is required for applied AI roles?**
+   **A:** Enough to reason about optimization, probability, and evaluation trade-offs confidently.
 
-17. **How do certifications help?**  
-They can validate commitment and structured learning but do not replace demonstrable project execution.
+17. **Q: How do certifications help?**
+   **A:** They can validate commitment and structured learning but do not replace demonstrable project execution.
 
-18. **What should a LinkedIn profile emphasize?**  
-Shipped projects, quantified outcomes, technical stack, and role alignment.
+18. **Q: What should a LinkedIn profile emphasize?**
+   **A:** Shipped projects, quantified outcomes, technical stack, and role alignment.
 
-19. **How do you explain career transitions to recruiters?**  
-Frame prior experience as transferable strengths plus concrete AI execution evidence.
+19. **Q: How do you explain career transitions to recruiters?**
+   **A:** Frame prior experience as transferable strengths plus concrete AI execution evidence.
 
 20. **Tell me about a project where you handled ethics/responsible AI concerns.**  
 Describe the risk, mitigation approach, stakeholder trade-offs, and measurable impact of the controls.
-
 # References
 
 - DeepLearning.AI (career resources): https://www.deeplearning.ai/
@@ -278,3 +277,10 @@ Describe the risk, mitigation approach, stakeholder trade-offs, and measurable i
 - roadmap.sh AI and Data Scientist roadmap PDF: https://roadmap.sh/pdfs/roadmaps/ai-data-scientist.pdf
 - Hugging Face course: https://huggingface.co/docs/course/en/chapter1/1
 - Preparing Students for AI-Driven Agile Development (project-based curriculum): https://arxiv.org/abs/2603.09599
+
+## Bridge to Next Lesson
+
+- **What you now know:** You can articulate responsible AI principles, policy implications, and a practical roadmap for building a credible AI portfolio and interview narrative.
+- **Why the next lesson follows:** The next lesson follows because many roles require deeper technical specialization in high-impact areas such as RL, advanced CV, and advanced NLP/LLM systems.
+- **What you'll build next:** You will build specialized capabilities and domain-tailored solutions that extend your core AI engineering foundation.
+

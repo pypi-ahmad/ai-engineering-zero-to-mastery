@@ -1,16 +1,37 @@
-# Lesson 12: MLOps & LLMOps - Production AI & Operations
+# Lesson 12: MLOps & LLMOps: Production AI & Operations
 
-This lesson focuses on taking ML and LLM systems from prototypes to reliable production services. It covers lifecycle design, deployment architecture, monitoring, observability, evaluation, governance, and cost controls.
+Lesson 12 is the advanced operations module: production hardening, observability, evaluation loops, governance, inference/post-training reliability, distributed training systems, privacy-preserving operations, and data-centric labeling loops.
 
-## Sub-lessons
+## Learning Objectives
+- Design robust deployment and monitoring architectures beyond baseline setups.
+- Implement telemetry and evaluation loops for quality, latency, and cost control.
+- Operationalize governance controls for enterprise-grade ML and LLM applications.
+- Engineer LLM inference serving behavior (queueing, batching, cache pressure) for predictable performance.
+- Build continuous post-training loops with release gates and data flywheels.
+- Select and operate distributed LLM training strategies (FSDP/ZeRO/parallelism) with explicit system trade-offs.
+- Design privacy-preserving training and deployment controls for regulated environments.
+- Operationalize active learning and weak-supervision labeling pipelines as production data systems.
 
-1. `12.1 MLOps Foundations & ML Lifecycle in Production`
-2. `12.2 ML Pipelines, Deployment & Monitoring`
-3. `12.3 LLMOps Foundations & LLM Lifecycle`
-4. `12.4 LLM Application Deployment, Observability & Governance`
+## Start Here (Theory + Notebooks)
+- `12-1-mlops-foundations-and-ml-lifecycle/theory/12-1-mlops-foundations-and-ml-lifecycle.md`
+- `12-2-ml-pipelines-deployment-and-monitoring/theory/12-2-ml-pipelines-deployment-and-monitoring.md`
+- `12-3-llmops-foundations-and-llm-lifecycle/theory/12-3-llmops-foundations-and-llm-lifecycle.md`
+- `12-4-llm-application-deployment-observability-and-governance/theory/12-4-llm-application-deployment-observability-and-governance.md`
+- `12-5-llm-inference-systems-engineering/theory/12-5-llm-inference-systems-engineering.md`
+- `12-6-llm-evaluation-data-flywheel-and-continuous-post-training-ops/theory/12-6-llm-evaluation-data-flywheel-and-continuous-post-training-ops.md`
+- `12-7-distributed-llm-training-systems/theory/12-7-distributed-llm-training-systems.md`
+- `12-8-privacy-preserving-ml-and-llm-ops/theory/12-8-privacy-preserving-ml-and-llm-ops.md`
+- `12-9-data-centric-labeling-ops/theory/12-9-data-centric-labeling-ops.md`
+- Run the corresponding notebook in each sub-folder `notebooks/`.
 
-## How to use this lesson
+## Prerequisites
+- Lesson 6 foundations (basic MLOps/LLMOps lifecycle and deployment patterns).
+- Lessons 7-11 context (agentic systems, responsible AI, and product framing).
 
-1. Read each `theory/` chapter first.
-2. Run notebooks in order to see lifecycle patterns translated into practical code.
-3. Reuse templates (runbooks, metric trees, evaluation checklists) in your own production AI projects.
+## Lesson Boundary
+Lesson 6 covers core operations fundamentals. Lesson 12 is the advanced continuation focused on production hardening and reliability engineering depth.
+
+If Lesson 6 answers "how do I ship a first reliable ML/LLM system?", Lesson 12 answers "how do I run and evolve that system safely at scale with strong observability, evaluation, and governance?"
+
+## What's Next
+Proceed to Lesson 13 to add safety, adversarial robustness, and trustworthy AI controls on top of this expanded operations baseline.

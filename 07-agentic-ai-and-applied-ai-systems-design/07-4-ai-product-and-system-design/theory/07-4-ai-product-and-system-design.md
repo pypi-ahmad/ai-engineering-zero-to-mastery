@@ -193,51 +193,50 @@ Fix:
 
 # Interview Questions & Answers
 
-1. **How is AI product design different from model development?**  
-AI product design optimizes end-to-end value delivery under operational constraints, not just model metrics.
+1. **Q: How is AI product design different from model development?**
+   **A:** AI product design optimizes end-to-end value delivery under operational constraints, not just model metrics.
 
-2. **What is the first system design artifact for an AI product?**  
-A workflow-level architecture showing data flow, model calls, and decision checkpoints.
+2. **Q: What is the first system design artifact for an AI product?**
+   **A:** A workflow-level architecture showing data flow, model calls, and decision checkpoints.
 
-3. **When should you reject an AI solution?**  
-When deterministic systems solve the problem better on cost, risk, or reliability.
+3. **Q: When should you reject an AI solution?**
+   **A:** When deterministic systems solve the problem better on cost, risk, or reliability.
 
-4. **What non-functional requirements matter most?**  
-Latency, cost, security, reliability, auditability, and compliance.
+4. **Q: What non-functional requirements matter most?**
+   **A:** Latency, cost, security, reliability, auditability, and compliance.
 
-5. **How do you control AI cost in production?**  
-Caching, routing to cheaper models, token budgets, and pruning unnecessary calls.
+5. **Q: How do you control AI cost in production?**
+   **A:** Caching, routing to cheaper models, token budgets, and pruning unnecessary calls.
 
-6. **What is modular monolith strategy?**  
-One deployable service with strict internal module boundaries, enabling future service split.
+6. **Q: What is modular monolith strategy?**
+   **A:** One deployable service with strict internal module boundaries, enabling future service split.
 
-7. **Why include human-in-the-loop?**  
-To reduce risk on high-impact decisions and capture corrective feedback.
+7. **Q: Why include human-in-the-loop?**
+   **A:** To reduce risk on high-impact decisions and capture corrective feedback.
 
-8. **How do you design fallback behavior?**  
-Define deterministic alternatives and escalation paths per failure type.
+8. **Q: How do you design fallback behavior?**
+   **A:** Define deterministic alternatives and escalation paths per failure type.
 
-9. **What is a good AI product SLO set?**  
-Task success rate, p95 latency, error rate, and cost per successful task.
+9. **Q: What is a good AI product SLO set?**
+   **A:** Task success rate, p95 latency, error rate, and cost per successful task.
 
-10. **How do you prevent data leakage?**  
-Scoped access control, PII masking, and strict tenancy boundaries.
+10. **Q: How do you prevent data leakage?**
+   **A:** Scoped access control, PII masking, and strict tenancy boundaries.
 
-11. **How do you test an AI system before launch?**  
-Offline eval suite, adversarial prompts, staging traffic replay, and human QA.
+11. **Q: How do you test an AI system before launch?**
+   **A:** Offline eval suite, adversarial prompts, staging traffic replay, and human QA.
 
-12. **What architecture supports long-running workflows best?**  
-State-aware orchestrators with checkpoints, retries, and resumable execution.
+12. **Q: What architecture supports long-running workflows best?**
+   **A:** State-aware orchestrators with checkpoints, retries, and resumable execution.
 
-13. **When should microservices be adopted?**  
-After clear scaling, ownership, or isolation bottlenecks appear.
+13. **Q: When should microservices be adopted?**
+   **A:** After clear scaling, ownership, or isolation bottlenecks appear.
 
-14. **How do you align with business stakeholders?**  
-Tie technical metrics directly to business KPIs and risk thresholds.
+14. **Q: How do you align with business stakeholders?**
+   **A:** Tie technical metrics directly to business KPIs and risk thresholds.
 
-15. **What is the biggest product mistake in AI teams?**  
-Shipping model demos without operational and UX reliability.
-
+15. **Q: What is the biggest product mistake in AI teams?**
+   **A:** Shipping model demos without operational and UX reliability.
 # References
 
 - NYU Stern Foundations of AI Agents: https://aiagents.stern.nyu.edu/

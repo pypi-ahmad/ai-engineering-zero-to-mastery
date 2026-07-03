@@ -184,54 +184,53 @@ Operational pattern:
 1. **Define data drift and how to detect it.**  
    Data drift is change in input feature distribution over time; detect with statistical comparisons (PSI, KS, divergence tests).
 
-2. **What is concept drift?**  
-   Change in the mapping from features to target; model logic degrades even if inputs appear similar.
+2. **Q: What is concept drift?**
+   **A:** Change in the mapping from features to target; model logic degrades even if inputs appear similar.
 
-3. **How do you monitor a production ML model?**  
-   Track service health, data quality/drift, prediction behavior, delayed-label performance, and business KPIs with alerts.
+3. **Q: How do you monitor a production ML model?**
+   **A:** Track service health, data quality/drift, prediction behavior, delayed-label performance, and business KPIs with alerts.
 
-4. **What is prediction drift?**  
-   Shift in output score/class distribution relative to baseline, often used before labels arrive.
+4. **Q: What is prediction drift?**
+   **A:** Shift in output score/class distribution relative to baseline, often used before labels arrive.
 
-5. **How do you choose drift thresholds?**  
-   Use historical variance, business impact tolerance, and backtesting to calibrate actionable thresholds.
+5. **Q: How do you choose drift thresholds?**
+   **A:** Use historical variance, business impact tolerance, and backtesting to calibrate actionable thresholds.
 
-6. **Why can alerting systems fail in practice?**  
-   Poor threshold calibration causes noise; missing context and runbooks delays response.
+6. **Q: Why can alerting systems fail in practice?**
+   **A:** Poor threshold calibration causes noise; missing context and runbooks delays response.
 
-7. **What is Responsible AI in MLOps?**  
-   Operational enforcement of fairness, transparency, privacy, robustness, and accountability across lifecycle stages.
+7. **Q: What is Responsible AI in MLOps?**
+   **A:** Operational enforcement of fairness, transparency, privacy, robustness, and accountability across lifecycle stages.
 
-8. **How do governance controls interact with deployment pipelines?**  
-   Through policy-as-code gates requiring approvals, evidence artifacts, and traceability before promotion.
+8. **Q: How do governance controls interact with deployment pipelines?**
+   **A:** Through policy-as-code gates requiring approvals, evidence artifacts, and traceability before promotion.
 
-9. **When should retraining be triggered?**  
-   On sustained drift/performance degradation with sufficient evidence, not on isolated noisy fluctuations.
+9. **Q: When should retraining be triggered?**
+   **A:** On sustained drift/performance degradation with sufficient evidence, not on isolated noisy fluctuations.
 
-10. **How do you avoid overreacting to noisy metrics?**  
-   Require persistence windows, confidence intervals, and multi-signal confirmation.
+10. **Q: How do you avoid overreacting to noisy metrics?**
+   **A:** Require persistence windows, confidence intervals, and multi-signal confirmation.
 
-11. **What metrics matter for delayed-label systems?**  
-   Leading indicators like input drift, prediction drift, calibration proxies, and downstream process signals.
+11. **Q: What metrics matter for delayed-label systems?**
+   **A:** Leading indicators like input drift, prediction drift, calibration proxies, and downstream process signals.
 
-12. **How do you monitor fairness in production?**  
-   Track performance and outcome disparities across protected/critical groups over time.
+12. **Q: How do you monitor fairness in production?**
+   **A:** Track performance and outcome disparities across protected/critical groups over time.
 
-13. **What is an audit trail in ML governance?**  
-   Immutable record of data/model/code versions, approvals, deployments, and monitoring incidents.
+13. **Q: What is an audit trail in ML governance?**
+   **A:** Immutable record of data/model/code versions, approvals, deployments, and monitoring incidents.
 
-14. **How does NIST AI RMF help MLOps teams?**  
-   It provides a structured framework to govern, map, measure, and manage AI risks.
+14. **Q: How does NIST AI RMF help MLOps teams?**
+   **A:** It provides a structured framework to govern, map, measure, and manage AI risks.
 
-15. **What is the difference between model monitoring and observability?**  
-   Monitoring tracks predefined metrics/alerts; observability enables deeper diagnosis via logs, traces, metadata, and ad hoc analysis.
+15. **Q: What is the difference between model monitoring and observability?**
+   **A:** Monitoring tracks predefined metrics/alerts; observability enables deeper diagnosis via logs, traces, metadata, and ad hoc analysis.
 
-16. **Why segment monitoring by cohort?**  
-   Aggregate metrics can mask critical failures in high-impact user segments.
+16. **Q: Why segment monitoring by cohort?**
+   **A:** Aggregate metrics can mask critical failures in high-impact user segments.
 
-17. **What is a safe retraining rollout pattern?**  
-   Candidate retrain -> offline validation -> shadow/canary -> staged promotion with rollback hooks.
-
+17. **Q: What is a safe retraining rollout pattern?**
+   **A:** Candidate retrain -> offline validation -> shadow/canary -> staged promotion with rollback hooks.
 # Further Reading & Sources
 
 - Azure model monitoring concepts: https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-monitoring?view=azureml-api-2

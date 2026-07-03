@@ -192,66 +192,65 @@ Lesson:
 
 # Interview Questions & Answers
 
-1. **How would you identify startup opportunities using AI?**  
-Start from painful workflows, validate demand, test AI feasibility, and compare against non-AI alternatives.
+1. **Q: How would you identify startup opportunities using AI?**
+   **A:** Start from painful workflows, validate demand, test AI feasibility, and compare against non-AI alternatives.
 
-2. **What makes an AI startup idea investable?**  
-Clear pain, strong GTM path, feasible execution, credible economics, and defensibility.
+2. **Q: What makes an AI startup idea investable?**
+   **A:** Clear pain, strong GTM path, feasible execution, credible economics, and defensibility.
 
-3. **How do you test problem-solution fit quickly?**  
-Run interview cycles, concierge pilots, and willingness-to-pay experiments before full build.
+3. **Q: How do you test problem-solution fit quickly?**
+   **A:** Run interview cycles, concierge pilots, and willingness-to-pay experiments before full build.
 
-4. **Which AI business model do you prefer and why?**  
-Depends on value delivery; usage pricing fits variable workloads, subscription fits predictable value.
+4. **Q: Which AI business model do you prefer and why?**
+   **A:** Depends on value delivery; usage pricing fits variable workloads, subscription fits predictable value.
 
-5. **What is a major GenAI startup risk?**  
-Unit economics collapse from uncontrolled token and operations cost.
+5. **Q: What is a major GenAI startup risk?**
+   **A:** Unit economics collapse from uncontrolled token and operations cost.
 
-6. **How do you decide API vs self-hosted model?**  
-Evaluate speed, cost, control, compliance, and long-term differentiation.
+6. **Q: How do you decide API vs self-hosted model?**
+   **A:** Evaluate speed, cost, control, compliance, and long-term differentiation.
 
-7. **How do you build moat in AI startups?**  
-Integrate deeply into workflow, collect proprietary feedback loops, and improve reliability over time.
+7. **Q: How do you build moat in AI startups?**
+   **A:** Integrate deeply into workflow, collect proprietary feedback loops, and improve reliability over time.
 
-8. **What role does responsible AI play in entrepreneurship?**  
-It reduces legal/reputational risk and increases enterprise adoption trust.
+8. **Q: What role does responsible AI play in entrepreneurship?**
+   **A:** It reduces legal/reputational risk and increases enterprise adoption trust.
 
-9. **How do you price an AI product initially?**  
-Tie pricing to delivered value proxy and validate via pilot cohorts.
+9. **Q: How do you price an AI product initially?**
+   **A:** Tie pricing to delivered value proxy and validate via pilot cohorts.
 
-10. **What should founders avoid in AI marketing?**  
-Overclaiming capabilities and hiding model limitations.
+10. **Q: What should founders avoid in AI marketing?**
+   **A:** Overclaiming capabilities and hiding model limitations.
 
-11. **How do you handle uncertain outputs in B2B contexts?**  
-Use confidence thresholds, approval gates, and explainability tooling.
+11. **Q: How do you handle uncertain outputs in B2B contexts?**
+   **A:** Use confidence thresholds, approval gates, and explainability tooling.
 
-12. **When can AI be the wrong technology choice?**  
-When deterministic workflows solve the problem cheaper and more reliably.
+12. **Q: When can AI be the wrong technology choice?**
+   **A:** When deterministic workflows solve the problem cheaper and more reliably.
 
-13. **How do you prioritize startup features?**  
-Rank by impact on core value metric, learning value, and implementation risk.
+13. **Q: How do you prioritize startup features?**
+   **A:** Rank by impact on core value metric, learning value, and implementation risk.
 
-14. **What metrics matter in early AI startups?**  
-Activation, retained usage, task success quality, cost-to-serve, and net revenue retention.
+14. **Q: What metrics matter in early AI startups?**
+   **A:** Activation, retained usage, task success quality, cost-to-serve, and net revenue retention.
 
-15. **How do you think about data strategy at seed stage?**  
-Start with accessible lawful data; design product loops to generate better proprietary data.
+15. **Q: How do you think about data strategy at seed stage?**
+   **A:** Start with accessible lawful data; design product loops to generate better proprietary data.
 
-16. **How do you prevent AI trust erosion?**  
-Transparent UX, clear limitations, and fast correction loops.
+16. **Q: How do you prevent AI trust erosion?**
+   **A:** Transparent UX, clear limitations, and fast correction loops.
 
-17. **What is a practical pilot design?**  
-Time-boxed deployment with baseline comparison and predefined success thresholds.
+17. **Q: What is a practical pilot design?**
+   **A:** Time-boxed deployment with baseline comparison and predefined success thresholds.
 
-18. **How do ethics affect fundraising and enterprise sales?**  
-Strong governance often shortens security/compliance cycles and improves buyer confidence.
+18. **Q: How do ethics affect fundraising and enterprise sales?**
+   **A:** Strong governance often shortens security/compliance cycles and improves buyer confidence.
 
-19. **How do you evaluate go-to-market readiness?**  
-Check repeatable onboarding, stable core performance, and sustainable support load.
+19. **Q: How do you evaluate go-to-market readiness?**
+   **A:** Check repeatable onboarding, stable core performance, and sustainable support load.
 
-20. **What does founder-product fit mean in AI ventures?**  
-Domain understanding plus capability to coordinate technical and commercial execution.
-
+20. **Q: What does founder-product fit mean in AI ventures?**
+   **A:** Domain understanding plus capability to coordinate technical and commercial execution.
 # References
 
 - University of Southampton, Entrepreneurship and Artificial Intelligence (MANG6586): https://www.southampton.ac.uk/courses/2026-27/modules/mang6586

@@ -199,51 +199,50 @@ Decision:
 
 # Interview Questions & Answers
 
-1. **What is LLMOps?**  
-Operational discipline for building, deploying, monitoring, and governing LLM systems at scale.
+1. **Q: What is LLMOps?**
+   **A:** Operational discipline for building, deploying, monitoring, and governing LLM systems at scale.
 
-2. **How is LLMOps different from MLOps?**  
-LLMOps adds prompt/context management, token economics, and generative risk controls.
+2. **Q: How is LLMOps different from MLOps?**
+   **A:** LLMOps adds prompt/context management, token economics, and generative risk controls.
 
-3. **Why treat prompts as versioned artifacts?**  
-Prompt changes can alter behavior as much as model changes.
+3. **Q: Why treat prompts as versioned artifacts?**
+   **A:** Prompt changes can alter behavior as much as model changes.
 
-4. **What are key stages of LLM lifecycle?**  
-Use-case framing, data/context setup, prompt workflow design, evaluation, deployment, and continuous improvement.
+4. **Q: What are key stages of LLM lifecycle?**
+   **A:** Use-case framing, data/context setup, prompt workflow design, evaluation, deployment, and continuous improvement.
 
-5. **How do you evaluate an LLM app?**  
-Use mixed automated + human evaluation across quality, safety, and business outcomes.
+5. **Q: How do you evaluate an LLM app?**
+   **A:** Use mixed automated + human evaluation across quality, safety, and business outcomes.
 
-6. **When do you choose RAG over fine-tuning?**  
-When knowledge changes frequently and citation/freshness are priorities.
+6. **Q: When do you choose RAG over fine-tuning?**
+   **A:** When knowledge changes frequently and citation/freshness are priorities.
 
-7. **How do you control LLM costs?**  
-Prompt optimization, retrieval precision, model routing, and caching.
+7. **Q: How do you control LLM costs?**
+   **A:** Prompt optimization, retrieval precision, model routing, and caching.
 
-8. **What is prompt injection risk?**  
-Malicious input attempts to override system instructions or exfiltrate sensitive data.
+8. **Q: What is prompt injection risk?**
+   **A:** Malicious input attempts to override system instructions or exfiltrate sensitive data.
 
-9. **What is a golden dataset?**  
-A curated benchmark set used for consistent regression testing.
+9. **Q: What is a golden dataset?**
+   **A:** A curated benchmark set used for consistent regression testing.
 
-10. **How do you improve groundedness?**  
-Better retrieval, citation requirements, and abstention logic for low-confidence contexts.
+10. **Q: How do you improve groundedness?**
+   **A:** Better retrieval, citation requirements, and abstention logic for low-confidence contexts.
 
-11. **What is model routing?**  
-Selecting different models per request complexity to balance quality and cost.
+11. **Q: What is model routing?**
+   **A:** Selecting different models per request complexity to balance quality and cost.
 
-12. **Why is LLM monitoring harder than classic ML monitoring?**  
-Outputs are free-form, subjective, and non-deterministic.
+12. **Q: Why is LLM monitoring harder than classic ML monitoring?**
+   **A:** Outputs are free-form, subjective, and non-deterministic.
 
-13. **How do you define LLM SLOs?**  
-Combine latency/cost targets with quality and safety thresholds.
+13. **Q: How do you define LLM SLOs?**
+   **A:** Combine latency/cost targets with quality and safety thresholds.
 
-14. **What are common LLMOps failure modes?**  
-Stale retrieval index, runaway token cost, silent quality regressions.
+14. **Q: What are common LLMOps failure modes?**
+   **A:** Stale retrieval index, runaway token cost, silent quality regressions.
 
-15. **How do you ship LLM systems safely?**  
-Staged rollout, policy guardrails, continuous evals, and rollback-ready architecture.
-
+15. **Q: How do you ship LLM systems safely?**
+   **A:** Staged rollout, policy guardrails, continuous evals, and rollback-ready architecture.
 # References
 
 - Coursera Duke LLMOps specialization: https://www.coursera.org/specializations/large-language-model-operations

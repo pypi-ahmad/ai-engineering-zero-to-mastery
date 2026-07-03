@@ -235,54 +235,53 @@ Operational implication:
 1. **Explain online vs batch model serving.**  
    Online serves low-latency request-time predictions; batch scores datasets on schedules for downstream consumption.
 
-2. **What is blue-green deployment?**  
-   A strategy with two parallel environments where traffic switches from current to new version, enabling fast rollback.
+2. **Q: What is blue-green deployment?**
+   **A:** A strategy with two parallel environments where traffic switches from current to new version, enabling fast rollback.
 
-3. **What is canary deployment?**  
-   Gradual traffic shift to a new version while monitoring health metrics before full promotion.
+3. **Q: What is canary deployment?**
+   **A:** Gradual traffic shift to a new version while monitoring health metrics before full promotion.
 
-4. **How do you roll back a bad model quickly?**  
-   Keep prior stable artifact live, route traffic back via deployment controller, and automate rollback triggers.
+4. **Q: How do you roll back a bad model quickly?**
+   **A:** Keep prior stable artifact live, route traffic back via deployment controller, and automate rollback triggers.
 
-5. **What belongs in a model registry?**  
-   Artifact URI, metrics, dataset/version lineage, stage status, and approval metadata.
+5. **Q: What belongs in a model registry?**
+   **A:** Artifact URI, metrics, dataset/version lineage, stage status, and approval metadata.
 
-6. **Why is p99 latency important?**  
-   Tail latency drives user-perceived performance and SLA breaches.
+6. **Q: Why is p99 latency important?**
+   **A:** Tail latency drives user-perceived performance and SLA breaches.
 
-7. **How do you secure inference endpoints?**  
-   Enforce authentication, authorization, network controls, secret management, and audit logging.
+7. **Q: How do you secure inference endpoints?**
+   **A:** Enforce authentication, authorization, network controls, secret management, and audit logging.
 
-8. **When would you prefer shadow over canary?**  
-   High-risk changes where you need behavioral comparison without impacting user-visible output.
+8. **Q: When would you prefer shadow over canary?**
+   **A:** High-risk changes where you need behavioral comparison without impacting user-visible output.
 
-9. **How do Docker and Kubernetes help model serving?**  
-   Docker ensures reproducible runtime; Kubernetes provides scalable rollout, health management, and traffic control.
+9. **Q: How do Docker and Kubernetes help model serving?**
+   **A:** Docker ensures reproducible runtime; Kubernetes provides scalable rollout, health management, and traffic control.
 
-10. **What is training-serving skew in deployment context?**  
-   Mismatch between training-time and serving-time feature processing leading to degraded live performance.
+10. **Q: What is training-serving skew in deployment context?**
+   **A:** Mismatch between training-time and serving-time feature processing leading to degraded live performance.
 
-11. **How do you version and promote models safely?**  
-   Registry states + automated validation gates + staged traffic rollout + rollback hooks.
+11. **Q: How do you version and promote models safely?**
+   **A:** Registry states + automated validation gates + staged traffic rollout + rollback hooks.
 
-12. **What are common causes of deployment incidents?**  
-   Schema changes, dependency mismatches, resource saturation, and missing observability.
+12. **Q: What are common causes of deployment incidents?**
+   **A:** Schema changes, dependency mismatches, resource saturation, and missing observability.
 
-13. **How do you handle GPU scheduling constraints?**  
-   Dedicated pools, capacity planning, autoscaling policies, and fallback paths.
+13. **Q: How do you handle GPU scheduling constraints?**
+   **A:** Dedicated pools, capacity planning, autoscaling policies, and fallback paths.
 
-14. **What is the difference between model and service versioning?**  
-   Model version tracks predictive artifact lineage; service version tracks runtime/API container deployment.
+14. **Q: What is the difference between model and service versioning?**
+   **A:** Model version tracks predictive artifact lineage; service version tracks runtime/API container deployment.
 
-15. **How do compliance requirements affect deployment?**  
-   They introduce approval workflows, documentation, and auditability requirements before promotion.
+15. **Q: How do compliance requirements affect deployment?**
+   **A:** They introduce approval workflows, documentation, and auditability requirements before promotion.
 
-16. **Why is endpoint contract testing important?**  
-   It prevents silent breakage when upstream payloads evolve.
+16. **Q: Why is endpoint contract testing important?**
+   **A:** It prevents silent breakage when upstream payloads evolve.
 
-17. **What metrics decide promotion during canary?**  
-   Error rate, latency, business KPI delta, calibration/quality metrics, and safety/compliance checks.
-
+17. **Q: What metrics decide promotion during canary?**
+   **A:** Error rate, latency, business KPI delta, calibration/quality metrics, and safety/compliance checks.
 # Further Reading & Sources
 
 - Azure model management/deployment: https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-management-and-deployment?view=azureml-api-2

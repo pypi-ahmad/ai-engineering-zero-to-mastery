@@ -189,51 +189,50 @@ Lesson:
 
 # Interview Questions & Answers
 
-1. **What is MLOps?**  
-A set of engineering practices that operationalize ML systems across development, deployment, and monitoring.
+1. **Q: What is MLOps?**
+   **A:** A set of engineering practices that operationalize ML systems across development, deployment, and monitoring.
 
-2. **How is MLOps different from DevOps?**  
-MLOps includes model/data lifecycle concerns such as drift, retraining, and model version governance.
+2. **Q: How is MLOps different from DevOps?**
+   **A:** MLOps includes model/data lifecycle concerns such as drift, retraining, and model version governance.
 
-3. **Why is CT important?**  
-Because model quality can degrade as data distributions change.
+3. **Q: Why is CT important?**
+   **A:** Because model quality can degrade as data distributions change.
 
-4. **What is MLOps maturity level 0?**  
-Manual, script-driven workflow with minimal automation and weak reproducibility.
+4. **Q: What is MLOps maturity level 0?**
+   **A:** Manual, script-driven workflow with minimal automation and weak reproducibility.
 
-5. **What belongs in a model artifact package?**  
-Model binary, dependency metadata, schema contract, and evaluation evidence.
+5. **Q: What belongs in a model artifact package?**
+   **A:** Model binary, dependency metadata, schema contract, and evaluation evidence.
 
-6. **What are common deployment strategies for ML models?**  
-Shadow, canary, blue-green, and batch deployment.
+6. **Q: What are common deployment strategies for ML models?**
+   **A:** Shadow, canary, blue-green, and batch deployment.
 
-7. **Why can good offline metrics fail in production?**  
-Data drift, integration bugs, and operational constraints can invalidate offline assumptions.
+7. **Q: Why can good offline metrics fail in production?**
+   **A:** Data drift, integration bugs, and operational constraints can invalidate offline assumptions.
 
-8. **What is a data contract?**  
-A formal agreement on schema, types, freshness, and quality expectations between producers and consumers.
+8. **Q: What is a data contract?**
+   **A:** A formal agreement on schema, types, freshness, and quality expectations between producers and consumers.
 
-9. **How do you choose retraining triggers?**  
-Combine schedule-based triggers with performance/drift-triggered retraining.
+9. **Q: How do you choose retraining triggers?**
+   **A:** Combine schedule-based triggers with performance/drift-triggered retraining.
 
-10. **What are MLOps guardrail metrics?**  
-Safety constraints such as latency limits, fairness thresholds, and false-positive caps.
+10. **Q: What are MLOps guardrail metrics?**
+   **A:** Safety constraints such as latency limits, fairness thresholds, and false-positive caps.
 
-11. **What is model registry used for?**  
-Versioning, stage transitions, governance, and reproducible promotion.
+11. **Q: What is model registry used for?**
+   **A:** Versioning, stage transitions, governance, and reproducible promotion.
 
-12. **How do you reduce ML technical debt?**  
-Automate checks, enforce contracts, and standardize build/deploy workflows.
+12. **Q: How do you reduce ML technical debt?**
+   **A:** Automate checks, enforce contracts, and standardize build/deploy workflows.
 
-13. **What should be monitored in production ML?**  
-Service health, data quality, drift, prediction distribution, and business outcomes.
+13. **Q: What should be monitored in production ML?**
+   **A:** Service health, data quality, drift, prediction distribution, and business outcomes.
 
-14. **When is heavy MLOps overkill?**  
-Low-risk, low-frequency internal workflows with minimal business impact.
+14. **Q: When is heavy MLOps overkill?**
+   **A:** Low-risk, low-frequency internal workflows with minimal business impact.
 
-15. **What makes an ML system production-ready?**  
-Reliable pipeline, tested deployment, observability, rollback plan, and clear ownership.
-
+15. **Q: What makes an ML system production-ready?**
+   **A:** Reliable pipeline, tested deployment, observability, rollback plan, and clear ownership.
 # References
 
 - Google Cloud Architecture: MLOps CI/CD/CT maturity and lifecycle guidance: https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning

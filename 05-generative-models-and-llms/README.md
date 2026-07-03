@@ -1,6 +1,6 @@
 # Lesson 5: Generative Models & LLMs
 
-Lesson 5 moves from classical generative modeling to modern LLM application design. It is organized as four chapter-style sub-lessons with both theory and runnable notebooks.
+Lesson 5 moves from classical generative modeling to modern LLM application design and post-training practice. It is organized as five chapter-style sub-lessons with both theory and runnable notebooks.
 
 ## Sub-lessons
 
@@ -12,6 +12,8 @@ Lesson 5 moves from classical generative modeling to modern LLM application desi
    - LLM capabilities/limits, prompting patterns, and fine-tuning/PEFT overview.
 4. **5.4 RAG, Tools, and AI Agents**
    - Retrieval-grounded generation, tool/function calling patterns, and multi-step agent loops.
+5. **5.5 LLM Post-Training & Fine-Tuning**
+   - Eval-first adaptation workflows with SFT, PEFT, LoRA, QLoRA, and alignment handoff (DPO/RLHF concepts).
 
 ## How to Use This Lesson
 
@@ -25,3 +27,14 @@ Lesson 5 moves from classical generative modeling to modern LLM application desi
 - `05-2-autoregressive-and-diffusion-models/`
 - `05-3-llm-foundations-and-prompt-engineering/`
 - `05-4-rag-tools-and-ai-agents/`
+- `05-5-llm-post-training-and-fine-tuning/`
+
+## Bridge from Lesson 4
+**Why this follows:** Lesson 4 gives the neural and transformer fundamentals required to understand modern generative AI behavior.
+
+**You should already know:** backpropagation intuition, optimization basics, and sequence/attention concepts.
+
+**What you will do next:** build from model-level generative concepts to application-level LLM patterns (prompting, RAG, tool use, agent loops).
+
+## Bridge to Lesson 6
+Lesson 6 turns these GenAI prototypes into production systems by introducing MLOps/LLMOps lifecycle design, deployment, monitoring, and governance.

@@ -2,7 +2,7 @@
 
 Covers practical data/model pipelines, deployment patterns, and model monitoring with drift-aware metrics and operational alerts.
 
-## Start here
+## Start Here
 
 1. Theory: `theory/12-2-ml-pipelines-deployment-and-monitoring.md`
 2. Notebook: `notebooks/12-2-ml-pipelines-deployment-and-monitoring-demo.ipynb`

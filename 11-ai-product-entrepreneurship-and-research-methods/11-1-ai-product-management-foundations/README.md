@@ -2,7 +2,7 @@
 
 Covers how AI PMs frame problems, define requirements, choose metrics, and launch AI/GenAI features responsibly.
 
-## Start here
+## Start Here
 
 1. Theory: `theory/11-1-ai-product-management-foundations.md`
 2. Notebook: `notebooks/11-1-ai-product-management-foundations-tools.ipynb`

@@ -210,54 +210,53 @@ Evaluation pattern:
 1. **Define RAG.**
    Retrieval-Augmented Generation combines external retrieval with LLM generation so answers are conditioned on relevant retrieved evidence.
 
-2. **What are core RAG components?**
-   Ingestion/chunking, embeddings/index, retriever, optional reranker, prompt augmentation, generator, and evaluation/monitoring.
+2. **Q: What are core RAG components?**
+   **A:** Ingestion/chunking, embeddings/index, retriever, optional reranker, prompt augmentation, generator, and evaluation/monitoring.
 
-3. **RAG vs fine-tuning?**
-   RAG updates knowledge via index refresh; fine-tuning updates model behavior/weights. They are complementary.
+3. **Q: RAG vs fine-tuning?**
+   **A:** RAG updates knowledge via index refresh; fine-tuning updates model behavior/weights. They are complementary.
 
-4. **Why is chunking important?**
-   Chunk quality directly affects retrieval relevance and final answer grounding.
+4. **Q: Why is chunking important?**
+   **A:** Chunk quality directly affects retrieval relevance and final answer grounding.
 
-5. **What is reranking and why use it?**
-   A second-stage relevance model improves precision among retrieved candidates, often improving grounded answers.
+5. **Q: What is reranking and why use it?**
+   **A:** A second-stage relevance model improves precision among retrieved candidates, often improving grounded answers.
 
-6. **What are common RAG failure modes?**
-   Missing relevant docs, poor chunking, stale sources, hallucinated citations, and prompt leakage.
+6. **Q: What are common RAG failure modes?**
+   **A:** Missing relevant docs, poor chunking, stale sources, hallucinated citations, and prompt leakage.
 
-7. **How do you reduce hallucinations in RAG?**
-   Better retrieval quality, strict grounding instructions, citation requirements, and refusal on low-confidence evidence.
+7. **Q: How do you reduce hallucinations in RAG?**
+   **A:** Better retrieval quality, strict grounding instructions, citation requirements, and refusal on low-confidence evidence.
 
-8. **Why is data freshness easier with RAG than fine-tuning?**
-   You can re-index updated documents without retraining base model weights.
+8. **Q: Why is data freshness easier with RAG than fine-tuning?**
+   **A:** You can re-index updated documents without retraining base model weights.
 
-9. **What metrics matter for RAG systems?**
-   Recall@k, MRR, groundedness/citation faithfulness, answer correctness, latency, and cost per query.
+9. **Q: What metrics matter for RAG systems?**
+   **A:** Recall@k, MRR, groundedness/citation faithfulness, answer correctness, latency, and cost per query.
 
-10. **What is tool/function calling in LLM apps?**
-    Structured invocation of external functions/APIs with validated inputs and model-mediated orchestration.
+10. **Q: What is tool/function calling in LLM apps?**
+   **A:** Structured invocation of external functions/APIs with validated inputs and model-mediated orchestration.
 
-11. **How do agents differ from plain RAG chat?**
-    Agents perform multi-step planning, tool usage, and stateful workflows, not just single-pass retrieval + response.
+11. **Q: How do agents differ from plain RAG chat?**
+   **A:** Agents perform multi-step planning, tool usage, and stateful workflows, not just single-pass retrieval + response.
 
-12. **How do you prevent dangerous tool actions?**
-    Schema validation, allowlists, role-based authorization, dry-run mode, and human approval for sensitive operations.
+12. **Q: How do you prevent dangerous tool actions?**
+   **A:** Schema validation, allowlists, role-based authorization, dry-run mode, and human approval for sensitive operations.
 
-13. **What is a planner/executor loop?**
-    Planner decomposes tasks; executor runs steps; verifier checks constraints and completion.
+13. **Q: What is a planner/executor loop?**
+   **A:** Planner decomposes tasks; executor runs steps; verifier checks constraints and completion.
 
-14. **When is RAG a bad fit?**
-    When needed information is not present or indexable, or when deterministic symbolic systems are better.
+14. **Q: When is RAG a bad fit?**
+   **A:** When needed information is not present or indexable, or when deterministic symbolic systems are better.
 
-15. **How do you debug poor RAG answers?**
-    Trace retrieval candidates, reranker decisions, prompt construction, and final grounding against source snippets.
+15. **Q: How do you debug poor RAG answers?**
+   **A:** Trace retrieval candidates, reranker decisions, prompt construction, and final grounding against source snippets.
 
-16. **What is groundedness?**
-    Degree to which answer claims are supported by retrieved evidence.
+16. **Q: What is groundedness?**
+   **A:** Degree to which answer claims are supported by retrieved evidence.
 
-17. **What is a practical rollout strategy for enterprise RAG?**
-    Start read-only with citations and observability, measure quality on curated sets, then gradually enable tool actions.
-
+17. **Q: What is a practical rollout strategy for enterprise RAG?**
+   **A:** Start read-only with citations and observability, measure quality on curated sets, then gradually enable tool actions.
 # Further Reading & Sources
 
 - IBM RAG overview: https://www.ibm.com/think/topics/retrieval-augmented-generation
@@ -267,3 +266,10 @@ Evaluation pattern:
 - Google Cloud RAG reference architectures: https://cloud.google.com/architecture/rag-reference-architectures
 - NVIDIA RAG glossary: https://www.nvidia.com/en-us/glossary/retrieval-augmented-generation/
 - NVIDIA RAG optimization/evaluation context: https://docs.nvidia.com/rag/2.3.0/accuracy_perf.html
+
+## Bridge to Next Lesson
+
+- **What you now know:** You now understand modern generative paradigms, prompting, and RAG/tooling patterns for LLM applications.
+- **Why the next lesson follows:** The next lesson follows because capability alone is insufficient without production reliability, repeatability, and operational governance.
+- **What you'll build next:** You will build operational foundations for MLOps/LLMOps: lifecycle design, data/feature pipelines, deployment, monitoring, and drift handling.
+
