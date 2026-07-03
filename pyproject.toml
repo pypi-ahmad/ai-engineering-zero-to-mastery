@@ -1,0 +1,41 @@
+[project]
+name = "ai-engineering-zero-to-mastery"
+version = "1.1.0"
+description = "Beginner-first, production-oriented AI engineering curriculum."
+requires-python = ">=3.10"
+dependencies = [
+    # Core scientific Python + teaching notebooks
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "seaborn",
+    "scikit-learn",
+    "scipy",
+    "xgboost",
+    "jupyter",
+    "ipykernel",
+    "requests",
+    "pyyaml",
+    # Common utilities used across lessons
+    "joblib",
+    "networkx",
+]
+
+[project.optional-dependencies]
+# Deep learning fundamentals and vision demos.
+dl = ["torch", "torchvision", "pillow"]
+
+# GenAI / LLM lessons: HF stack + PEFT / TRL.
+genai = ["transformers", "diffusers", "accelerate", "datasets", "peft", "trl"]
+
+# Reinforcement learning demos.
+rl = ["gymnasium"]
+
+# Serving examples (FastAPI) and local server runs.
+serving = ["fastapi", "uvicorn", "pydantic"]
+
+# Ops / experiment tracking.
+ops = ["mlflow", "wandb"]
+
+[dependency-groups]
+dev = ["pytest"]

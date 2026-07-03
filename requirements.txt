@@ -1,16 +1,34 @@
+# NOTE: Prefer `uv sync --frozen` (see README) for deterministic installs via `uv.lock`.
+# This file is kept as a lightweight fallback for users who must use pip.
+
+# Core scientific Python + notebook runtime (Lessons 1-3)
 numpy
 pandas
 matplotlib
 seaborn
-jupyter
-ipykernel
-requests
 scikit-learn
 scipy
 xgboost
-pytest
-torch
-torchvision
-transformers
-diffusers
-accelerate
+jupyter
+ipykernel
+requests
+pyyaml
+joblib
+networkx
+
+# Optional extras (install only when needed)
+# torch
+# torchvision
+# pillow
+# transformers
+# diffusers
+# accelerate
+# datasets
+# peft
+# trl
+# gymnasium
+# fastapi
+# uvicorn
+# pydantic
+# mlflow
+# wandb
