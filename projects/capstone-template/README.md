@@ -14,10 +14,10 @@ From the repository root:
 
 ```bash
 uv sync --frozen --group dev
-python projects/capstone-template/data/ingest.py
-python projects/capstone-template/data/prepare.py
-python projects/capstone-template/model/train.py
-python projects/capstone-template/model/evaluate.py
+uv run python projects/capstone-template/data/ingest.py
+uv run python projects/capstone-template/data/prepare.py
+uv run python projects/capstone-template/model/train.py
+uv run python projects/capstone-template/model/evaluate.py
 ```
 
 Expected outputs:
