@@ -256,6 +256,85 @@ def validate_notebooks(root: Path) -> list[ValidationError]:
     return errors
 
 
+def validate_exercises(root: Path) -> list[ValidationError]:
+    """Require a consistent practice loop for the early curriculum.
+
+    Lessons 1-6 are designed to be beginner-first with a predictable cadence:
+    theory -> notebook -> exercises -> solutions. Later lessons may add practice
+    content iteratively without being blocked by CI.
+    """
+    errors: list[ValidationError] = []
+
+    lesson_dirs = sorted([p for p in root.iterdir() if p.is_dir() and LESSON_DIR_RE.match(p.name)])
+    for lesson in lesson_dirs:
+        try:
+            lesson_num = int(lesson.name[:2])
+        except Exception:
+            continue
+        if lesson_num > 6:
+            continue
+
+        sub_lessons = sorted(
+            [
+                d
+                for d in lesson.iterdir()
+                if d.is_dir() and re.match(rf"^{lesson.name[:2]}-\d+", d.name)
+            ]
+        )
+        for sub in sub_lessons:
+            exercises_dir = sub / "exercises"
+            exercises_md = exercises_dir / "exercises.md"
+            solutions_md = exercises_dir / "solutions.md"
+
+            if not exercises_dir.exists():
+                errors.append(
+                    ValidationError(
+                        code="EX001",
+                        message="Missing exercises/ directory (Lessons 1-6 require practice loop)",
+                        path=str(exercises_dir),
+                    )
+                )
+            else:
+                if not exercises_md.exists():
+                    errors.append(
+                        ValidationError(
+                            code="EX002",
+                            message="Missing exercises/exercises.md",
+                            path=str(exercises_md),
+                        )
+                    )
+                if not solutions_md.exists():
+                    errors.append(
+                        ValidationError(
+                            code="EX003",
+                            message="Missing exercises/solutions.md",
+                            path=str(solutions_md),
+                        )
+                    )
+
+            readme = sub / "README.md"
+            if readme.exists():
+                txt = _read_text(readme)
+                if "## Practice (Recommended)" not in txt:
+                    errors.append(
+                        ValidationError(
+                            code="EX010",
+                            message="Sub-lesson README missing 'Practice (Recommended)' section (Lessons 1-6)",
+                            path=str(readme),
+                        )
+                    )
+                if "exercises/exercises.md" not in txt or "exercises/solutions.md" not in txt:
+                    errors.append(
+                        ValidationError(
+                            code="EX011",
+                            message="Sub-lesson README missing links to exercises + solutions (Lessons 1-6)",
+                            path=str(readme),
+                        )
+                    )
+
+    return errors
+
+
 def validate_placeholders(root: Path) -> list[ValidationError]:
     errors: list[ValidationError] = []
     tokens = ["TODO", "TBD", "Lorem ipsum"]
@@ -424,6 +503,7 @@ def main() -> int:
     errors: list[ValidationError] = []
     errors.extend(validate_structure(root))
     errors.extend(validate_notebooks(root))
+    errors.extend(validate_exercises(root))
     errors.extend(validate_placeholders(root))
     errors.extend(validate_markdown_links(root))
     errors.extend(validate_tracked_hygiene(root))
