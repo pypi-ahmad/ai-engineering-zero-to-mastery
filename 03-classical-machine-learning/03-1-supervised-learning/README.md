@@ -13,3 +13,7 @@ Supervised learning is a core baseline capability reused in deep learning, MLOps
 ## Start Here
 1. Theory: `theory/03-1-supervised-learning.md`
 2. Notebook: `notebooks/03-1-supervised-learning.ipynb`
+
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`

@@ -13,3 +13,7 @@ Probability/statistics supports model evaluation, risk-aware metrics, and uncert
 ## Start Here
 1. Theory: `theory/02-3-probability-and-statistics-titanic.md`
 2. Notebook: `notebooks/02-3-probability-and-statistics-titanic.ipynb`
+
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`

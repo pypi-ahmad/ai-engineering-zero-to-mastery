@@ -13,3 +13,7 @@ This bridges mathematical theory to practical model evaluation workflows used he
 ## Start Here
 1. Theory: `theory/02-4-applied-stats-for-ml-iris.md`
 2. Notebook: `notebooks/02-4-applied-stats-for-ml-iris.ipynb`
+
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`

@@ -13,3 +13,7 @@ Linear algebra is foundational for model architectures, gradient-based training,
 ## Start Here
 1. Theory: `theory/02-1-linear-algebra-for-ml-and-ai.md`
 2. Notebook: `notebooks/02-1-linear-algebra-for-ml-and-ai.ipynb`
+
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`

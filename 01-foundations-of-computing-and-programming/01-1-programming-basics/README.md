@@ -13,3 +13,9 @@ These fundamentals are reused in every later lesson for data prep, model trainin
 ## Start Here
 1. Theory: `theory/01-1-programming-basics.md`
 2. Notebook: `notebooks/01-1-programming-basics.ipynb`
+
+## Practice (Recommended)
+After running the notebook once, do:
+
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`

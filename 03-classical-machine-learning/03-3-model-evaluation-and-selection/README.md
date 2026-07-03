@@ -13,3 +13,7 @@ This is the decision-quality layer that connects model development to production
 ## Start Here
 1. Theory: `theory/03-3-model-evaluation-and-selection.md`
 2. Notebook: `notebooks/03-3-model-evaluation-and-selection.ipynb`
+
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`

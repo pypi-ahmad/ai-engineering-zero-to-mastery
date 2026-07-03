@@ -13,3 +13,7 @@ Efficient data handling and algorithmic reasoning are critical for feature engin
 ## Start Here
 1. Theory: `theory/01-2-data-structures-and-algorithms.md`
 2. Notebook: `notebooks/01-2-data-structures-and-algorithms.ipynb`
+
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`

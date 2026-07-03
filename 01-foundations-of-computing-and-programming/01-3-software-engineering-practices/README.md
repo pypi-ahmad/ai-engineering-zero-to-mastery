@@ -17,6 +17,12 @@ This sub-lesson builds engineering discipline needed to ship reliable AI systems
 - `notebooks/01-3-2-clean-code-modular-design-documentation.ipynb`
 - `notebooks/01-3-3-basic-rest-apis-http-json.ipynb`
 
+## Practice (Recommended)
+After you complete the notebooks, do:
+
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`
+
 ## Prerequisites
 - Lesson 1.1 and 1.2 basics (Python syntax, data structures, control flow).
 - Basic command-line familiarity.

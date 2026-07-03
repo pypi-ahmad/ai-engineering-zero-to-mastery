@@ -13,3 +13,7 @@ Unsupervised techniques feed customer segmentation, anomaly detection, and retri
 ## Start Here
 1. Theory: `theory/03-2-unsupervised-learning.md`
 2. Notebook: `notebooks/03-2-unsupervised-learning.ipynb`
+
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`

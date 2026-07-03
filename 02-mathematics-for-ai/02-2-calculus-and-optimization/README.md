@@ -13,3 +13,7 @@ These concepts directly power deep learning training workflows in Lesson 4 and o
 ## Start Here
 1. Theory: `theory/02-2-calculus-and-optimization.md`
 2. Notebook: `notebooks/02-2-calculus-and-optimization.ipynb`
+
+## Practice (Recommended)
+1. Exercises: `exercises/exercises.md`
+2. Solutions (check your work): `exercises/solutions.md`
