@@ -2,10 +2,20 @@
 
 Lesson 6 introduces operational foundations for moving ML/LLM work from notebooks into repeatable production workflows.
 
+## Why This Matters
+
+Great models still fail in production without operational discipline. This lesson teaches how to ship with: reproducibility, stable data pipelines, explicit contracts, monitoring, and rollback-ready controls.
+
 ## Learning Objectives
 - Understand ML lifecycle stages, CI/CD/CT/CM, and artifact/version discipline.
 - Build baseline data/feature pipelines, deployment patterns, and drift monitoring.
 - Apply first-pass LLMOps patterns for RAG and tool-augmented applications.
+
+## Expected Outcomes
+
+- You can define run metadata and save artifacts so results are reproducible.
+- You can design a basic serving contract and a rollback strategy.
+- You can write a monitoring policy (alerts + retraining triggers) that avoids noise.
 
 ## Start Here (Theory + Notebooks)
 - `06-1-mlops-fundamentals-and-lifecycle/theory/06-1-mlops-fundamentals-and-lifecycle.md`

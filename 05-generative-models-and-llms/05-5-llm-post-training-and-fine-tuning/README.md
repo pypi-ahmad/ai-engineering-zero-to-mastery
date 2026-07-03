@@ -2,6 +2,13 @@
 
 This sub-lesson is the practical bridge from prompting to model adaptation. It covers supervised fine-tuning (SFT), PEFT, LoRA, QLoRA, and the transition to preference optimization methods such as DPO/RLHF.
 
+## Key Terms (Plain English)
+
+- **SFT**: supervised fine-tuning on labeled examples.
+- **PEFT**: parameter-efficient fine-tuning (update fewer parameters).
+- **LoRA/QLoRA**: PEFT techniques that reduce compute/memory cost.
+- **Eval-first**: define evaluation before you train so you know what “better” means.
+
 ## What You Will Learn
 - How to decide between prompting, RAG, and fine-tuning.
 - How PEFT/LoRA/QLoRA reduce adaptation cost.
@@ -23,3 +30,22 @@ This sub-lesson is the practical bridge from prompting to model adaptation. It c
 
 ## Why This Matters
 Modern LLM systems often fail due to behavior inconsistency rather than missing model capacity. This module shows how to tune behavior rigorously while keeping cost and operations manageable.
+
+## Expected Outcomes
+
+- You can decide between prompting vs RAG vs fine-tuning for a specific failure mode.
+- You can run a small PEFT/LoRA adaptation with a defined eval set.
+- You can describe the operational risks (dataset quality, overfit, regressions) and how to gate them.
+
+## Verify Your Work
+
+- Run the notebook from a clean kernel.
+- Complete the exercises and write:
+  - an eval set description,
+  - a regression gate you would block releases on.
+
+## Common Mistakes
+
+- Fine-tuning without an eval set (you can’t tell if you improved).
+- Training on small or biased data and overfitting behavior.
+- Treating fine-tuning as a replacement for RAG when freshness is required.

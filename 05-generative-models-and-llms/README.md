@@ -2,6 +2,16 @@
 
 Lesson 5 moves from classical generative modeling to modern LLM application design and post-training practice. It is organized as five chapter-style sub-lessons with both theory and runnable notebooks.
 
+## Why This Matters
+
+Generative AI is now a systems problem as much as a modeling problem: prompts, retrieval, tools, evaluation, and operational controls determine whether an LLM app is reliable. This lesson builds those foundations before you scale into LLMOps.
+
+## Expected Outcomes
+
+- You can explain what an LLM does and what it does not guarantee (non-determinism, hallucinations).
+- You can build a small grounded system (RAG or tool-augmented) and evaluate it.
+- You can describe when prompting is enough vs when fine-tuning makes sense.
+
 ## Sub-lessons
 
 1. **5.1 Classical Deep Generative Models (VAEs, GANs, Flows)**
