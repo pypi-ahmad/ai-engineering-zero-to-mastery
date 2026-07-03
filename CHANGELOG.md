@@ -27,6 +27,13 @@ Release focused on tutorial-grade pedagogy: clearer definitions, stronger verifi
 - Upgraded Lessons 7–15 lesson READMEs with expected outcomes and verification guidance.
 - Added a notebook playbook and improved intros for selected beginner-critical notebooks with explicit run/verify steps.
 
+## v1.5.1 (2026-07-03)
+
+Release polish focused on consistency and beginner onboarding.
+
+- Overhauled the root README into a clearer beginner-first “front door” with roadmap, navigation, curated references, and troubleshooting pointers.
+- Standardized `uv sync` commands across docs and capstone error messages to recommend `--frozen` for reproducible installs.
+
 ## v1.2.0 (2026-07-03)
 
 Release focused on portability, lean release hygiene, and a consistent beginner practice loop.
